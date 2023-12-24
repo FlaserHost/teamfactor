@@ -9,25 +9,110 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <header class="page-header">
-            <div class="page-header__logo-block">
-                <figure>
-                    <img src="src/img/logo.svg" alt="logo">
-                </figure>
-            </div>
-            <nav class="page-header__page-navigation">
-                <ul>
-                    <li>Solutions</li>
-                    <li>How to start</li>
-                    <li>Cases</li>
-                    <li>Blog</li>
-                    <li>About us</li>
-                </ul>
-            </nav>
-            <div class="page-header__btn-block">
-                <button class="free-demo-btn" id="free-demo-btn" type="button">Request free demo</button>
-            </div>
-        </header>
+        <div class="header-wrapper">
+            <header class="page-header">
+                <div class="page-header__logo-block">
+                    <figure>
+                        <img src="src/img/logo.svg" alt="logo">
+                    </figure>
+                </div>
+                <nav class="page-header__page-navigation">
+                    <ul>
+                        <li>
+                            <button class="nav-btn solutions-btn" type="button" data-sub-id="solutions-items">Solutions</button>
+                        </li>
+                        <li>
+                            <button class="nav-btn how-to-start-btn" type="button">How to start</button>
+                        </li>
+                        <li>
+                            <button class="nav-btn cases-btn" type="button">Cases</button>
+                        </li>
+                        <li>
+                            <button class="nav-btn blog-btn" type="button">Blog</button>
+                        </li>
+                        <li>
+                            <button class="nav-btn about-us-btn" type="button">About us</button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="page-header__btn-block">
+                    <button class="free-demo-btn" id="free-demo-btn" type="button">Request free demo</button>
+                </div>
+            </header>
+            <section class="sub-menu" id="solutions-items">
+                <div class="sub-menu__solutions-items">
+                    <article class="products">
+                        <h2>Products</h2>
+                        <div class="product-menu-content">
+                            <div class="recruitment-system">
+                                <div class="details title-wrapper">
+                                    <span class="title">Recruitment System Management</span>
+                                </div>
+                                <div class="details sub-title-wrapper">
+                                    <span class="sub-title">Сlose vacancies 2 times faster!</span>
+                                </div>
+                            </div>
+                            <div class="performance">
+                                <div class="details title-wrapper">
+                                    <span class="title">Performance Management and KPIs</span>
+                                </div>
+                                <div class="details sub-title-wrapper">
+                                    <span class="sub-title">Easy to track the performance</span>
+                                </div>
+                            </div>
+                            <div class="talent-management">
+                                <div class="details title-wrapper">
+                                    <span class="title">Talent Management</span>
+                                </div>
+                                <div class="details sub-title-wrapper">
+                                    <span class="sub-title">Grow up team skills to get high performance!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="advantages">
+                        <h2>Advantages</h2>
+                        <ul class="sub-menu-article-list advantages__list">
+                            <li>
+                                <a href="#">Perfect integration</a>
+                            </li>
+                            <li>
+                                <a href="#">Flexible reports</a>
+                            </li>
+                            <li>
+                                <a href="#">Fast-track start with SaaS</a>
+                            </li>
+                            <li>
+                                <a href="#">Сomplete data security with On-Premise</a>
+                            </li>
+                            <li>
+                                <a href="#">Integrations and Stack of Technologies</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="industries">
+                        <h2>Industries</h2>
+                        <ul class="sub-menu-article-list industries__list">
+                            <li>
+                                <a href="#">Retail</a>
+                            </li>
+                            <li>
+                                <a href="#">Banking and Financial Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Manufacturing</a>
+                            </li>
+                            <li>
+                                <a href="#">Oil & Gas</a>
+                            </li>
+                            <li>
+                                <a href="#">Recruitment agencies</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
     </div>
     <script src="src/js/script.js"></script>
 </body>
