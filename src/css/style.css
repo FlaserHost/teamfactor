@@ -150,6 +150,7 @@ img {
     gap: 25px;
     width: 100%;
     max-width: 1074px;
+    flex-wrap: wrap;
 }
 
 .header-wrapper .sub-menu .articles-keeper article:not(:last-child) {
