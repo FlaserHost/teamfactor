@@ -78,7 +78,7 @@ img {
 .page-header__page-navigation > ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 72px;
+    gap: 10px 116px;
 }
 
 .page-header__logo-block {
@@ -139,14 +139,21 @@ img {
     display: none;
 }
 
-.header-wrapper .sub-menu .sub-menu__solutions-items {
+.header-wrapper .sub-menu > div {
     display: flex;
     justify-content: flex-end;
-    gap: 25px;
 }
 
-.header-wrapper .sub-menu .sub-menu__solutions-items > article:not(:last-child) {
-    margin-right: 25px;
+.header-wrapper .sub-menu .articles-keeper {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+    max-width: 1074px;
+}
+
+.header-wrapper .sub-menu .articles-keeper article:not(:last-child) {
+    margin-right: 26px;
 }
 
 .header-wrapper .sub-menu h2 {
@@ -241,4 +248,27 @@ img {
 
 .sub-menu.showed {
     display: block;
+}
+
+.header-wrapper .sub-menu .how-to-start-article {
+    width: 346px;
+    padding: 20px;
+    height: 136px;
+    background: rgba(2, 35, 181, .05) url('../img/girl.svg') no-repeat bottom right / 70% 82%;
+    transform: translateY(-20px);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-wrapper .sub-menu .how-to-start-article:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/arrows.svg') no-repeat center / 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transform: rotate(-90deg);
 }
