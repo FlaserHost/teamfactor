@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navBtns = document.querySelectorAll('.nav-btn');
     navBtns.forEach((btn, _, orig) => {
         btn.addEventListener('click', e => {
-
-
             const subId = e.target.dataset.subId;
             const subSection = document.getElementById(subId);
 
@@ -21,4 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    const header = document.querySelector('.header-wrapper');
+    document.addEventListener('click', e => {
+        const currentPath = e.composedPath();
+
+        if (!currentPath.includes(header)) {
+            subSections.forEach(sub => sub.classList.remove('showed'));
+            navBtns.forEach(nav => nav.classList.remove('active-nav'));
+        }
+    });
+
+
 });

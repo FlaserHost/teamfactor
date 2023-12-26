@@ -36,6 +36,7 @@ html, body, .page-wrapper {
 a {
     text-decoration: none;
     color: #000;
+    font-size: 14px;
 }
 
 button {
@@ -55,7 +56,11 @@ img {
 
 .page-wrapper {
     width: 95%;
+    max-width: 1384px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 382px;
 }
 
 .header-wrapper {
@@ -63,8 +68,12 @@ img {
     border-radius: 10px;
     box-shadow: 0 0 30px 10px #eee;
     overflow: hidden;
-    position: sticky;
-    top: 30px
+    position: absolute;
+    top: 30px;
+    background-color: #fff;
+    z-index: 1;
+    width: 95%;
+    max-width: 1384px;
 }
 
 .page-header {
@@ -78,7 +87,7 @@ img {
 .page-header__page-navigation > ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 116px;
+    gap: 10px 72px;
 }
 
 .page-header__logo-block {
@@ -131,12 +140,16 @@ img {
     padding: 13px 20px;
 }
 
-.header-wrapper .sub-menu {
-    border-top: 1px solid rgba(100, 130, 254, .22);
+.header-wrapper .sub-menu,
+.page-footer .footer-container {
     width: 100%;
     padding: 40px 0;
     margin-top: 13px;
+}
+
+.header-wrapper .sub-menu {
     display: none;
+    border-top: 1px solid rgba(100, 130, 254, .22);
 }
 
 .header-wrapper .sub-menu > div {
@@ -144,73 +157,89 @@ img {
     justify-content: flex-end;
 }
 
-.header-wrapper .sub-menu .articles-keeper {
+.header-wrapper .sub-menu .articles-keeper,
+.page-footer .articles-keeper {
     display: flex;
     justify-content: space-between;
     gap: 25px;
     width: 100%;
-    max-width: 1074px;
+    max-width: 900px;
     flex-wrap: wrap;
 }
 
-.header-wrapper .sub-menu .articles-keeper article:not(:last-child) {
+.header-wrapper .sub-menu .articles-keeper article:not(:last-child),
+.page-footer .articles-keeper article:not(:last-child) {
     margin-right: 26px;
 }
 
-.header-wrapper .sub-menu h2 {
-    font-size: 20px;
+.header-wrapper .sub-menu h2,
+.page-footer h2 {
+    font-size: 18px;
     color: var(--main-color);
     font-weight: 600;
 }
 
-.header-wrapper .sub-menu .list-img-block {
+.header-wrapper .sub-menu .list-img-block,
+.page-footer .list-img-block {
     width: 35px;
     padding-top: 5px;
 }
 
-.header-wrapper .sub-menu .list-img-block > img {
+.header-wrapper .sub-menu .list-img-block > img,
+.page-footer .list-img-block > img {
     height: 35px;
     object-fit: contain;
 }
 
 .header-wrapper .sub-menu span,
-.header-wrapper .sub-menu .sub-menu-article-list li {
+.header-wrapper .sub-menu .sub-menu-article-list li,
+.page-footer span,
+.page-footer .sub-menu-article-list li {
     display: block;
     font-family: Inter, sans-serif;
     color: #232323;
     line-height: 22px;
+    font-size: 15px;
 }
 
-.header-wrapper .sub-menu span.sub-title {
+.header-wrapper .sub-menu span.sub-title,
+.page-footer span.sub-title {
     color: rgba(35, 35, 35, .6);
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 7px;
 }
 
 .header-wrapper .sub-menu article > div,
-.header-wrapper .sub-menu .sub-menu-article-list {
+.header-wrapper .sub-menu .sub-menu-article-list,
+.page-footer article > div,
+.page-footer .sub-menu-article-list {
     margin-top: 17px;
 }
 
-.header-wrapper .sub-menu .product-menu-content > div:not(:first-child) {
+.header-wrapper .sub-menu .product-menu-content > div:not(:first-child),
+.page-footer .product-menu-content > div:not(:first-child) {
     margin-top: 25px;
 }
 
-.header-wrapper .sub-menu .products {
+.header-wrapper .sub-menu .products,
+.page-footer .products {
     width: 260px;
 }
 
-.header-wrapper .sub-menu .details {
+.header-wrapper .sub-menu .details,
+.page-footer .details {
     padding-left: 40px;
 }
 
-.header-wrapper .sub-menu .title-wrapper {
+.header-wrapper .sub-menu .title-wrapper,
+.page-footer .title-wrapper {
     padding-right: 30px;
     position: relative;
     display: block;
 }
 
-.header-wrapper .sub-menu .title-wrapper:before {
+.header-wrapper .sub-menu .title-wrapper:before,
+.page-footer .title-wrapper:before {
     content: '';
     display: block;
     position: absolute;
@@ -222,23 +251,28 @@ img {
     background: no-repeat center / 33px;
 }
 
-.header-wrapper .sub-menu .recruitment-system .title-wrapper:before {
+.header-wrapper .sub-menu .recruitment-system .title-wrapper:before,
+.page-footer .recruitment-system .title-wrapper:before {
     background-image: url('../img/man.svg');
 }
 
-.header-wrapper .sub-menu .performance .title-wrapper:before {
+.header-wrapper .sub-menu .performance .title-wrapper:before,
+.page-footer .performance .title-wrapper:before {
     background-image: url('../img/dashboard-stats.svg');
 }
 
-.header-wrapper .sub-menu .talent-management .title-wrapper:before {
+.header-wrapper .sub-menu .talent-management .title-wrapper:before,
+.page-footer .talent-management .title-wrapper:before {
     background-image: url('../img/graduation.svg');
 }
 
-.header-wrapper .sub-menu .advantages a {
+.header-wrapper .sub-menu a,
+.page-footer a {
     font-family: Inter, sans-serif;
 }
 
-.header-wrapper .sub-menu .sub-menu-article-list li:not(:first-child) {
+.header-wrapper .sub-menu .sub-menu-article-list li:not(:first-child),
+.page-footer .sub-menu-article-list li:not(:first-child) {
     margin-top: 12px;
 }
 
@@ -272,4 +306,69 @@ img {
     right: 20px;
     bottom: 20px;
     transform: rotate(-90deg);
+}
+
+.page-footer {
+    width: 100%;
+    min-height: 282px;
+    background-color: rgba(2, 35, 181, .1);
+    margin-top: auto;
+    padding: 0 20px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.page-footer .footer-container {
+    width: 95%;
+    max-width: 1384px;
+    margin: 0 auto;
+}
+
+.page-footer .footer-logo > figure {
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.page-footer .articles-keeper {
+    margin-top: 30px;
+}
+
+.page-footer .articles-keeper .contacts {
+    width: 249px;
+}
+
+.page-footer .articles-keeper .social-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-footer .articles-keeper .social-link > svg {
+    width: 36px;
+    height: 36px;
+}
+
+.page-footer .articles-keeper .social-link svg path {
+    transition: fill .3s;
+}
+
+.page-footer .articles-keeper .social-link:hover path {
+    fill: #0223B5;
+}
+
+.page-footer .articles-keeper .stories {
+    width: 300px;
+}
+
+.page-footer .articles-keeper {
+    max-width: initial;
+}
+
+.page-footer .articles-keeper .stories ul li::marker {
+    content: '';
+    background: url('../img/arrows.svg') no-repeat center / 13px;
+    width: 13px;
+    height: 13px;
+    font-size: 14px;
 }
