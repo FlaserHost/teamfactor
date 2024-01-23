@@ -483,7 +483,7 @@ img {
     margin-top: 180px;
 }
 
-.main-content .title-block {
+.main-content .title-block.spec {
     padding: 0 100px;
 }
 
@@ -525,7 +525,6 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    padding-bottom: 40px;
 }
 
 
@@ -533,7 +532,7 @@ img {
 /* advantages */
 
 .main-content .advantages {
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .main-content .advantages__content-wrapper .tabs {
@@ -544,7 +543,6 @@ img {
 }
 
 .main-content .advantages__content-wrapper {
-    padding: 0 100px;
     margin-top: 30px;
 }
 
@@ -611,7 +609,7 @@ img {
 /* achievements */
 
 .main-content .achievements {
-    margin-top: 40px;
+    margin-top: 100px;
     padding: 0 100px;
     display: grid;
     grid: repeat(2, minmax(160px, 1fr)) / repeat(12, 1fr);
@@ -619,7 +617,7 @@ img {
 }
 
 .main-content .achievements .achievement {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 25px;
     padding: 40px;
     display: flex;
@@ -628,6 +626,7 @@ img {
 
 .main-content .achievements .achievement.blue-article {
     background-color: var(--main-color);
+    border-color: var(--main-color);
     color: #fff;
 }
 
@@ -672,6 +671,99 @@ img {
 }
 
 
+
+/* blog */
+
+.main-content section:not(.trust-us) {
+    padding: 0 100px;
+}
+
+.main-content .blog {
+    margin-top: 100px;
+}
+
+.main-content .blog .title-block h2 {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.main-content .blog .blog__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 15px;
+    margin-top: 45px;
+}
+
+.main-content .blog .blog__card {
+    width: 280px;
+    height: 320px;
+    background-color: var(--light-blue);
+    overflow: hidden;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .blog .blog__card figure {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.main-content .blog .blog__card .card-info {
+    padding: 14px 40px 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .blog .blog__card p {
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-size: 14px;
+}
+
+.main-content .blog .blog__card .blog-card-link {
+    display: block;
+    margin-top: auto;
+    align-self: flex-end;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.main-content .blog .blog__card.last-card {
+    padding: 30px;
+    justify-content: flex-end;
+}
+
+.main-content .blog .blog__card .last-card-link {
+    text-decoration: underline;
+    font-size: 18px;
+    display: block;
+    position: relative;
+}
+
+.main-content .blog .blog__card .last-card-link::before {
+    content: '';
+    background: url('../img/arrows.svg') no-repeat center / 13px;
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 13px;
+    height: 13px;
+    font-size: 14px;
+    transform: rotate(-90deg);
+}
+
+
+
+/* webinars */
+
+.main-content .webinars {
+    margin-top: 100px;
+}
 
 
 
