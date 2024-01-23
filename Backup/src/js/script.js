@@ -30,26 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Бегущая строка
 
-    const swiper = new Swiper('.swiper-marquee', {
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        speed: 2000,
-        watchOverflow: true,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-        },
-    });
-
-    let originalSlides = swiper.slides;
-    const viewport = window.innerWidth;
-    const dublicatesAmount = Math.round(viewport / 500);
-
-    for (let i = 0; i < dublicatesAmount; i++) {
-        originalSlides.forEach(slide => swiper.appendSlide(slide.outerHTML));
-    }
 });
