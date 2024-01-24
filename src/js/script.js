@@ -52,4 +52,21 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < dublicatesAmount; i++) {
         originalSlides.forEach(slide => swiper.appendSlide(slide.outerHTML));
     }
+
+    // слайдер
+
+    const thumbSwiper = new Swiper(".thumbs-slider", {
+        spaceBetween: 17,
+        slidesPerView: 'auto',
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    const mainSwiper = new Swiper(".main-slider", {
+        spaceBetween: 17,
+        slidesPerView: 1.5,
+        thumbs: {
+            swiper: thumbSwiper,
+        },
+    });
 });
