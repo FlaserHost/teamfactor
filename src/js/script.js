@@ -30,6 +30,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // функция создания дублей слайдов
+    const viewport = window.innerWidth;
+    const dublicatesCreate = slider => {
+        const originalSlides = slider.slides;
+        const amount = originalSlides.length;
+        const width = originalSlides[0].getBoundingClientRect().width;
+        const divider = width * amount;
+
+        const dublicatesAmount = Math.round(viewport / divider);
+
+        for (let i = 0; i < dublicatesAmount; i++) {
+            originalSlides.forEach(slide => slider.appendSlide(slide.outerHTML));
+        }
+    }
+
     // Бегущая строка
 
     const swiper = new Swiper('.swiper-marquee', {
@@ -45,15 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    let originalSlides = swiper.slides;
-    const viewport = window.innerWidth;
-    const dublicatesAmount = Math.round(viewport / 500);
-
-    for (let i = 0; i < dublicatesAmount; i++) {
-        originalSlides.forEach(slide => swiper.appendSlide(slide.outerHTML));
-    }
-
-    // слайдер
+    // слайдеры
 
     const thumbSwiper = new Swiper(".thumbs-slider", {
         spaceBetween: 17,
@@ -69,4 +76,37 @@ document.addEventListener('DOMContentLoaded', () => {
             swiper: thumbSwiper,
         },
     });
+
+    const messengers = new Swiper(".swiper-messengers", {
+        spaceBetween: 17,
+        loop: true,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.next-arrow.messengers-arrow',
+            prevEl: '.prev-arrow.messengers-arrow',
+        },
+    });
+
+    const jobSites = new Swiper(".swiper-job-sites", {
+        spaceBetween: 17,
+        loop: true,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.next-arrow.job-sites-arrow',
+            prevEl: '.prev-arrow.job-sites-arrow',
+        },
+    });
+
+    const services = new Swiper(".swiper-services", {
+        spaceBetween: 17,
+        loop: true,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.next-arrow.services-arrow',
+            prevEl: '.prev-arrow.services-arrow',
+        },
+    });
+
+    const sliders = [swiper, messengers, jobSites, services];
+    sliders.forEach(slider => dublicatesCreate(slider));
 });

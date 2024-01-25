@@ -674,7 +674,7 @@ img {
 
 /* blog */
 
-.main-content section:not(.trust-us, .reviews) {
+.main-content section:not(.trust-us, .reviews, .SAAS) {
     padding: 0 100px;
 }
 
@@ -1005,8 +1005,176 @@ img {
 
 .main-content .SAAS {
     margin-top: 100px;
+    border-radius: 50px;
+    background-color: var(--light-blue);
+    overflow: hidden;
+    padding-bottom: 90px;
 }
 
+.main-content .SAAS .SAAS-cards {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    padding: 100px;
+}
+
+.main-content .SAAS .SAAS-card {
+    width: 100%;
+    max-width: 550px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .SAAS .SAAS-card .card-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.main-content .SAAS .SAAS-card .card-tag {
+    display: block;
+    padding: 7px 15px;
+    border: 1.5px solid #ddd;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.main-content .SAAS .SAAS-card h2 {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 80px;
+}
+
+.main-content .SAAS .SAAS-card ul {
+    margin: 45px 0 80px;
+}
+
+.main-content .SAAS .SAAS-card ul li {
+    list-style-type: none;
+    font-size: 21px;
+    font-family: 'Onest Thin', sans-serif;
+    font-weight: 600;
+}
+
+.main-content .SAAS .SAAS-card ul li:not(:first-child) {
+    margin-top: 12px;
+}
+
+.main-content .SAAS .SAAS-card .card-btn-block {
+    margin-top: auto;
+}
+
+.main-content .SAAS .SAAS-card .connect-btn {
+    width: 100%;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+.main-content .SAAS .integrations .title-block {
+    padding: 0 100px;
+    color: var(--main-color);
+}
+
+.main-content .SAAS .sliders {
+    margin-top: 37px;
+}
+
+.main-content .SAAS .swiper-integrations .swiper-slide {
+    width: 150px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .SAAS .swiper-integrations .swiper-slide img {
+    object-fit: contain;
+}
+
+.main-content .SAAS .swiper-messengers .swiper-slide img {
+    width: 45px;
+}
+
+.main-content .SAAS .swiper-messengers .swiper-slide img.whatsapp-logo {
+    width: 53px;
+}
+
+.main-content .SAAS .swiper-job-sites .swiper-slide img.superjob-logo {
+    width: 110px;
+}
+
+.main-content .SAAS .swiper-job-sites .swiper-slide img.linkedin-logo {
+    width: 90px;
+}
+
+.main-content .SAAS .swiper-job-sites .swiper-slide img.headhunter-logo {
+    width: 40px;
+}
+
+.main-content .SAAS .swiper-job-sites .swiper-slide img.avito-logo {
+    width: 80px;
+}
+
+.main-content .SAAS .swiper-services .swiper-slide img.L-logo,
+.main-content .SAAS .swiper-services .swiper-slide img.outlook-logo,
+.main-content .SAAS .swiper-services .swiper-slide img.mexc-logo {
+    width: 45px;
+}
+
+.main-content .SAAS .swiper-services .swiper-slide img.yandex-logo {
+    width: 100px;
+}
+
+.main-content .SAAS .swiper-integrations {
+    margin: 13px 0 0 -235px;
+}
+
+.main-content .SAAS .slider-title {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content .SAAS .slider-title span {
+    font-size: 15px;
+}
+
+.main-content .SAAS .slider-title > .control-arrows {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.main-content .SAAS .slider-title .arrow-btn {
+    width: 15px;
+    height: 15px;
+    background: center / 15px;
+}
+
+.main-content .SAAS .slider-title .prev-arrow {
+    background-image: url('../img/arrows.svg');
+    transform: rotate(90deg);
+}
+
+.main-content .SAAS .slider-title .next-arrow {
+    background-image: url('../img/arrows.svg');
+    transform: rotate(-90deg);
+}
+
+.main-content .SAAS .slider-wrapper {
+    margin-top: 40px;
+}
 
 
 
