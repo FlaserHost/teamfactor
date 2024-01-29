@@ -105,11 +105,12 @@ img {
 
 .page-header__logo-block {
     margin-right: auto;
-    min-width: 88px;
+    min-width: 100px;
+    max-width: 100px;
 }
 
 .page-header__logo-block img {
-    transform: translateY(4px);
+    transform: translateY(1px);
 }
 
 .page-header__page-navigation {
