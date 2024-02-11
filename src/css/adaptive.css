@@ -445,8 +445,17 @@
         padding: 0 23px;
     }
 
+    .main-content .request .request-wrapper .block-container .request_title-img-desktop,
     .main-content .main-block .logo-preview {
         display: none;
+    }
+
+    .main-content .main-block .logo-preview-mobile {
+        display: block;
+    }
+
+    .main-content .main-btn-view:not(.become-client, .reg-btn) {
+        width: 100%;
     }
 
     .main-content .main-block .logo-preview-mobile,
@@ -466,10 +475,6 @@
 
     .main-content section.trust-us {
         margin-top: 90px;
-    }
-
-    .main-content .request .request-wrapper .block-container .request_title-img-desktop {
-        display: none;
     }
 
     .main-content .request .request-wrapper .block-container > figure {
