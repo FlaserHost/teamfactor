@@ -361,6 +361,10 @@ img {
     gap: 8px;
 }
 
+.page-footer .social-links.mobile {
+    display: none;
+}
+
 .page-footer .social-link > svg {
     width: 36px;
     height: 36px;
