@@ -1,0 +1,517 @@
+@media screen and (max-width: 1350px) and (min-width: 1010px) {
+    .page-footer .articles-keeper .stories {
+        width: 100%;
+    }
+
+    .page-footer .articles-keeper .stories .sub-menu-article-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-footer .articles-keeper .stories .sub-menu-article-list li:not(:first-child) {
+        margin-top: 0;
+    }
+
+    .page-footer .articles-keeper .stories .sub-menu-article-list li {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-footer .articles-keeper .stories .sub-menu-article-list li a:first-child {
+        margin-bottom: 40px;
+    }
+
+    .page-footer .articles-keeper .stories .sub-menu-article-list li:nth-child(2) {
+        margin-left: -13px;
+    }
+
+    .page-footer .articles-keeper .stories .sub-menu-article-list li:last-child {
+        width: 276px;
+    }
+
+    .page-footer .privacy-policy.desktop,
+    .page-footer .all-rights-reserved.desktop {
+        display: none;
+    }
+
+    .page-footer .privacy-policy.portable,
+    .page-footer .all-rights-reserved.portable {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .main-content .main-btn-view:not(.become-client, .reg-btn) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .main-content .achievements {
+        grid: repeat(2, minmax(106px, 1fr)) / repeat(22, 1fr);
+    }
+
+    .main-content .achievements .achievement.experience {
+        grid-column: 1 / 6;
+    }
+
+    .main-content .achievements .achievement.modules {
+        grid-column: 6 / 15;
+    }
+
+    .main-content .achievements .achievement.clients {
+        grid-column: 15 / 23;
+    }
+
+    .main-content .achievements .achievement.agile {
+        background: var(--main-color) url(../img/girl_2.svg) no-repeat 89% 122% / 132px;
+        grid-area: 2 / 14 / 3 / 23;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-content .achievements .achievement.licences {
+        grid-column: 1 / 7;
+    }
+
+    .main-content .achievements .achievement.hours {
+        grid-column: 7 / 14;
+    }
+
+    .main-content .achievements .achievement {
+        padding: 36px;
+        display: flex;
+    }
+
+    .main-content .achievements .achievement:not(.agile) {
+        justify-content: center;
+    }
+
+    .main-content .achievements .achievement.agile {
+        align-items: center;
+    }
+
+    .main-content .achievements .achievement span:first-child {
+        font-size: 36px;
+    }
+
+    .main-content .achievements .achievement.agile span:last-child {
+        margin-left: 10px;
+    }
+
+    .main-content .achievements .achievement:not(.agile) span:last-child {
+        width: initial;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .main-content .main-block .logo-preview {
+        transform: translateX(0%);
+    }
+
+    .main-content .advantages-content {
+        flex-wrap: wrap;
+    }
+
+    .main-content .advantages-article.text {
+        display: grid;
+        grid: repeat(2, 1fr) / repeat(2, minmax(150px, 1fr));
+        width: 100%;
+        gap: 15px;
+    }
+
+    .main-content .advantages-article.text div:nth-child(2) {
+        width: auto;
+    }
+
+    .main-content .advantages-article.text div:last-child {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-content section:not(.trust-us, .reviews, .SAAS),
+    .main-content .reviews .title-block,
+    .main-content .SAAS .integrations .title-block,
+    .main-content .SAAS .slider-title {
+        padding: 0 30px;
+    }
+
+    .main-content .reviews .slider-container {
+        padding-left: 30px;
+    }
+
+    .main-content .SAAS .SAAS-cards {
+        padding: 100px 30px;
+    }
+
+    .main-content .SAAS .SAAS-card ul li:not(:first-child) {
+        margin-top: 19px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .main-content .achievements .achievement {
+        padding: 30px;
+    }
+
+    .main-content .mass-media .media-blocks-container {
+        grid: repeat(3, 1fr) / repeat(4, minmax(110px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .page-footer .articles-keeper .social-links {
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .page-header__page-navigation,
+    .main-content .main-block .main-title-wrapper.desktop {
+        display: none;
+    }
+
+    .main-content .main-block .main-title-wrapper.mobile {
+        display: block;
+    }
+
+    .main-content .main-block .logo-preview {
+        margin-top: 70px;
+    }
+
+    .main-content .main-block .main-btns-block {
+        flex-wrap: nowrap;
+    }
+
+    .main-content .main-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content section.trust-us {
+        margin-top: 115px;
+    }
+
+    .main-content .SAAS .SAAS-card ul li {
+        font-size: 16px;
+    }
+
+    .main-content .SAAS .SAAS-card h2 {
+        font-size: 26px;
+    }
+
+    .main-content .SAAS .SAAS-card ul {
+        margin: 45px 0 46px;
+    }
+
+    .main-content .SAAS .SAAS-card h2 {
+        margin-top: 54px;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .main-content .achievements .achievement span:first-child {
+        font-size: 36px;
+    }
+
+    .main-content .blog .last-card-link.mobile-link {
+        display: block;
+    }
+
+    .main-content .blog .blog__card.last-card {
+        display: none;
+    }
+
+    .main-content .main-block .main-btns-block {
+        justify-content: center;
+    }
+
+    .main-content .main-btn-view:not(.become-client, .reg-btn) {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .main-content .achievements .achievement span:first-child {
+        font-size: 27px;
+    }
+
+    .main-content .reviews .main-slider .swiper-slide .text-block {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .main-content .achievements {
+        grid: repeat(3, minmax(106px, 1fr)) / repeat(22, 1fr);
+    }
+
+    .main-content .achievements .achievement.experience {
+        grid-column: 1 / 10;
+    }
+
+    .main-content .achievements .achievement.modules {
+        grid-column: 10 / 23;
+    }
+
+    .main-content .achievements .achievement.clients {
+        grid-area: 2 / 1 / 3 / 11;
+    }
+
+    .main-content .achievements .achievement.agile {
+        background: var(--main-color) url(../img/girl_2.svg) no-repeat 89% 122% / 132px;
+        grid-area: 3 / 10 / 3 / 23;
+    }
+
+    .main-content .achievements .achievement.licences {
+        grid-column: 11 / 23;
+    }
+
+    .main-content .achievements .achievement.hours {
+        grid-area: 3 / 1 / 4 / 10;
+    }
+
+    .main-content .achievements .achievement span:first-child {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content .webinars .webinars-body .time-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 26px;
+    }
+
+    .main-content .main-btn-view.reg-btn {
+        width: 100%;
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 696px) {
+    .page-footer .privacy-policy.desktop,
+    .page-footer .all-rights-reserved.desktop,
+    .page-footer .articles-keeper .social-links,
+    .page-footer .articles-keeper .stories,
+    .page-footer .sub-title-wrapper,
+    .page-footer .title-wrapper:before {
+        display: none;
+    }
+
+    .page-footer .social-links.mobile,
+    .page-footer .mobile-reserved-and-policy {
+        display: block;
+    }
+
+    .page-footer .social-links.mobile {
+        margin-top: 40px;
+    }
+
+    .page-footer .mobile-reserved-and-policy {
+        margin-top: 30px;
+    }
+
+    .page-footer .mobile-reserved-and-policy .all-rights-reserved {
+        margin-top: 8px;
+    }
+
+    .page-footer .title-wrapper {
+        padding-left: 0;
+    }
+
+    .page-footer .product-menu-content > div:not(:first-child) {
+        margin-top: 12px;
+    }
+
+    .page-footer .articles-keeper article:not(:last-child) {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .page-footer .footer-logo > figure {
+        max-width: 130px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .main-content .webinars {
+        flex-wrap: wrap;
+    }
+
+    .main-content .webinars .webinars-body {
+        width: 100%;
+        min-height: 333px;
+    }
+
+    .main-content .webinars .subscribe {
+        min-height: 406px;
+    }
+
+    .main-content .webinars .webinars-body .time-block {
+        margin-top: 46px;
+    }
+
+    .main-content .main-btn-view.reg-btn {
+        margin-top: 52px;
+    }
+
+    .main-content .SAAS .SAAS-cards {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .main-content .advantages-article.text {
+        grid: 1fr / 1fr;
+    }
+
+    .main-content .achievements {
+        grid: repeat(4, minmax(106px, 1fr)) / repeat(22, 1fr);
+    }
+
+    .main-content .achievements .achievement.experience {
+        grid-column: 1 / 7;
+    }
+
+    .main-content .achievements .achievement.modules {
+        grid-column: 7 / 23;
+    }
+
+    .main-content .achievements .achievement.clients {
+        grid-area: 2 / 1 / 3 / 11;
+    }
+
+    .main-content .achievements .achievement.agile {
+        background: var(--main-color) url(../img/girl_2.svg) no-repeat 89% 122% / 132px;
+        grid-area: 4 / 1 / 5 / 23;
+    }
+
+    .main-content .achievements .achievement.licences {
+        grid-area: 3 / 1 / 4 / 23;
+    }
+
+    .main-content .achievements .achievement.hours {
+        grid-area: 2 / 11 / 3 / 23;
+    }
+
+    .main-content .achievements .achievement span:first-child {
+        font-size: 37px;
+    }
+
+    .main-content .mass-media .media-blocks-container {
+        grid: repeat(4, 1fr) / repeat(2, minmax(110px, 1fr));
+    }
+
+    .main-content .mass-media .media-blocks-container .media-block:nth-last-child(-n + 4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .main-content .reviews .main-slider .swiper-slide {
+        flex-direction: column;
+        height: auto;
+        padding: 17px;
+    }
+
+    .main-content .reviews .main-slider .swiper-slide figure {
+        max-width: initial;
+    }
+
+    .main-content .reviews .main-slider .swiper-slide img {
+        height: auto;
+    }
+
+    .main-content .reviews .main-slider .swiper-slide .text-block {
+        padding-left: 0;
+        margin-top: 13px;
+    }
+
+    .main-content section:not(.trust-us, .reviews, .SAAS),
+    .main-content .reviews .title-block {
+        padding: 0 20px;
+    }
+
+    .main-content .reviews .slider-container {
+        padding-left: 20px;
+    }
+
+    .main-content .main-block .main-title-wrapper.mobile {
+        padding: 0 23px;
+    }
+
+    .main-content .main-block .logo-preview {
+        display: none;
+    }
+
+    .main-content .main-block .logo-preview-mobile,
+    .main-content .main-block .main-btns-block {
+        padding: 0 30px;
+        margin-top: 50px;
+    }
+
+    .main-content .main-block .main-btns-block {
+        flex-wrap: wrap;
+        margin-top: 44px;
+    }
+
+    .main-content .title-block.spec {
+        padding: 0 30px;
+    }
+
+    .main-content section.trust-us {
+        margin-top: 90px;
+    }
+
+    .main-content .request .request-wrapper .block-container .request_title-img-desktop {
+        display: none;
+    }
+
+    .main-content .request .request-wrapper .block-container > figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content .request .request-wrapper .block-container .request_title-img-mobile {
+        display: block;
+        width: 220px;
+    }
+
+    .main-content .request .request-wrapper .presentation-btn {
+        width: 100%;
+    }
+
+    .main-content .request .request-wrapper {
+        padding: 50px 25px;
+    }
+
+    .main-content section.request {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .main-content .achievements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content .achievements .achievement.agile {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .main-content .blog .blog__card .card-info {
+        padding: 14px 21px 19px;
+    }
+
+    .main-content .blog .blog__card figure {
+        max-height: 203px;
+    }
+}

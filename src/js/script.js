@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // функция создания дублей слайдов
-    const viewport = window.innerWidth;
     const dublicatesCreate = slider => {
+        const viewport = window.innerWidth;
         const originalSlides = slider.slides;
         const amount = originalSlides.length;
         const width = originalSlides[0].getBoundingClientRect().width;
@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Бегущая строка
+    // Бегущие строки
 
-    const swiper = new Swiper('.swiper-marquee', {
+    const swiperDeskMarquee = new Swiper('.desktop-marquee', {
         direction: 'horizontal',
         loop: true,
         slidesPerView: 'auto',
@@ -60,6 +60,33 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
+    const mobileMarquee = () => {
+        const viewport = window.innerWidth;
+        let swiperMobMarquee = '';
+        const mobile = document.querySelector('.mobile-marquee');
+
+        if (viewport <= 425) {
+            mobile.classList.remove('hide');
+            swiperMobMarquee = new Swiper('.mobile-marquee', {
+                direction: 'horizontal',
+                loop: true,
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+                speed: 2000,
+                watchOverflow: true,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                    reverseDirection: true,
+                },
+            });
+
+            dublicatesCreate(swiperMobMarquee);
+        } else {
+            mobile.classList.add('hide');
+        }
+    }
+
     // слайдеры
 
     const thumbSwiper = new Swiper(".thumbs-slider", {
@@ -71,10 +98,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const mainSwiper = new Swiper(".main-slider", {
         spaceBetween: 17,
-        slidesPerView: 1.5,
         thumbs: {
             swiper: thumbSwiper,
         },
+        breakpoints: {
+            769: {
+                slidesPerView: 1.5,
+            },
+            10: {
+                slidesPerView: 1.07,
+            }
+        }
     });
 
     const messengers = new Swiper(".swiper-messengers", {
@@ -107,6 +141,33 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    const sliders = [swiper, messengers, jobSites, services];
+    const blogSlider = new Swiper(".swiper-blog", {
+        spaceBetween: 20,
+        breakpoints: {
+            945: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            490: {
+                slidesPerView: 2.1,
+            },
+            10: {
+                slidesPerView: 1.1,
+            }
+        }
+    });
+
+    const sliders = [swiperDeskMarquee, messengers, jobSites, services];
     sliders.forEach(slider => dublicatesCreate(slider));
+
+    mobileMarquee();
+
+    const viewportChecker = () => {
+        const sliders = [swiperDeskMarquee, messengers, jobSites, services];
+        sliders.forEach(slider => dublicatesCreate(slider));
+        mobileMarquee();
+    }
+    window.addEventListener('resize', viewportChecker);
 });
