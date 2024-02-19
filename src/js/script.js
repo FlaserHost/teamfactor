@@ -21,10 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const header = document.querySelector('.header-wrapper');
+    const mobileModal = document.querySelector('.mobile-menu-platform-wrapper');
     document.addEventListener('click', e => {
         const currentPath = e.composedPath();
 
-        if (!currentPath.includes(header)) {
+        if (!currentPath.includes(header) && !currentPath.includes(mobileModal)) {
             subSections.forEach(sub => sub.classList.remove('showed'));
             navBtns.forEach(nav => nav.classList.remove('active-nav'));
         }
@@ -170,4 +171,56 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMarquee();
     }
     window.addEventListener('resize', viewportChecker);
+
+    // мобильное меню
+
+    const mobileMenuArticles = document.querySelectorAll('.mobile-menu-article');
+    const mobileMenuBtns = document.querySelectorAll('.mobile-menu-btn');
+    mobileMenuBtns.forEach(btn => {
+        btn.addEventListener('click', e => {
+            const property = e.target.dataset.property;
+            mobileMenuArticles.forEach(art => art.classList.remove('flex'));
+
+            const parent = e.target.closest('.mobile-menu-platform');
+            parent.classList.add('not-menu');
+
+            const neededArticle = document.querySelector(`.mobile-menu-article#${property}`);
+            neededArticle.classList.add('flex');
+        });
+    });
+
+    // гамбургер
+
+    const hamburgerBtn = document.querySelector('.hamburger-menu > .menu__btn');
+    hamburgerBtn.addEventListener('click', e => {
+        const parent = e.target.parentElement;
+        const modal = parent.nextElementSibling;
+
+        // открытие / закрытие модалки
+        if (parent.classList.contains('closed')) {
+            modal.classList.remove('hide');
+            parent.classList.remove('closed');
+        } else {
+            modal.classList.add('hide');
+            parent.classList.add('closed');
+            mobileMenuArticles.forEach(art => art.classList.remove('flex'));
+            modal.querySelector('.mobile-menu-platform').classList.remove('not-menu');
+            modal.querySelector('#mobile-menu-article').classList.add('flex');
+        }
+    });
+
+    // вкладки advantages
+
+    const advantagesArticles = document.querySelectorAll('.advantages-article-item');
+    const tabs = document.querySelectorAll('.advantages-tab');
+    tabs.forEach((tab, _, orig) => {
+        tab.addEventListener('click', e => {
+            orig.forEach(item => item.classList.remove('active-tab'));
+            e.target.classList.add('active-tab');
+            advantagesArticles.forEach(art => art.classList.remove('show'));
+
+            const property = e.target.dataset.property;
+            document.getElementById(property).classList.add('show');
+        });
+    });
 });

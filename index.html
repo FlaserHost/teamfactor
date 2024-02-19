@@ -40,6 +40,7 @@
                 </nav>
                 <div class="page-header__btn-block">
                     <button class="free-demo-btn" id="free-demo-btn" type="button">Request free demo</button>
+                    <div class="hamburger-place"></div>
                 </div>
             </header>
             <section class="sub-menu" id="solutions-items">
@@ -150,6 +151,153 @@
                 </div>
             </section>
         </div>
+        <div class="hamburger-menu closed">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+        </div>
+        <div class="modal hide mobile-menu-platform-wrapper">
+            <div class="mobile-menu-platform">
+                <article class="mobile-menu-article mobile-menu flex" id="mobile-menu-article">
+                    <ul class="mobile-menu-list">
+                        <li>
+                            <button class="mobile-menu-btn" type="button" data-property="solutions-mobile">Solutions</button>
+                        </li>
+                        <li>
+                            <button class="mobile-menu-btn" type="button" data-property="how-to-start-mobile">How to start</button>
+                        </li>
+                        <li>
+                            <button class="mobile-menu-btn" type="button">Cases</button>
+                        </li>
+                        <li>
+                            <button class="mobile-menu-btn" type="button">Blog</button>
+                        </li>
+                        <li>
+                            <button class="mobile-menu-btn" type="button">About us</button>
+                        </li>
+                    </ul>
+                    <a class="free-demo-btn" href="#">Заполнить заявку</a>
+                </article>
+                <article class="mobile-menu-article solutions-mobile" id="solutions-mobile">
+                    <div class="mobile-title">
+                        <h2>Solutions</h2>
+                    </div>
+                    <div class="sub-menu show">
+                        <div class="sub-menu__solutions-items">
+                            <div class="articles-keeper">
+                                <article class="products">
+                                    <h2>Products</h2>
+                                    <div class="product-menu-content">
+                                        <div class="recruitment-system">
+                                            <div class="details title-wrapper">
+                                                <a class="title" href="#">Recruitment System Management</a>
+                                            </div>
+                                            <div class="details sub-title-wrapper">
+                                                <span class="sub-title">Сlose vacancies 2 times faster!</span>
+                                            </div>
+                                        </div>
+                                        <div class="performance">
+                                            <div class="details title-wrapper">
+                                                <a class="title" href="#">Performance Management: OKRs & KPIs</a>
+                                            </div>
+                                            <div class="details sub-title-wrapper">
+                                                <span class="sub-title">Easy to track the performance</span>
+                                            </div>
+                                        </div>
+                                        <div class="talent-management">
+                                            <div class="details title-wrapper">
+                                                <a class="title" href="#">Talent Management</a>
+                                            </div>
+                                            <div class="details sub-title-wrapper">
+                                                <span class="sub-title">Grow up team skills to get high performance!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="advantages">
+                                    <h2>Advantages</h2>
+                                    <ul class="sub-menu-article-list advantages__list">
+                                        <li>
+                                            <a href="#">Perfect integration</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Flexible reports</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fast-track start with SaaS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Сomplete data security with On-Premise</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Integrations and Stack of Technologies</a>
+                                        </li>
+                                    </ul>
+                                </article>
+                                <article class="industries">
+                                    <h2>Industries</h2>
+                                    <ul class="sub-menu-article-list industries__list">
+                                        <li>
+                                            <a href="#">Retail</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Banking and Financial Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Manufacturing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Oil & Gas</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Recruitment agencies</a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="mobile-menu-article how-to-start-mobile" id="how-to-start-mobile">
+                    <div class="mobile-title">
+                        <h2>How to start</h2>
+                    </div>
+                    <div class="sub-menu show">
+                        <div class="sub-menu__how-to-start-items">
+                            <div class="articles-keeper">
+                                <article class="services">
+                                    <h2>Services</h2>
+                                    <div class="services-menu-content">
+                                        <ul class="sub-menu-article-list services__list">
+                                            <li>
+                                                <a href="#">Предпроектное обследование</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Настройка ПП</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article class="tech-support">
+                                    <h2>Техподдержка</h2>
+                                    <ul class="sub-menu-article-list tech-support__list">
+                                        <li>
+                                            <a href="#">Mass and corporate users</a>
+                                        </li>
+                                    </ul>
+                                </article>
+                                <a href="#">
+                                    <article class="how-to-start-article">
+                                        <h2>How to start</h2>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
         <main class="main-content">
             <section class="main-block">
                 <div class="logo-title">
@@ -227,11 +375,11 @@
                 </div>
                 <div class="advantages__content-wrapper">
                     <div class="tabs">
-                        <button class="tab advantages-tab active-tab" type="button">Team Recruit</button>
-                        <button class="tab advantages-tab" type="button">Team Perform</button>
-                        <button class="tab advantages-tab" type="button">Team Talent</button>
+                        <button class="tab advantages-tab active-tab" type="button" data-property="team-recruit">Team Recruit</button>
+                        <button class="tab advantages-tab" type="button" data-property="team-performance">Team Perform</button>
+                        <button class="tab advantages-tab" type="button" data-property="team-talent">Team Talent</button>
                     </div>
-                    <div class="close-vacancies">
+                    <article class="advantages-article-item team-recruit show" id="team-recruit">
                         <div class="advantages-title">
                             <h2>Сlose vacancies 2 times faster!</h2>
                         </div>
@@ -255,11 +403,69 @@
                             </article>
                             <article class="advantages-article img">
                                 <figure>
-                                    <img src="src/img/advantages.svg" alt="advantages">
+                                    <img src="src/img/team_recruit.svg" alt="team-recruit">
                                 </figure>
                             </article>
                         </div>
-                    </div>
+                    </article>
+                    <article class="advantages-article-item team-performance" id="team-performance">
+                        <div class="advantages-title">
+                            <h2>Easy to track the performance</h2>
+                        </div>
+                        <div class="advantages-content">
+                            <article class="advantages-article text">
+                                <div>
+                                    <h3>Grow employee engagement</h3>
+                                    <p>Every employee knows their own goals and performance criteria. Get linked personal and company goals& Make performance bonuses transparent</p>
+                                </div>
+                                <div>
+                                    <h3>Smart goals (OKRs & KPIs)</h3>
+                                    <p>Set quantitative and qualitative goals. Provide managers use OKRs and KPIs for drive success</p>
+                                </div>
+                                <div>
+                                    <h3>Manage performance data</h3>
+                                    <p>Automate the consolidation of performance data from different sources (ERP, CRM and etc.). Use dashboards to monitor performance online</p>
+                                </div>
+                                <div>
+                                    <button class="more-btn main-btn-view">Подробнее о продукте</button>
+                                </div>
+                            </article>
+                            <article class="advantages-article img">
+                                <figure>
+                                    <img src="src/img/team_performance.svg" alt="team-performance">
+                                </figure>
+                            </article>
+                        </div>
+                    </article>
+                    <article class="advantages-article-item team-talent" id="team-talent">
+                        <div class="advantages-title">
+                            <h2>Grow up team skills to get high performance!</h2>
+                        </div>
+                        <div class="advantages-content">
+                            <article class="advantages-article text">
+                                <div>
+                                    <h3>Job profiling relying on performance</h3>
+                                    <p>Сreate a competency model for high performance</p>
+                                </div>
+                                <div>
+                                    <h3>Smart assessment</h3>
+                                    <p>Competency assessment, 360 degrees, testing, grading, performance review. Individual training plan for grow performance</p>
+                                </div>
+                                <div>
+                                    <h3>Competency development</h3>
+                                    <p>Engage in development with learning management system (LMS). Succession planning for grow future leaders</p>
+                                </div>
+                                <div>
+                                    <button class="more-btn main-btn-view">Подробнее о продукте</button>
+                                </div>
+                            </article>
+                            <article class="advantages-article img">
+                                <figure>
+                                    <img src="src/img/team_talent.svg" alt="team-talent">
+                                </figure>
+                            </article>
+                        </div>
+                    </article>
                 </div>
             </section>
             <section class="achievements">

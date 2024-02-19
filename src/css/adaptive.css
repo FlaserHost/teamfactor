@@ -45,6 +45,14 @@
     .main-content .main-btn-view:not(.become-client, .reg-btn) {
         width: 100%;
     }
+
+    .page-header__logo-block {
+        margin-right: initial;
+    }
+
+    .page-header__page-navigation > ul {
+        gap: 10px 36px;
+    }
 }
 
 @media screen and (max-width: 1170px) {
@@ -131,6 +139,10 @@
         align-items: center;
     }
 
+    .main-content .advantages-article.img {
+        width: 100%;
+    }
+
     .main-content section:not(.trust-us, .reviews, .SAAS),
     .main-content .reviews .title-block,
     .main-content .SAAS .integrations .title-block,
@@ -152,12 +164,56 @@
 }
 
 @media screen and (max-width: 1070px) {
+    .header-wrapper {
+        box-shadow: none;
+    }
+
     .main-content .achievements .achievement {
         padding: 30px;
     }
 
     .main-content .mass-media .media-blocks-container {
         grid: repeat(3, 1fr) / repeat(4, minmax(110px, 1fr));
+    }
+
+    .page-header__page-navigation > ul {
+        gap: 10px 38px;
+    }
+
+    .page-header {
+        gap: 22px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .page-header__page-navigation > ul {
+        gap: 10px 32px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .page-header {
+        gap: 20px;
+        height: 46px;
+    }
+
+    .page-header__page-navigation > ul {
+        gap: 10px 37px;
+    }
+}
+
+@media screen and (max-width: 1021px) {
+    .page-header__page-navigation {
+        display: none;
+    }
+
+    .hamburger-place,
+    .hamburger-menu {
+        display: block;
+    }
+
+    .header-wrapper {
+        top: 0;
     }
 }
 
@@ -168,7 +224,6 @@
 }
 
 @media screen and (max-width: 950px) {
-    .page-header__page-navigation,
     .main-content .main-block .main-title-wrapper.desktop {
         display: none;
     }
@@ -208,6 +263,11 @@
 
     .main-content .SAAS .SAAS-card h2 {
         margin-top: 54px;
+    }
+
+    .main-content {
+        padding-top: 0;
+        margin: 89px 0 0;
     }
 }
 
@@ -509,6 +569,10 @@
     .main-content .achievements .achievement.agile {
         order: 1;
     }
+
+    .page-header__btn-block .free-demo-btn {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 490px) {
@@ -518,5 +582,16 @@
 
     .main-content .blog .blog__card figure {
         max-height: 203px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .mobile-menu-platform {
+        width: 100%;
+    }
+
+    .mobile-menu-platform .mobile-menu-list {
+        margin: auto;
+        text-align: center;
     }
 }
