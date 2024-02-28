@@ -22,12 +22,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const header = document.querySelector('.header-wrapper');
     const mobileModal = document.querySelector('.mobile-menu-platform-wrapper');
+
+    // языковая панель
+
+    const languagePanel = document.getElementById('language-panel');
+    const currentLang = document.getElementById('current-lang');
+    currentLang.addEventListener('click', e => {
+        if (languagePanel.classList.contains('hide')) {
+            const wrapper = languagePanel.children[0];
+            const height = wrapper.getBoundingClientRect().height;
+
+            languagePanel.style.height = `${height + 14}px`;
+            languagePanel.classList.remove('hide');
+        } else {
+            languagePanel.style.height = '33px';
+            languagePanel.classList.add('hide');
+        }
+    });
+
+    // скрытие выпадашек при клике вовне
+
     document.addEventListener('click', e => {
         const currentPath = e.composedPath();
 
         if (!currentPath.includes(header) && !currentPath.includes(mobileModal)) {
             subSections.forEach(sub => sub.classList.remove('showed'));
             navBtns.forEach(nav => nav.classList.remove('active-nav'));
+        }
+
+        if (!currentPath.includes(languagePanel)) {
+            languagePanel.style.height = '33px';
+            languagePanel.classList.add('hide');
         }
     });
 

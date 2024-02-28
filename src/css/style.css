@@ -79,7 +79,6 @@ img {
     padding: 13px 30px;
     border-radius: 10px;
     box-shadow: 0 0 30px 10px #eee;
-    overflow: hidden;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -335,6 +334,7 @@ img {
     display: flex;
     align-items: center;
     gap: 27px;
+    position: relative;
 }
 
 .hamburger-place {
@@ -1562,5 +1562,58 @@ img {
 .main-content .mass-media .media-blocks-container .media-block img.vcru-logo {
     width: 40%;
 }
+
+
+
+/* language-panel */
+
+.language-keeper {
+    width: 41px;
+    height: 32px;
+    position: relative;
+}
+
+.language-panel {
+    padding: 7px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+    transition: .3s;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.language-panel.hide {
+    box-shadow: none;
+}
+
+.language-panel,
+.language-panel.hide:hover {
+    box-shadow: 0 0 10px 2px #ddd;
+}
+
+.language-panel .lang {
+    display: block;
+    width: 27px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.language-panel .lang:not(:first-child) {
+    margin-top: 10px;
+}
+
+.language-panel .current-lang {
+    background: url('../img/langs/GB.svg') no-repeat center / cover;
+}
+
+.language-panel .available-lang.turkish {
+    background: url('../img/langs/TR.svg') no-repeat center / cover;
+}
+
 
 /* max-width: 1384px; */
