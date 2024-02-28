@@ -741,7 +741,7 @@ img {
 }
 
 .main-content .main-block .logo-preview {
-    max-width: 727px;
+    width: 727px;
     transform: translateX(5%);
 }
 
