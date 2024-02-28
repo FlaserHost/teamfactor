@@ -177,7 +177,7 @@ img {
     justify-content: space-between;
     gap: 37px 25px;
     width: 100%;
-    max-width: 900px;
+    max-width: 966px;
     flex-wrap: wrap;
 }
 
@@ -891,7 +891,7 @@ img {
 }
 
 .main-content .advantages-article.text div:not(.first-child) {
-    margin-top: 15px;
+    margin-top: 31px;
 }
 
 .main-content .advantages-article.text div:nth-last-child(2) {
@@ -927,14 +927,23 @@ img {
 
 .main-content .achievements .achievement span:first-child {
     font-size: 50px;
+    text-transform: uppercase;
 }
 
 .main-content .achievements .achievement.agile span:first-child {
     font-size: 65px;
 }
 
+.main-content .achievements .achievement.agile span.special-turkish-1 {
+    font-size: 45px;
+}
+
 .main-content .achievements .achievement.agile span:last-child {
     width: 110px;
+}
+
+.main-content .achievements .achievement.agile span.special-turkish-2 {
+    width: 150px;
 }
 
 .main-content .achievements .achievement:not(.blue-article) span:first-child {
@@ -1607,11 +1616,13 @@ img {
     margin-top: 10px;
 }
 
-.language-panel .current-lang {
+.language-panel.english .current-lang,
+.language-panel.turkish .available-lang.english {
     background: url('../img/langs/GB.svg') no-repeat center / cover;
 }
 
-.language-panel .available-lang.turkish {
+.language-panel.turkish .current-lang,
+.language-panel.english .available-lang.turkish {
     background: url('../img/langs/TR.svg') no-repeat center / cover;
 }
 
