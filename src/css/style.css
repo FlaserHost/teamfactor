@@ -731,7 +731,14 @@ img {
 
 .main-content .main-block .main-title-wrapper {
     max-width: 600px;
+}
+
+.english .main-content .main-block .main-title-wrapper {
     min-width: 400px;
+}
+
+.turkish .main-content .main-block .main-title-wrapper {
+    min-width: 385px;
 }
 
 .main-content .main-block .main-title-wrapper.mobile {
