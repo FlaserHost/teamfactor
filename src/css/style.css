@@ -434,6 +434,7 @@ img {
     width: 300px;
     background-color: #fff;
     height: 100%;
+    overflow-y: auto;
 }
 
 .mobile-menu-platform.not-menu {
@@ -444,6 +445,10 @@ img {
     height: 100%;
     padding: 26px 30px 30px;
     display: none;
+}
+
+.mobile-menu-platform > article .mobile-title {
+    position: relative;
 }
 
 .mobile-menu-platform > article .mobile-title h2 {
@@ -825,7 +830,8 @@ img {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 0 15px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .main-content .advantages__content-wrapper {
@@ -1572,7 +1578,14 @@ img {
     width: 40%;
 }
 
-
+.mobile-back-btn {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 20px;
+    height: 28px;
+    z-index: 9999;
+}
 
 /* language-panel */
 
@@ -1625,6 +1638,5 @@ img {
 .language-panel.english .available-lang.turkish {
     background: url('../img/langs/TR.svg') no-repeat center / cover;
 }
-
 
 /* max-width: 1384px; */

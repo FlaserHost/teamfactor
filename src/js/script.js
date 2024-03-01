@@ -221,16 +221,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const parent = e.target.parentElement;
         const modal = parent.nextElementSibling;
 
+
         // открытие / закрытие модалки
         if (parent.classList.contains('closed')) {
             modal.classList.remove('hide');
             parent.classList.remove('closed');
+            document.body.style.overflow = 'hidden';
         } else {
             modal.classList.add('hide');
             parent.classList.add('closed');
             mobileMenuArticles.forEach(art => art.classList.remove('flex'));
             modal.querySelector('.mobile-menu-platform').classList.remove('not-menu');
             modal.querySelector('#mobile-menu-article').classList.add('flex');
+            document.body.style.overflow = 'visible';
         }
     });
 
@@ -246,6 +249,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const property = e.target.dataset.property;
             document.getElementById(property).classList.add('show');
+        });
+    });
+
+    // кнопка Назад (для мобильной версии)
+
+    const mobileBackBtns = document.querySelectorAll('.mobile-back-btn');
+    mobileBackBtns.forEach(btn => {
+        btn.addEventListener('click', e => {
+            const mainMenu = e.target.closest('.mobile-menu-platform').children[0];
+            const parent = e.target.closest('.mobile-menu-article');
+            parent.classList.remove('flex');
+            mainMenu.classList.add('flex');
         });
     });
 });
