@@ -73,18 +73,19 @@ img {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
 }
 
 .header-wrapper {
     padding: 13px 30px;
     border-radius: 10px;
     box-shadow: 0 0 30px 10px #eee;
-    position: absolute;
+    position: sticky;
     left: 50%;
-    transform: translateX(-50%);
-    top: 30px;
+    transform: translateX(-6%);
+    top: 0;
     background-color: #fff;
-    z-index: 1;
+    z-index: 9999;
     width: 90%;
 }
 
@@ -716,7 +717,7 @@ img {
 
 .main-content {
     width: 100%;
-    margin: 102px 0 0;
+    margin: 72px 0 0;
     flex-grow: 1;
     padding-top: 100px;
 }
