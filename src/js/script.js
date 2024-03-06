@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             languagePanel.style.height = `${height + 14}px`;
             languagePanel.classList.remove('hide');
         } else {
-            languagePanel.style.height = '33px';
+            languagePanel.style.height = '39px';
             languagePanel.classList.add('hide');
         }
     });
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (!currentPath.includes(languagePanel)) {
-            languagePanel.style.height = '33px';
+            languagePanel.style.height = '39px';
             languagePanel.classList.add('hide');
         }
     });
