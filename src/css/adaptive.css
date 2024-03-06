@@ -228,7 +228,6 @@
 
     .header-wrapper {
         position: fixed;
-        transform: translateX(-50%);
         top: 0;
         width: 100%;
     }

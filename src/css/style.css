@@ -128,8 +128,8 @@ img {
     color: var(--main-color);
 }
 
-.page-header__page-navigation button:after,
-.page-header__page-navigation button.active-nav:after {
+.page-header__page-navigation button:not(.webinars-btn):after,
+.page-header__page-navigation button:not(.webinars-btn).active-nav:after {
     content: '';
     width: 14px;
     height: 14px;
