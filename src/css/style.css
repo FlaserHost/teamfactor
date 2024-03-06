@@ -179,8 +179,12 @@ img {
     justify-content: space-between;
     gap: 37px 25px;
     width: 100%;
-    max-width: 966px;
+    max-width: 1001px;
     flex-wrap: wrap;
+}
+
+.sub-menu.blog-items .articles-keeper {
+    padding-right: 178px;
 }
 
 .sub-menu .articles-keeper article:not(:last-child),
@@ -309,15 +313,23 @@ img {
     display: block;
 }
 
-.sub-menu .how-to-start-article {
+.sub-menu .how-to-start-article,
+.sub-menu .about-us-article {
     width: 346px;
     padding: 20px;
     height: 136px;
-    background: rgba(2, 35, 181, .05) url('../img/girl.svg') no-repeat bottom right / 70% 82%;
     transform: translateY(-20px);
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+}
+
+.sub-menu .how-to-start-article {
+    background: rgba(2, 35, 181, .05) url('../img/girl.svg') no-repeat bottom right / 70% 82%;
+}
+
+.sub-menu .about-us-article {
+    background: rgba(2, 35, 181, .05) url('../img/girl_3.svg') no-repeat bottom right / 70% 82%;
 }
 
 .sub-menu .how-to-start-article:after {
