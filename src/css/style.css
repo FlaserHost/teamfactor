@@ -552,7 +552,7 @@ img {
     position: relative;
 }
 
-.mobile-menu-list > li > button:after {
+.mobile-menu-list > li > button:not(.webinars):after {
     content: '';
     background: url('../img/arrows.svg') no-repeat center / 13px;
     display: block;
@@ -898,7 +898,7 @@ img {
 }
 
 .main-content .advantages-article.text {
-    padding: 40px 0 33px;
+    padding-bottom: 33px;
     width: 306px;
     display: flex;
     flex-direction: column;
