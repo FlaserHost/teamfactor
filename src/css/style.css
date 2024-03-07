@@ -236,6 +236,10 @@ img {
     margin-top: 17px;
 }
 
+.sub-menu .product-menu-content > a {
+    display: block;
+}
+
 .sub-menu .product-menu-content > div:not(:first-child),
 .page-footer .product-menu-content > div:not(:first-child) {
     margin-top: 25px;
@@ -732,7 +736,7 @@ img {
     margin-top: auto;
 }
 
-.main-content section:not(.trust-us, .reviews, .SAAS) {
+.main-content section:not(.trust-us, .reviews, .SAAS, .slider-conditions) {
     padding: 0 100px;
 }
 
@@ -797,6 +801,8 @@ img {
     border-radius: 8px;
     color: #fff;
     background-color: var(--main-color);
+    text-align: center;
+    font-size: 17px;
 }
 
 .main-content .main-block .main-btns-block .main-btn-view:last-child {
@@ -925,7 +931,7 @@ img {
 }
 
 .main-content .advantages-article.text p {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 8px;
 }
 
