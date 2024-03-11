@@ -11,4 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.conditions-slider-nav-btn.prev',
         },
     });
+
+    const freeRecruiterSlider = new Swiper('.swiper-free-recruiter', {
+        direction: 'horizontal',
+        slidesPerView: 1.5,
+        spaceBetween: 25,
+        navigation: {
+            nextEl: '',
+            prevEl: '',
+        },
+    });
 });

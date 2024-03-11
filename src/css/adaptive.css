@@ -271,6 +271,12 @@
     }
 }
 
+@media screen and (max-width: 1010px) and (min-width: 812px) {
+    .page-footer .sub-menu-article-list.industries__list {
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (max-width: 950px) {
     .main-content .main-block .main-title-wrapper.desktop {
         display: none;

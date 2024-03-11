@@ -88,6 +88,10 @@ img {
     width: calc(100% - 200px);
 }
 
+.header-wrapper.border-radius-top {
+    border-radius: 10px 10px 0 0;
+}
+
 .page-header {
     width: 100%;
     display: flex;
@@ -165,7 +169,27 @@ img {
 
 .sub-menu {
     display: none;
-    border-top: 1px solid rgba(100, 130, 254, .22);
+    background-color: #fff;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+    padding: 40px 30px 30px;
+}
+
+.header-wrapper .sub-menu {
+    position: absolute;
+    box-shadow: 0 7px 14px 2px #eee;
+}
+
+.sub-menu:before {
+    content: '';
+    display: block;
+    width: calc(100% - 60px);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(100, 130, 254, .22);
+    height: 1px;
 }
 
 .sub-menu > div {
@@ -176,11 +200,19 @@ img {
 .sub-menu .articles-keeper,
 .page-footer .articles-keeper {
     display: flex;
-    justify-content: space-between;
-    gap: 37px 25px;
     width: 100%;
     max-width: 1001px;
     flex-wrap: wrap;
+}
+
+.sub-menu .articles-keeper {
+    justify-content: flex-start;
+    gap: 37px 110px;
+}
+
+.page-footer .articles-keeper {
+    justify-content: space-between;
+    gap: 37px 25px;
 }
 
 .sub-menu.blog-items .articles-keeper {
@@ -308,6 +340,10 @@ img {
     margin-top: 12px;
 }
 
+.page-footer .footer-blog-title {
+    margin-top: 30px;
+}
+
 .active-nav {
     font-weight: 700;
     color: var(--main-color);
@@ -326,6 +362,10 @@ img {
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+}
+
+.sub-menu .about-us-article {
+    width: 418px;
 }
 
 .sub-menu .how-to-start-article {
@@ -1630,6 +1670,7 @@ img {
     width: 49px;
     height: 40px;
     position: relative;
+    z-index: 3;
 }
 
 .language-panel {

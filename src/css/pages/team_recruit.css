@@ -317,5 +317,119 @@ section.POST + section.POST-additions {
 /* free-recruiter */
 
 .swiper-free-recruiter {
+    margin-top: 50px;
+    overflow: visible;
+}
 
+.swiper-free-recruiter .swiper-slide {
+    border-radius: 25px;
+    background-color: #f4f4f4;
+    width: 100%;
+    max-width: 1127px;
+    min-width: 839px;
+    display: flex;
+    flex-direction: column;
+    min-height: 750px;
+}
+
+.swiper-free-recruiter .swiper-slide pre {
+    padding: 30px 40px;
+    height: 186px;
+}
+
+.swiper-free-recruiter figure {
+    width: 100%;
+    max-width: 1127px;
+    margin-bottom: -5px;
+    box-shadow: 0 10px 27px 9px rgba(100, 130, 254, .12);
+    border-radius: 25px;
+    margin-top: auto;
+}
+
+.swiper-free-recruiter figure > img {
+    object-fit: contain;
+}
+
+/* convenient */
+
+.convenient .section-container {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    height: 742px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.convenient figure {
+    width: 100%;
+    height: 100%;
+}
+
+.convenient .mobile-img img {
+    object-fit: contain;
+}
+
+.convenient .text-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+.convenient .text-articles > .text-article {
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.convenient .text-articles > .text-article:first-child {
+    transform: translateY(46px);
+}
+
+.convenient .text-articles > .text-article:last-child {
+    margin-top: auto;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.convenient .text-articles > .text-article > pre {
+    white-space: pre-wrap;
+}
+
+.convenient .text-articles > .text-article:last-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background: url('../../img/pages/team_recruit/sign.svg') no-repeat center / 50px;
+}
+
+
+
+/* get to know */
+
+.get-to-know {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-content .get-to-know .title-block h2 {
+    text-transform: initial;
+    font-size: 40px;
+}
+
+.get-to-know p {
+    text-align: center;
+    width: 350px;
+}
+
+.main-content .get-to-know .main-btn-view {
+    background-color: #0030FC;
 }

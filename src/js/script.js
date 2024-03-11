@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navBtns = document.querySelectorAll('.nav-btn');
     navBtns.forEach((btn, _, orig) => {
         btn.addEventListener('click', e => {
+            const headerWrapper = e.target.closest('.header-wrapper');
             const subId = e.target.dataset.subId;
             const subSection = document.getElementById(subId);
 
@@ -13,9 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 orig.forEach(nav => nav.classList.remove('active-nav'));
                 e.target.classList.add('active-nav');
                 subSection.classList.add('showed');
+                headerWrapper.classList.add('border-radius-top');
             } else {
                 e.target.classList.remove('active-nav');
                 subSection.classList.remove('showed');
+                headerWrapper.classList.remove('border-radius-top');
             }
         });
     });
