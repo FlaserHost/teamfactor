@@ -372,10 +372,6 @@ img {
     cursor: pointer;
 }
 
-.sub-menu .about-us-article {
-    width: 418px;
-}
-
 .sub-menu .how-to-start-article {
     background: rgba(2, 35, 181, .05) url('../img/girl.svg') no-repeat bottom right / 70% 82%;
 }
@@ -753,7 +749,8 @@ img {
 }
 
 .header-wrapper .sub-menu__blog-items .articles-keeper .cases__list li,
-.page-footer .articles-keeper .stories li {
+.page-footer .articles-keeper .stories li,
+.mobile-menu-article .sub-menu__blog-items .services__list li {
     position: relative;
     padding-left: 22px;
 }
@@ -767,7 +764,8 @@ img {
 }
 
 .header-wrapper .sub-menu__blog-items .articles-keeper .cases__list li::before,
-.page-footer .articles-keeper .stories li::before {
+.page-footer .articles-keeper .stories li::before,
+.mobile-menu-article .sub-menu__blog-items .services__list li::before {
     content: '';
     background: url('../img/arrows.svg') no-repeat center / 13px;
     display: block;
