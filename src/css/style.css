@@ -197,7 +197,8 @@ img {
     justify-content: flex-end;
 }
 
-.header-wrapper .sub-menu__how-to-start-items > .articles-keeper > a {
+.header-wrapper .sub-menu__how-to-start-items > .articles-keeper > a,
+.header-wrapper .sub-menu__about-us-items > .articles-keeper > a {
     flex-grow: 1;
 }
 
