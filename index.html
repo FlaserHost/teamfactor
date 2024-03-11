@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -1183,6 +1183,38 @@
             </div>
         </div>
     </footer>
+    <div class="demo-page demo-page-modal">
+        <div class="demo-page__page-modal-wrapper">
+            <h2>Demo version</h2>
+            <p>In order to get a demo version provide the following information:</p>
+            <form class="demo-page-form" id="demo-page-form" action="#" method="POST">
+                <div class="field-area">
+                    <label class="required" for="form__name-field">Name</label>
+                    <input class="form-field" id="form__name-field" type="text" required>
+                </div>
+                <div class="field-area">
+                    <label class="required" for="form__company-field">Name of company</label>
+                    <input class="form-field" id="form__company-field" type="text" required>
+                </div>
+                <div class="field-area">
+                    <label class="required" for="form__email-field">E-mail</label>
+                    <input class="form-field" id="form__email-field" type="email" required>
+                </div>
+                <div class="field-area">
+                    <label class="required" for="form__phone-number-field">Phone number</label>
+                    <input class="form-field" id="form__phone-number-field" type="tel" required>
+                </div>
+                <div class="field-area checkbox-area">
+                    <input id="consent-checkbox" type="checkbox">
+                    <label for="consent-checkbox">By checking this box, I give my consent to the processing of my personal data, accept the terms of the Offer for using the site and agree to the Privacy Policy</label>
+                </div>
+                <div class="field-area checkbox-area">
+                    <input id="announcements-checkbox" type="checkbox">
+                    <label for="announcements-checkbox">I want to receive announcements of events, news, interesting articles from the TopFactor team</label>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="src/js/script.js"></script>
 </body>
 </html>

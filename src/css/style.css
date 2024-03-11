@@ -1727,4 +1727,94 @@ img {
     background: url('../img/langs/TR.svg') no-repeat center / 35px;
 }
 
+
+
+/* demo page */
+
+.demo-page {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 40px;
+    display: none;
+    justify-content: center;
+    z-index: 90;
+}
+
+.demo-page__page-modal-wrapper {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demo-page__page-modal-wrapper > h2 {
+    font-size: 56px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.demo-page__page-modal-wrapper > p {
+    text-align: center;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.demo-page .demo-page-form {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.demo-page .demo-page-form .field-area,
+.demo-page .demo-page-form .field-area > input {
+    width: 100%;
+    position: relative;
+}
+
+.demo-page .demo-page-form .field-area > input[type='checkbox'] {
+    display: none;
+}
+
+.demo-page .demo-page-form .field-area.checkbox-area > label {
+    padding-left: 30px;
+}
+
+.demo-page .demo-page-form .field-area:not(:first-child) {
+    margin-top: 15px;
+}
+
+.demo-page .demo-page-form .field-area > label {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #757575;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.demo-page .demo-page-form .field-area > label.required:after {
+    content: '*';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 1px);
+    font-size: 16px;
+    color: #f00;
+}
+
+.demo-page .demo-page-form .field-area > input {
+    padding: 20px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+}
+
+
 /* max-width: 1384px; */
