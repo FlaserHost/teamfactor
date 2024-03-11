@@ -130,7 +130,8 @@ body {
     background: url('../../img/pages/team_recruit/shield-tick.svg') no-repeat center / var(--slides-icons-size);
 }
 
-.slider-conditions .slider-navigation-btns {
+.slider-conditions .slider-navigation-btns,
+.free-recruiter .slider-navigation-btns {
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -139,17 +140,25 @@ body {
     margin-bottom: 30px;
 }
 
-.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn {
+.free-recruiter .slider-navigation-btns {
+    margin-top: 40px;
+    padding-right: 0;
+}
+
+.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn,
+.free-recruiter .slider-navigation-btns > .free-recruiter-slider-nav-btn {
     width: 20px;
     height: 20px;
 }
 
-.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn.prev {
+.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn.prev,
+.free-recruiter .slider-navigation-btns > .free-recruiter-slider-nav-btn.prev {
     background: url('../../img/arrows.svg') no-repeat center / 20px;
     transform: rotate(90deg);
 }
 
-.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn.next {
+.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn.next,
+.free-recruiter .slider-navigation-btns > .free-recruiter-slider-nav-btn.next {
     background: url('../../img/arrows.svg') no-repeat center / 20px;
     transform: rotate(-90deg);
 }

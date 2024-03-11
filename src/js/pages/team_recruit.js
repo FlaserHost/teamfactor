@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1.5,
         spaceBetween: 25,
         navigation: {
-            nextEl: '',
-            prevEl: '',
+            nextEl: '.free-recruiter-slider-nav-btn.next',
+            prevEl: '.free-recruiter-slider-nav-btn.prev',
         },
     });
 });
