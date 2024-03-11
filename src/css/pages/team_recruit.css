@@ -422,11 +422,24 @@ section.POST + section.POST-additions {
 
 /* get to know */
 
-.get-to-know {
+.main-content section.get-to-know {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.get-to-know:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    bottom: -140px;
+    background-image: linear-gradient(to top, rgba(230, 233, 248, .8), transparent);
 }
 
 .main-content .get-to-know .title-block h2 {
