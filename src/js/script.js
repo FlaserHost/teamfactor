@@ -266,4 +266,17 @@ document.addEventListener('DOMContentLoaded', () => {
             mainMenu.classList.add('flex');
         });
     });
+
+    // открытие демо формы
+
+    const demoModal = document.querySelector('.demo-page-modal');
+    const demoModalCloseBtn = demoModal.querySelector('.cross-close-btn')
+    const demoBtns = document.querySelectorAll('.free-demo-btn');
+    demoBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            demoModal.classList.add('flex');
+        });
+    });
+
+    demoModalCloseBtn.addEventListener('click', () => demoModal.classList.remove('flex'));
 });

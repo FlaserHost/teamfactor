@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -494,7 +494,7 @@
                     <img src="../src/img/logo_preview-mobile.png" alt="logo-preview">
                 </figure>
                 <div class="main-btns-block">
-                    <button class="main-btn main-btn-view" type="button">Request free demo</button>
+                    <button class="main-btn main-btn-view free-demo-btn" type="button">Request free demo</button>
                     <button class="main-btn main-btn-view" type="button">Order a callback</button>
                 </div>
             </div>
@@ -638,7 +638,7 @@
         </section>
         <section class="POST-additions">
             <span>Look how TeamRecruit works</span>
-            <button class="POST-additions__btn main-btn-view demo" type="button">Request free demo</button>
+            <button class="POST-additions__btn main-btn-view demo free-demo-btn" type="button">Request free demo</button>
             <button class="POST-additions__btn main-btn-view contact" type="button">Order a callback</button>
         </section>
         <section class="free-recruiter">
@@ -716,7 +716,7 @@ candidates,
                 <h2>Get to know TeamRecruit</h2>
             </div>
             <p>Request a personal presentation and access to a free demo of TeamRecruit</p>
-            <button class="main-btn-view">Request free demo</button>
+            <button class="main-btn-view free-demo-btn">Request free demo</button>
         </section>
         <section class="SAAS">
             <div class="SAAS-cards">
@@ -1257,6 +1257,40 @@ candidates,
         </div>
     </div>
 </footer>
+<div class="demo-page demo-page-modal">
+    <button class="cross-close-btn" type="button"></button>
+    <div class="demo-page__page-modal-wrapper">
+        <h2>Demo version</h2>
+        <p>In order to get a demo version provide the following information:</p>
+        <form class="demo-page-form" id="demo-page-form" action="#" method="POST">
+            <div class="field-area">
+                <label class="required" for="form__name-field">Name</label>
+                <input class="form-field" id="form__name-field" type="text" required>
+            </div>
+            <div class="field-area">
+                <label class="required" for="form__company-field">Name of company</label>
+                <input class="form-field" id="form__company-field" type="text" required>
+            </div>
+            <div class="field-area">
+                <label class="required" for="form__email-field">E-mail</label>
+                <input class="form-field" id="form__email-field" type="email" required>
+            </div>
+            <div class="field-area">
+                <label class="required" for="form__phone-number-field">Phone number</label>
+                <input class="form-field" id="form__phone-number-field" type="tel" required>
+            </div>
+            <div class="field-area checkbox-area">
+                <input id="consent-checkbox" type="checkbox">
+                <label for="consent-checkbox">By checking this box, I give my consent to the processing of my personal data, accept the terms of the Offer for using the site and agree to the Privacy Policy</label>
+            </div>
+            <div class="field-area checkbox-area">
+                <input id="announcements-checkbox" type="checkbox">
+                <label for="announcements-checkbox">I want to receive announcements of events, news, interesting articles from the TopFactor team</label>
+            </div>
+            <button class="main-btn-view get-ready-btn" type="submit">Get a ready solution for your tasks</button>
+        </form>
+    </div>
+</div>
 <script src="../src/js/script.js"></script>
 <script src="../src/js/pages/team_recruit.js"></script>
 </body>

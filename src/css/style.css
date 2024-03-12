@@ -438,6 +438,15 @@ img {
 }
 
 .hamburger-menu {
+    display: none;
+}
+
+.demo-page__page-modal-wrapper .hamburger-menu {
+    display: block;
+}
+
+.hamburger-menu,
+.demo-page__page-modal-wrapper .hamburger-menu {
     position: fixed;
     top: 28px;
     right: 30px;
@@ -445,7 +454,6 @@ img {
     height: 26px;
     cursor: pointer;
     z-index: 10;
-    display: none;
 }
 
 .menu__btn {
@@ -482,6 +490,8 @@ img {
     content: '';
     top: 8px;
 }
+
+
 
 /* mobile-platform */
 
@@ -845,7 +855,7 @@ img {
     display: none;
 }
 
-.main-content .main-btn-view {
+.main-btn-view {
     border: 1px solid var(--main-color);
     padding: 12px 22px;
     border-radius: 8px;
@@ -1752,6 +1762,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .demo-page__page-modal-wrapper > h2 {
@@ -1769,6 +1780,8 @@ img {
 .demo-page .demo-page-form {
     margin-top: 50px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .demo-page .demo-page-form .field-area,
@@ -1777,12 +1790,35 @@ img {
     position: relative;
 }
 
+.demo-page .demo-page-form .field-area {
+    height: 63px;
+}
+
 .demo-page .demo-page-form .field-area > input[type='checkbox'] {
     display: none;
 }
 
 .demo-page .demo-page-form .field-area.checkbox-area > label {
-    padding-left: 30px;
+    padding-left: 15px;
+    position: relative;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.demo-page .demo-page-form .field-area.checkbox-area > label:before {
+    content: '';
+    display: block;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.demo-page .demo-page-form .field-area.checkbox-area > input:checked + label:before {
+    background-color: var(--main-color);
 }
 
 .demo-page .demo-page-form .field-area:not(:first-child) {
@@ -1810,11 +1846,34 @@ img {
     color: #f00;
 }
 
+.demo-page .demo-page-form .field-area:nth-last-child(3) {
+    margin-top: 40px;
+}
+
 .demo-page .demo-page-form .field-area > input {
     padding: 20px;
     background-color: #F1F1F1;
     border-radius: 10px;
 }
 
+.get-ready-btn {
+    align-self: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.cross-close-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/cross.svg') no-repeat center / 20px;
+    z-index: 9999;
+}
 
 /* max-width: 1384px; */
