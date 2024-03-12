@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const demoModal = document.querySelector('.demo-page-modal');
     const demoModalCloseBtn = demoModal.querySelector('.cross-close-btn')
-    const demoBtns = document.querySelectorAll('.free-demo-btn');
+    const demoBtns = document.querySelectorAll('.demo-btn');
     demoBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             demoModal.classList.add('flex');
@@ -282,5 +282,20 @@ document.addEventListener('DOMContentLoaded', () => {
     demoModalCloseBtn.addEventListener('click', () => {
         demoModal.classList.remove('flex');
         document.body.style.overflow = 'visible';
+    });
+
+    const formInputs = demoModal.querySelectorAll('.form-field');
+    formInputs.forEach(btn => {
+        btn.addEventListener('focus', e => {
+            const parent = e.target.parentElement;
+            const label = parent.children[0];
+            label.style.opacity = '0';
+        });
+
+        btn.addEventListener('blur', e => {
+            const parent = e.target.parentElement;
+            const label = parent.children[0];
+            label.style.opacity = '1';
+        });
     });
 });

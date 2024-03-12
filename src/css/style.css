@@ -1834,6 +1834,8 @@ img {
     color: #757575;
     z-index: 2;
     pointer-events: none;
+    opacity: 1;
+    transition: opacity .3s;
 }
 
 .demo-page .demo-page-form .field-area > label.required:after {

@@ -1,3 +1,21 @@
+@media screen and (max-width: 1504px) {
+    .turkish .page-header__page-navigation {
+        display: none;
+    }
+
+    .turkish .hamburger-place,
+    .turkish .hamburger-menu {
+        display: block;
+    }
+
+    .turkish .header-wrapper {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
 @media screen and (max-width: 1421px) {
     .page-header__page-navigation > ul {
         gap: 10px 40px;
@@ -80,6 +98,22 @@
 @media screen and (max-width: 1210px) {
     .page-header {
         gap: 6px;
+    }
+
+    .english .page-header__page-navigation {
+        display: none;
+    }
+
+    .english .hamburger-place,
+    .english .hamburger-menu {
+        display: block;
+    }
+
+    .english .header-wrapper {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
     }
 }
 
@@ -211,10 +245,6 @@
 }
 
 @media screen and (max-width: 1070px) {
-    .header-wrapper {
-        box-shadow: none;
-    }
-
     .main-content .achievements .achievement {
         padding: 30px;
     }
@@ -245,23 +275,6 @@
 
     .page-header__page-navigation > ul {
         gap: 10px 37px;
-    }
-}
-
-@media screen and (max-width: 1021px) {
-    .page-header__page-navigation {
-        display: none;
-    }
-
-    .hamburger-place,
-    .hamburger-menu {
-        display: block;
-    }
-
-    .header-wrapper {
-        position: fixed;
-        top: 0;
-        width: 100%;
     }
 }
 
