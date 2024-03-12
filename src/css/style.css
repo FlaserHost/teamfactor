@@ -766,6 +766,14 @@ img {
     padding-left: 22px;
 }
 
+.about-us-mobile .articles-keeper .services {
+    height: 10px;
+}
+
+.how-to-start-mobile .articles-keeper .tech-support {
+    height: 13px;
+}
+
 .page-footer .articles-keeper .sub-menu-article-list li a:first-child {
     transition: color .3s;
 }
