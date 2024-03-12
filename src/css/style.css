@@ -766,7 +766,8 @@ img {
     padding-left: 22px;
 }
 
-.about-us-mobile .articles-keeper .services {
+.about-us-mobile .articles-keeper .services,
+.about-us-mobile .articles-keeper .tech-support {
     height: 10px;
 }
 
