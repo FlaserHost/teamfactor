@@ -275,8 +275,12 @@ document.addEventListener('DOMContentLoaded', () => {
     demoBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             demoModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
         });
     });
 
-    demoModalCloseBtn.addEventListener('click', () => demoModal.classList.remove('flex'));
+    demoModalCloseBtn.addEventListener('click', () => {
+        demoModal.classList.remove('flex');
+        document.body.style.overflow = 'visible';
+    });
 });
