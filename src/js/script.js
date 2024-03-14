@@ -123,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 'auto',
         freeMode: true,
         watchSlidesProgress: true,
+        allowTouchMove: false
     });
 
     const mainSwiper = new Swiper(".main-slider", {
@@ -201,7 +202,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', viewportChecker);
 
     // мобильное меню
-
     const mobileMenuArticles = document.querySelectorAll('.mobile-menu-article');
     const mobileMenuBtns = document.querySelectorAll('.mobile-menu-btn');
     mobileMenuBtns.forEach(btn => {
@@ -218,12 +218,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // гамбургер
-
     const hamburgerBtn = document.querySelector('.hamburger-menu > .menu__btn');
     hamburgerBtn.addEventListener('click', e => {
         const parent = e.target.parentElement;
         const modal = parent.nextElementSibling;
-
 
         // открытие / закрытие модалки
         if (parent.classList.contains('closed')) {
@@ -241,7 +239,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // вкладки advantages
-
     const advantagesArticles = document.querySelectorAll('.advantages-article-item');
     const tabs = document.querySelectorAll('.advantages-tab');
     tabs.forEach((tab, _, orig) => {
@@ -256,7 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // кнопка Назад (для мобильной версии)
-
     const mobileBackBtns = document.querySelectorAll('.mobile-back-btn');
     mobileBackBtns.forEach(btn => {
         btn.addEventListener('click', e => {
@@ -270,7 +266,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // открытие демо формы
-
     const demoModal = document.querySelector('.demo-page-modal');
     const demoModalCloseBtn = demoModal.querySelector('.cross-close-btn')
     const demoBtns = document.querySelectorAll('.demo-btn');
