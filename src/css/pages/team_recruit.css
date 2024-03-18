@@ -2,12 +2,16 @@
     --slides-icons-size: 40px;
 }
 
-body {
-    overflow-x: hidden;
+.main-content {
+    padding-top: 0;
 }
 
-.main-content {
-    padding-top: 70px;
+.main-content section.trust-us {
+    margin-top: 80px;
+}
+
+.main-content section.POST {
+    margin-top: 40px;
 }
 
 .english .main-content .main-block .main-title-wrapper {
@@ -50,9 +54,9 @@ body {
     max-width: 450px;
 }
 
-.main-content .main-block .logo-preview {
+/*.main-content .main-block .logo-preview {
     transform: translateY(-80px);
-}
+}*/
 
 .swiper-conditions .swiper-slide {
     width: 240px;
@@ -163,9 +167,9 @@ body {
     transform: rotate(-90deg);
 }
 
-.main-content section.slider-conditions {
+/*.main-content section.slider-conditions {
     margin-top: -40px;
-}
+}*/
 
 .CRM > .title-block > h2 {
     width: 100%;

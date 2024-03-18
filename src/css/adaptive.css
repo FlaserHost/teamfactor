@@ -1,21 +1,3 @@
-@media screen and (max-width: 1504px) {
-    .turkish .page-header__page-navigation {
-        display: none;
-    }
-
-    .turkish .hamburger-place,
-    .turkish .hamburger-menu {
-        display: block;
-    }
-
-    .turkish .header-wrapper {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        box-shadow: none;
-    }
-}
-
 @media screen and (max-width: 1421px) {
     .page-header__page-navigation > ul {
         gap: 10px 40px;
@@ -99,21 +81,11 @@
     .page-header {
         gap: 6px;
     }
+}
 
-    .english .page-header__page-navigation {
-        display: none;
-    }
-
-    .english .hamburger-place,
-    .english .hamburger-menu {
-        display: block;
-    }
-
-    .english .header-wrapper {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        box-shadow: none;
+@media screen and (max-width: 1200px) and (min-width: 1150px) {
+    .tariffs-and-costs .table-wrapper h2 {
+        padding-right: 700px;
     }
 }
 
@@ -190,6 +162,74 @@
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .table-wrapper .table-row-title {
+        grid-column: 1 / 5;
+        padding: 30px 30px 10px 30px;
+    }
+
+    .tariffs-and-costs-title,
+    .popular-tariff {
+        display: none;
+    }
+
+    .table-wrapper {
+        grid: 34px / repeat(3, minmax(90px, 344px));
+    }
+
+    .tariffs-and-costs {
+        grid: 40px 1fr 100px / repeat(3, 1fr);
+    }
+
+    .table-sticky-header {
+        grid: 130px / repeat(3, minmax(90px, 344px));
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .table-wrapper .table-row-title:after {
+        display: none;
+    }
+
+    .table-wrapper .first-check:after {
+        left: 100%;
+        transform: translateX(-100%);
+    }
+
+    .table-wrapper .third-check:after {
+        left: 0;
+    }
+
+    .table-wrapper .first-check:after,
+    .table-wrapper .third-check:after {
+        width: 88%;
+    }
+
+    .table-wrapper .tariff-title {
+        bottom: calc(100% + 89px);
+    }
+
+    .table-wrapper .second-tariff {
+        bottom: calc(100% + 70px);
+        border-radius: 12px 12px 0 0;
+        z-index: 1;
+        height: 214px;
+        box-shadow: 0 0 50px -22px #000;
+    }
+
+    .table-wrapper > h2:first-child {
+        position: relative;
+        z-index: 30;
+        background-color: #fff;
+        padding: 21px 30px 0 30px;
+        box-shadow: 0 -23px 41px -15px #000;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .empty-space {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1120px) {
     .header-wrapper {
         width: calc(100% - 60px);
@@ -231,6 +271,10 @@
         padding: 0 30px;
     }
 
+    .main-content section.calculator {
+        padding: 44px 30px;
+    }
+
     .main-content .reviews .slider-container {
         padding-left: 30px;
     }
@@ -241,6 +285,10 @@
 
     .main-content .SAAS .SAAS-card ul li:not(:first-child) {
         margin-top: 19px;
+    }
+
+    .calculator {
+        padding: 100px 30px;
     }
 }
 
@@ -287,6 +335,12 @@
 @media screen and (max-width: 1010px) and (min-width: 812px) {
     .page-footer .sub-menu-article-list.industries__list {
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 958px) {
+    .designations > p:before {
+        top: 27%;
     }
 }
 
@@ -418,6 +472,36 @@
         width: 100%;
         margin-top: 24px;
     }
+
+    .page-header__page-navigation {
+        display: none;
+    }
+
+    .hamburger-place,
+    .hamburger-menu {
+        display: block;
+    }
+
+    .header-wrapper {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .table-sticky-header {
+        width: calc(100% + 60px);
+        transform: translateX(-30px);
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .table-wrapper > .check {
+        white-space: normal;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 696px) {
@@ -539,6 +623,24 @@
     }
 }
 
+@media screen and (max-width: 591px) {
+    .table-control-btns {
+        flex-direction: column;
+    }
+
+    .table-wrapper .tariff-title > h3 {
+        font-size: 18px;
+    }
+
+    .table-wrapper .tariff-title > .tariff-price {
+        font-size: 17px;
+    }
+
+    .table-wrapper .tariff-title > .tariff-period {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 580px) {
     .main-content .reviews .main-slider .swiper-slide {
         flex-direction: column;
@@ -559,7 +661,7 @@
         margin-top: 13px;
     }
 
-    .main-content section:not(.trust-us, .reviews, .SAAS),
+    .main-content section:not(.trust-us, .reviews, .SAAS, .calculator),
     .main-content .reviews .title-block {
         padding: 0 20px;
     }
@@ -627,6 +729,32 @@
     }
 }
 
+@media screen and (max-width: 566px) {
+    .table-sticky-header .tariff-title > h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .table-control-btns {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .table-wrapper .table-row-title.first-row {
+        padding: 60px 30px 10px 30px;
+    }
+
+    .table-wrapper .tariff-title {
+        bottom: calc(100% + 100px);
+    }
+
+    .table-wrapper .second-tariff {
+        bottom: calc(100% + 73px);
+    }
+}
+
 @media screen and (max-width: 512px) {
     .main-content .achievements {
         display: flex;
@@ -644,6 +772,39 @@
     .hamburger-menu {
         top: 25px;
     }
+
+    .table-sticky-header .tariff-title > h3 {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .table-sticky-header .tariff-title > .tariff-price {
+        font-size: 14px;
+    }
+
+    .table-sticky-header .tariff-title > h3,
+    .table-sticky-header .tariff-title > .tariff-price {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .table-wrapper .tariff-title {
+        bottom: calc(100% + 64px);
+    }
+
+    .table-wrapper .tariff-title {
+        bottom: calc(100% + 95px);
+    }
+
+    .table-wrapper .second-tariff {
+        bottom: calc(100% + 72px);
+    }
+
+    .table-wrapper .table-row-title > div,
+    .table-wrapper > .check {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 490px) {
@@ -656,6 +817,51 @@
     }
 }
 
+@media screen and (max-width: 488px) {
+    .table-wrapper .tariff-title > .tariff-period > .info-mark {
+        background: url('../img/calculator/info.svg') no-repeat center / contain;
+    }
+
+    .table-wrapper .tariff-title > .tariff-period > .info-mark,
+    .table-sticky-header .tariff-title > .tariff-period > .info-mark {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .table-wrapper .tariff-title > h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-inputs-wrapper {
+        grid: repeat(2, 1fr) / 1fr;
+    }
+
+    .form-inputs-wrapper .calc-form-field,
+    .form-btn {
+        width: 100%;
+        max-width: initial;
+    }
+
+    .form-btns-wrapper {
+        flex-direction: column;
+    }
+
+    .table-wrapper .table-row-title > div,
+    .table-wrapper > .check {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .table-wrapper .tariff-title > h3 {
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 426px) {
     .mobile-menu-platform {
         width: 100%;
@@ -664,5 +870,23 @@
     .mobile-menu-platform .mobile-menu-list {
         margin: auto;
         text-align: center;
+    }
+
+    .table-wrapper .tariff-title {
+        bottom: calc(100% + 124px);
+    }
+
+    .table-wrapper .second-tariff {
+        bottom: calc(100% + 93px);
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .table-wrapper .tariff-title {
+        bottom: calc(100% + 130px);
+    }
+
+    .table-wrapper .tariff-title > .tariff-price {
+        font-size: 15px;
     }
 }

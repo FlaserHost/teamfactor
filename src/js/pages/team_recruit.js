@@ -21,4 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.free-recruiter-slider-nav-btn.prev',
         },
     });
+
+    // установка z-index для строк (в текущей ситуации нужно делать именно через js)
+    const calcTableRows = document.querySelectorAll('.calculator .table-row-title');
+    let rowsLength = calcTableRows.length;
+    calcTableRows.forEach(row => {
+        row.style.zIndex = `${rowsLength}`;
+        rowsLength--;
+    });
 });
