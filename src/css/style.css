@@ -91,6 +91,8 @@ img {
     z-index: 92;
     height: 73px;
     width: calc(100% - 200px);
+    display: flex;
+    align-items: center;
 }
 
 .header-wrapper.border-radius-top {
