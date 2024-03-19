@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('scroll', e => {
         const scrollWindow = e.target.body.getBoundingClientRect().top;
 
-        scrollWindow <= tableWrapperPos - 442
+        scrollWindow <= tableWrapperPos - 242
             ? stickyHeader.classList.add('show-sticky-header')
             : stickyHeader.classList.remove('show-sticky-header');
     });
