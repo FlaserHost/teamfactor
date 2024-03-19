@@ -123,7 +123,8 @@ img {
 }
 
 .page-header__page-navigation {
-    margin: 0 40px 0 12px;
+    margin-left: 12px;
+    padding-right: 40px;
     height: 22px;
     overflow: hidden;
 }
