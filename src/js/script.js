@@ -218,6 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // гамбургер
+    const html = document.querySelector('html');
     const hamburgerBtn = document.querySelector('.hamburger-menu > .menu__btn');
     hamburgerBtn.addEventListener('click', e => {
         const parent = e.target.parentElement;
@@ -227,14 +228,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (parent.classList.contains('closed')) {
             modal.classList.remove('hide');
             parent.classList.remove('closed');
-            document.body.style.overflow = 'hidden';
+            html.style.overflow = 'hidden';
         } else {
             modal.classList.add('hide');
             parent.classList.add('closed');
             mobileMenuArticles.forEach(art => art.classList.remove('flex'));
             modal.querySelector('.mobile-menu-platform').classList.remove('not-menu');
             modal.querySelector('#mobile-menu-article').classList.add('flex');
-            document.body.style.overflow = 'visible';
+            html.style.overflow = 'visible';
         }
     });
 
@@ -272,13 +273,13 @@ document.addEventListener('DOMContentLoaded', () => {
     demoBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             demoModal.classList.add('flex');
-            document.body.style.overflow = 'hidden';
+            html.style.overflow = 'hidden';
         });
     });
 
     demoModalCloseBtn.addEventListener('click', () => {
         demoModal.classList.remove('flex');
-        document.body.style.overflow = 'visible';
+        html.style.overflow = 'visible';
     });
 
     const formInputs = demoModal.querySelectorAll('.form-field');

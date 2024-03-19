@@ -88,7 +88,7 @@ img {
     margin: 0 auto;
     top: 0;
     background-color: #fff;
-    z-index: 92;
+    z-index: 135;
     height: 73px;
     width: calc(100% - 200px);
     display: flex;
@@ -190,6 +190,7 @@ img {
 .header-wrapper .sub-menu {
     position: absolute;
     box-shadow: 0 7px 14px 2px #eee;
+    top: 60px;
 }
 
 .sub-menu:before {
@@ -465,7 +466,7 @@ img {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 94;
+    z-index: 136;
 }
 
 .menu__btn {
@@ -516,7 +517,7 @@ img {
     bottom: 0;
     left: 0;
     background-color: rgba(2, 35, 181, .3);
-    z-index: 93;
+    z-index: 135;
     display: flex;
     justify-content: flex-end;
 }
@@ -2284,7 +2285,7 @@ h2 {
     position: sticky;
     top: 73px;
     background-color: #677BD3;
-    z-index: 91;
+    z-index: 130;
     display: grid;
     grid: 130px / minmax(200px, 1fr) repeat(3, 200px);
     pointer-events: none;
@@ -2321,7 +2322,7 @@ h2 {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 90;
+    z-index: 130;
     gap: 18px;
     margin-top: 40px;
 }
