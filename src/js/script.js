@@ -316,24 +316,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //развернуть/свернуть таблицу
+    const closeLangs = {
+        'english': ['Show table', 'Close table'],
+        'turkish': ['Tablo aç (düğme)', 'Tabloyu gizle (düğme)']
+    };
+
     const showFullTableBtn = document.getElementById('show-full-table-btn');
     showFullTableBtn.addEventListener('click', e => {
         const parent = e.target.parentElement;
         const grandParent = e.target.closest('.calculator');
         const table = grandParent.querySelector('.tariffs-and-costs');
         const tableContainer = table.querySelector('.table-container');
+        const lang = e.target.dataset.pageLanguage;
 
         if (!e.target.classList.contains('showed-table')) {
             const tableHeight = tableContainer.children[0].getBoundingClientRect().height;
             tableContainer.style.maxHeight = `${tableHeight + 200}px`;
             e.target.classList.add('showed-table');
-            e.target.innerText = 'Close table';
+            e.target.innerText = closeLangs[lang][1];
             parent.classList.remove('mist');
         } else {
             document.querySelector('html').scroll({top: tableWrapperPos * -1 - 100, behavior: 'smooth'});
             tableContainer.style.maxHeight = `500px`;
             e.target.classList.remove('showed-table');
-            e.target.innerText = 'Show table';
+            e.target.innerText = closeLangs[lang][0];
             parent.classList.add('mist');
         }
     });
