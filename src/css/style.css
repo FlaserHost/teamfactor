@@ -2134,9 +2134,14 @@ h2 {
     z-index: -1;
 }
 
-.table-sticky-header .tariff-title > h3,
-.table-wrapper .tariff-title > h3 {
+.english .table-sticky-header .tariff-title > h3,
+.english .table-wrapper .tariff-title > h3 {
     font-size: 24px;
+}
+
+.turkish .table-sticky-header .tariff-title > h3,
+.turkish .table-wrapper .tariff-title > h3 {
+    font-size: 20px;
 }
 
 .table-wrapper .tariff-title > h3 {
