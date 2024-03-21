@@ -2009,9 +2009,7 @@ h2 {
     width: 100%;
 }
 
-.calc-input-wrapper:after {
-    content: '';
-    display: block;
+.calc-input-wrapper > .info-mark {
     position: absolute;
     top: 50%;
     right: 15px;
@@ -2201,6 +2199,11 @@ h2 {
     opacity: 0;
     pointer-events: none;
     transition: opacity .3s;
+}
+
+.calc-input-wrapper > .info-mark > .hint {
+    top: calc(100% + 10px);
+    left: -200px;
 }
 
 .info-mark:hover > .hint {
