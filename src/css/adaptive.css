@@ -324,6 +324,10 @@
     .page-header__page-navigation > ul {
         gap: 10px 37px;
     }
+
+    .slider-conditions .slider-navigation-btns {
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 1010px) {
@@ -826,6 +830,10 @@
     .table-sticky-header .tariff-title > .tariff-period > .info-mark {
         width: 20px;
         height: 20px;
+    }
+
+    .main-content .get-to-know .title-block h2 {
+        text-align: center;
     }
 }
 
