@@ -358,6 +358,15 @@ img {
     font-family: Inter, sans-serif;
 }
 
+.page-title {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    color: #000;
+    white-space: nowrap;
+}
+
 .sub-menu .sub-menu-article-list li:not(:first-child),
 .page-footer .sub-menu-article-list li:not(:first-child) {
     margin-top: 12px;
