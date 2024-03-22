@@ -199,7 +199,14 @@ document.addEventListener('DOMContentLoaded', () => {
         sliders.forEach(slider => dublicatesCreate(slider));
         mobileMarquee();
     }
-    window.addEventListener('resize', viewportChecker);
+
+    const tableWrapper = document.querySelector('.tariffs-and-costs');
+    let tableWrapperPos = tableWrapper.offsetTop * -1;
+
+    window.addEventListener('resize', () => {
+        viewportChecker();
+        tableWrapperPos = tableWrapper.offsetTop * -1;
+    });
 
     // мобильное меню
     const mobileMenuArticles = document.querySelectorAll('.mobile-menu-article');
@@ -303,13 +310,10 @@ document.addEventListener('DOMContentLoaded', () => {
     popularTariff.style.height = `calc(100% + ${tableHeight - 35}px)`;
 
     // появление липкой шапки
-    const tableWrapper = document.querySelector('.tariffs-and-costs');
     const stickyHeader = document.querySelector('.table-sticky-header');
-    const tableWrapperPos = tableWrapper.offsetTop * -1;
 
     document.addEventListener('scroll', e => {
         const scrollWindow = e.target.body.getBoundingClientRect().top;
-
         scrollWindow <= tableWrapperPos - 82
             ? stickyHeader.classList.add('show-sticky-header')
             : stickyHeader.classList.remove('show-sticky-header');
