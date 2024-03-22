@@ -178,7 +178,7 @@
     }
 
     .tariffs-and-costs {
-        grid: 40px 1fr 100px / repeat(3, 1fr);
+        grid: 40px 1fr 0 / repeat(3, 1fr);
     }
 
     .table-sticky-header {
@@ -824,8 +824,8 @@
 
     .table-wrapper .tariff-title > .tariff-period > .info-mark,
     .table-sticky-header .tariff-title > .tariff-period > .info-mark {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 }
 
