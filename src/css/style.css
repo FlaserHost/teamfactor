@@ -2233,6 +2233,16 @@ h2 {
     padding-top: 0;
 }
 
+.table-wrapper .table-row-title:first-child .hint {
+    white-space: normal;
+    top: calc(100% + 10px);
+    left: auto;
+    right: 0;
+    min-width: 100px;
+    max-width: 135px;
+    text-align: center;
+}
+
 .white-mask {
     position: absolute;
     width: 57%;
