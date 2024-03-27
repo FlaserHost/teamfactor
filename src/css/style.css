@@ -2018,6 +2018,10 @@ h2 {
     width: 100%;
 }
 
+.info-mark {
+    pointer-events: all;
+}
+
 .calc-input-wrapper > .info-mark {
     position: absolute;
     top: 50%;
@@ -2233,6 +2237,7 @@ h2 {
     padding-top: 0;
 }
 
+.table-sticky-header .hint,
 .table-wrapper .table-row-title:first-child .hint {
     white-space: normal;
     top: calc(100% + 10px);
@@ -2241,6 +2246,7 @@ h2 {
     min-width: 100px;
     max-width: 135px;
     text-align: center;
+    color: #000;
 }
 
 .white-mask {
