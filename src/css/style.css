@@ -2029,18 +2029,14 @@ h2 {
 }
 
 .tariffs-and-costs {
-    margin-top: 140px;
     width: 100%;
     max-width: 1300px;
     position: relative;
-    display: grid;
-    grid: 40px 1fr 41px / repeat(4, 1fr);
 }
 
 .tariffs-and-costs-title {
     color: var(--main-color);
     font-size: 35px;
-    grid-area: 1 / 1 / 2 / 3;
 }
 
 .tariffs-and-costs-title > span {
@@ -2050,15 +2046,12 @@ h2 {
 
 .table-wrapper {
     background-color: #fff;
-    display: grid;
-    grid: minmax(34px, 1fr) / minmax(200px, 1fr) repeat(3, 200px);
     padding-top: 40px;
     border-radius: 30px;
     margin-top: 80px;
 }
 
 .table-wrapper > h2 {
-    grid-column: 1 / 5;
     padding: 0 30px;
 }
 
@@ -2069,10 +2062,10 @@ h2 {
 
 .table-wrapper > div {
     height: 100%;
-    padding: 30px;
+    padding: 30px 0 30px 30px;
 }
 
-.table-wrapper > .check {
+.table-wrapper .check {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2082,7 +2075,7 @@ h2 {
 
 .table-wrapper .tariff-title {
     position: absolute;
-    bottom: calc(100% + 49px);
+    bottom: calc(100% + 9px);
     width: 100%;
     height: 165px;
     background-color: #fff;
@@ -2232,56 +2225,61 @@ h2 {
     position: relative;
     z-index: 2;
     background-color: #fff;
+    display: grid;
+    grid: minmax(34px, 1fr) / minmax(200px, 1fr) repeat(3, 200px);
 }
 
-.table-wrapper .table-row-title > div {
+.table-wrapper .table-row-title:first-child {
+    padding-top: 0;
+}
+
+.white-mask {
+    position: absolute;
+    width: 57%;
+    height: 110px;
+    background-color: #fff;
+    top: -40px;
+    border-radius: 30px 30px 0 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+
+.table-wrapper .table-row-title > div:not(.white-mask) {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
-.table-wrapper .table-row-title > div > .info-mark {
+.table-wrapper .table-row-title .info-mark {
     width: 20px;
     height: 20px;
     background: url('../img/calculator/info.svg') no-repeat center / 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: calc(100% + 5px);
     cursor: pointer;
 }
 
-.table-wrapper .table-row-title:after,
-.table-wrapper .first-check:after,
-.table-wrapper .second-check:after,
-.table-wrapper .third-check:after {
+.table-wrapper .table-row-title:not(:first-child) .info-mark {
+    left: calc(100% + 5px);
+}
+
+.table-wrapper .table-row-title:after {
     content: '';
     display: block;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-}
-
-.table-wrapper .first-check:after,
-.table-wrapper .second-check:after,
-.table-wrapper .third-check:after {
-    left: 0;
-}
-
-.table-wrapper .table-row-title:after {
-    right: 0;
     width: 96%;
     z-index: -1;
+    height: 1px;
+    background-color: #ddd;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.table-wrapper .first-check:after,
-.table-wrapper .second-check:after {
-    width: 100%;
-}
-
-.table-wrapper .third-check:after {
-    width: 85%;
+.table-wrapper .table-row-title .row-text > div {
+    position: relative;
 }
 
 .tick {
@@ -2302,13 +2300,12 @@ h2 {
     position: sticky;
     top: 73px;
     background-color: #677BD3;
-    z-index: 130;
+    z-index: 131;
     display: grid;
     grid: 130px / minmax(200px, 1fr) repeat(3, 200px);
     pointer-events: none;
     opacity: 0;
     transition: opacity .3s;
-    grid-area: 1 / 1 / 2 / 5;
 }
 
 .show-sticky-header {
@@ -2325,7 +2322,6 @@ h2 {
 }
 
 .table-container {
-    grid-area: 2 / 1 / 3 / 5;
     max-height: 500px;
     transition: max-height .3s;
     overflow: hidden;
