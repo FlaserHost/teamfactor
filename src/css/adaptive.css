@@ -222,7 +222,8 @@
     .main-content section:not(.trust-us, .reviews, .SAAS),
     .main-content .reviews .title-block,
     .main-content .SAAS .integrations .title-block,
-    .main-content .SAAS .slider-title {
+    .main-content .SAAS .slider-title,
+    .page-footer {
         padding: 0 30px;
     }
 
