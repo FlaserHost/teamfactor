@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // расчет высоты выделения популярного тарифа
         const popularTariff = document.getElementById('popular-tariff');
         const tableHeight = document.querySelector('.table-wrapper').getBoundingClientRect().height;
-        popularTariff.style.height = `calc(100% + ${tableHeight - 35}px)`;
+        popularTariff.style.height = `calc(100% + ${tableHeight - 45}px)`;
 
         // появление липкой шапки
         const stickyHeader = document.querySelector('.table-sticky-header');
