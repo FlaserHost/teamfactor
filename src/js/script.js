@@ -200,12 +200,89 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMarquee();
     }
 
-    const tableWrapper = document.querySelector('.tariffs-and-costs');
-    let tableWrapperPos = tableWrapper.offsetTop * -1;
+    try {
+        const tableWrapper = document.querySelector('.tariffs-and-costs');
+        let tableWrapperPos = tableWrapper.offsetTop * -1;
+
+        window.addEventListener('resize', () => {
+            tableWrapperPos = tableWrapper.offsetTop * -1;
+        });
+
+        // расчет высоты выделения популярного тарифа
+        const popularTariff = document.getElementById('popular-tariff');
+        const tableHeight = document.querySelector('.table-wrapper').getBoundingClientRect().height;
+        popularTariff.style.height = `calc(100% + ${tableHeight - 35}px)`;
+
+        // появление липкой шапки
+        const stickyHeader = document.querySelector('.table-sticky-header');
+
+        document.addEventListener('scroll', e => {
+            const scrollWindow = e.target.body.getBoundingClientRect().top;
+            scrollWindow <= tableWrapperPos - 82
+                ? stickyHeader.classList.add('show-sticky-header')
+                : stickyHeader.classList.remove('show-sticky-header');
+        });
+
+        //развернуть/свернуть таблицу
+        const closeLangs = {
+            'english': ['Show table', 'Close table'],
+            'turkish': ['Tablo aç (düğme)', 'Tabloyu gizle (düğme)']
+        };
+
+        const showFullTableBtn = document.getElementById('show-full-table-btn');
+        showFullTableBtn.addEventListener('click', e => {
+            const parent = e.target.parentElement;
+            const grandParent = e.target.closest('.calculator');
+            const table = grandParent.querySelector('.tariffs-and-costs');
+            const tableContainer = table.querySelector('.table-container');
+            const lang = e.target.dataset.pageLanguage;
+
+            if (!e.target.classList.contains('showed-table')) {
+                const tableHeight = tableContainer.children[0].getBoundingClientRect().height;
+                tableContainer.style.maxHeight = `${tableHeight + 200}px`;
+                e.target.classList.add('showed-table');
+                e.target.innerText = closeLangs[lang][1];
+                parent.classList.remove('mist');
+            } else {
+                document.querySelector('html').scroll({top: tableWrapperPos * -1 - 100, behavior: 'smooth'});
+                tableContainer.style.maxHeight = `500px`;
+                e.target.classList.remove('showed-table');
+                e.target.innerText = closeLangs[lang][0];
+                parent.classList.add('mist');
+            }
+        });
+
+        //логика расчета
+        const priceList = {
+            one_recruiter: 4000,
+            additional_recruiter: 1900,
+            additional_connection: 950,
+            allowance: 2000
+        };
+
+        const calculationForm = document.getElementById('calc-form');
+        const calculateBtn = document.getElementById('calc-btn');
+        const fastStartPrice = document.querySelectorAll('.fast-start > span');
+        const advancedPrice = document.querySelectorAll('.advanced > span')
+        calculateBtn.addEventListener('click', () => {
+            const fieldValues = [...new FormData(calculationForm)];
+
+            const tmpSumm = fieldValues[0][1] > 1
+                ? (--fieldValues[0][1]) * priceList.additional_recruiter + priceList.one_recruiter
+                : fieldValues[0][1] * priceList.one_recruiter;
+
+            const formula = (tmpSumm + fieldValues[1][1] * priceList.additional_connection);
+            const fastStart = formula / 89 * 3;
+            const advanced = (formula + priceList.allowance * (++fieldValues[0][1])) / 89 * 3;
+
+            fastStartPrice.forEach(item => item.innerText = `${Math.ceil(fastStart)} $`);
+            advancedPrice.forEach(item => item.innerText = `${Math.ceil(advanced)} $`);
+        });
+    } catch (err) {}
+
 
     window.addEventListener('resize', () => {
         viewportChecker();
-        tableWrapperPos = tableWrapper.offsetTop * -1;
     });
 
     // мобильное меню
@@ -304,74 +381,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // расчет высоты выделения популярного тарифа
-    const popularTariff = document.getElementById('popular-tariff');
-    const tableHeight = document.querySelector('.table-wrapper').getBoundingClientRect().height;
-    popularTariff.style.height = `calc(100% + ${tableHeight - 35}px)`;
 
-    // появление липкой шапки
-    const stickyHeader = document.querySelector('.table-sticky-header');
-
-    document.addEventListener('scroll', e => {
-        const scrollWindow = e.target.body.getBoundingClientRect().top;
-        scrollWindow <= tableWrapperPos - 82
-            ? stickyHeader.classList.add('show-sticky-header')
-            : stickyHeader.classList.remove('show-sticky-header');
-    });
-
-    //развернуть/свернуть таблицу
-    const closeLangs = {
-        'english': ['Show table', 'Close table'],
-        'turkish': ['Tablo aç (düğme)', 'Tabloyu gizle (düğme)']
-    };
-
-    const showFullTableBtn = document.getElementById('show-full-table-btn');
-    showFullTableBtn.addEventListener('click', e => {
-        const parent = e.target.parentElement;
-        const grandParent = e.target.closest('.calculator');
-        const table = grandParent.querySelector('.tariffs-and-costs');
-        const tableContainer = table.querySelector('.table-container');
-        const lang = e.target.dataset.pageLanguage;
-
-        if (!e.target.classList.contains('showed-table')) {
-            const tableHeight = tableContainer.children[0].getBoundingClientRect().height;
-            tableContainer.style.maxHeight = `${tableHeight + 200}px`;
-            e.target.classList.add('showed-table');
-            e.target.innerText = closeLangs[lang][1];
-            parent.classList.remove('mist');
-        } else {
-            document.querySelector('html').scroll({top: tableWrapperPos * -1 - 100, behavior: 'smooth'});
-            tableContainer.style.maxHeight = `500px`;
-            e.target.classList.remove('showed-table');
-            e.target.innerText = closeLangs[lang][0];
-            parent.classList.add('mist');
-        }
-    });
-
-    //логика расчета
-    const priceList = {
-        one_recruiter: 4000,
-        additional_recruiter: 1900,
-        additional_connection: 950,
-        allowance: 2000
-    };
-
-    const calculationForm = document.getElementById('calc-form');
-    const calculateBtn = document.getElementById('calc-btn');
-    const fastStartPrice = document.querySelectorAll('.fast-start > span');
-    const advancedPrice = document.querySelectorAll('.advanced > span')
-    calculateBtn.addEventListener('click', () => {
-        const fieldValues = [...new FormData(calculationForm)];
-
-        const tmpSumm = fieldValues[0][1] > 1
-            ? (--fieldValues[0][1]) * priceList.additional_recruiter + priceList.one_recruiter
-            : fieldValues[0][1] * priceList.one_recruiter;
-
-        const formula = (tmpSumm + fieldValues[1][1] * priceList.additional_connection);
-        const fastStart = formula / 89 * 3;
-        const advanced = (formula + priceList.allowance * (++fieldValues[0][1])) / 89 * 3;
-
-        fastStartPrice.forEach(item => item.innerText = `${Math.ceil(fastStart)} $`);
-        advancedPrice.forEach(item => item.innerText = `${Math.ceil(advanced)} $`);
-    });
 });
