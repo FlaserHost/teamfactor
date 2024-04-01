@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //развернуть/свернуть таблицу
         const closeLangs = {
-            'english': ['Show table', 'Close table'],
+            'english': ['Show table', 'Hide table'],
             'turkish': ['Tablo aç (düğme)', 'Tabloyu gizle (düğme)']
         };
 
@@ -245,10 +245,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 parent.classList.remove('mist');
             } else {
                 document.querySelector('html').scroll({top: tableWrapperPos * -1 - 100, behavior: 'smooth'});
-                tableContainer.style.maxHeight = `500px`;
-                e.target.classList.remove('showed-table');
-                e.target.innerText = closeLangs[lang][0];
-                parent.classList.add('mist');
+                setTimeout(() => {
+                    tableContainer.style.maxHeight = `500px`;
+                    e.target.classList.remove('showed-table');
+                    e.target.innerText = closeLangs[lang][0];
+                    parent.classList.add('mist');
+                }, 450);
             }
         });
 
