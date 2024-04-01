@@ -2397,6 +2397,7 @@ h2 {
 
 .table-control-btn {
     width: 300px;
+    height: 49px;
     padding: 13px 15px;
     border: 1px solid var(--main-color);
     border-radius: 10px;
