@@ -2075,6 +2075,12 @@ h2 {
     white-space: nowrap;
 }
 
+.turkish .table-wrapper .check {
+    white-space: normal;
+    padding: 0 10px;
+    text-align: center;
+}
+
 .table-wrapper .tariff-title {
     position: absolute;
     bottom: calc(100% + 9px);
@@ -2263,6 +2269,7 @@ h2 {
     position: relative;
     display: flex;
     align-items: center;
+    padding-right: 30px;
 }
 
 .table-wrapper .table-row-title .info-mark {
