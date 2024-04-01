@@ -54,10 +54,6 @@
     max-width: 450px;
 }
 
-/*.main-content .main-block .logo-preview {
-    transform: translateY(-80px);
-}*/
-
 .swiper-conditions .swiper-slide {
     width: 240px;
     height: 248px;
@@ -166,10 +162,6 @@
     background: url('../../img/arrows.svg') no-repeat center / 20px;
     transform: rotate(-90deg);
 }
-
-/*.main-content section.slider-conditions {
-    margin-top: -40px;
-}*/
 
 .CRM > .title-block > h2 {
     width: 100%;
@@ -353,10 +345,9 @@ section.POST + section.POST-additions {
 .swiper-free-recruiter figure {
     width: 100%;
     max-width: 1127px;
-    margin-bottom: -5px;
+    height: 638px;
     box-shadow: 0 10px 27px 9px rgba(100, 130, 254, .12);
-    border-radius: 25px;
-    margin-top: auto;
+    border-radius: 32px;
 }
 
 .swiper-free-recruiter figure > img {
