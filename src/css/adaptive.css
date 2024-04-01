@@ -290,6 +290,11 @@
     .page-footer .articles-keeper .social-links {
         margin: 40px 0;
     }
+
+    .page-footer .articles-keeper {
+        display: grid;
+        grid: repeat(2, 1fr) / repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 1010px) and (min-width: 812px) {
