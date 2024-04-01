@@ -280,7 +280,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     } catch (err) {}
 
-
     window.addEventListener('resize', () => {
         viewportChecker();
     });
@@ -380,6 +379,4 @@ document.addEventListener('DOMContentLoaded', () => {
             label.style.opacity = '1';
         });
     });
-
-
 });
