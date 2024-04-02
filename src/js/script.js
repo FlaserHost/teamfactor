@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const pageLang = document.querySelector('.page-wrapper').className.split(' ')[1];
 
         const scrollCorrections = {
-            english: 392,
+            english: 412,
             turkish: 342
         };
 
