@@ -211,6 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const tableWrapper = document.querySelector('.tariffs-and-costs');
         let tableWrapperPos = tableWrapper.offsetTop * -1;
 
+        console.log(tableWrapperPos);
+
         window.addEventListener('resize', () => {
             tableWrapperPos = tableWrapper.offsetTop * -1;
         });
