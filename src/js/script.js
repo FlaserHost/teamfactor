@@ -209,28 +209,33 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const tableWrapper = document.querySelector('.tariffs-and-costs');
-        let tableWrapperPos = tableWrapper.offsetTop * -1;
 
-        console.log(tableWrapperPos);
+        setTimeout(() => {
+            let tableWrapperPos = tableWrapper.offsetTop * -1;
 
-        window.addEventListener('resize', () => {
-            tableWrapperPos = tableWrapper.offsetTop * -1;
-        });
+            console.log(tableWrapperPos);
 
-        // расчет высоты выделения популярного тарифа
-        const popularTariff = document.getElementById('popular-tariff');
-        const tableHeight = document.querySelector('.table-wrapper').getBoundingClientRect().height;
-        popularTariff.style.height = `calc(100% + ${tableHeight - 45}px)`;
+            window.addEventListener('resize', () => {
+                tableWrapperPos = tableWrapper.offsetTop * -1;
+            });
 
-        // появление липкой шапки
-        const stickyHeader = document.querySelector('.table-sticky-header');
+            // расчет высоты выделения популярного тарифа
+            const popularTariff = document.getElementById('popular-tariff');
+            const tableHeight = document.querySelector('.table-wrapper').getBoundingClientRect().height;
+            popularTariff.style.height = `calc(100% + ${tableHeight - 45}px)`;
 
-        document.addEventListener('scroll', e => {
-            const scrollWindow = e.target.body.getBoundingClientRect().top;
-            scrollWindow <= tableWrapperPos - scrollCorrections[pageLang]
-                ? stickyHeader.classList.add('show-sticky-header')
-                : stickyHeader.classList.remove('show-sticky-header');
-        });
+            // появление липкой шапки
+            const stickyHeader = document.querySelector('.table-sticky-header');
+
+            document.addEventListener('scroll', e => {
+                const scrollWindow = e.target.body.getBoundingClientRect().top;
+                scrollWindow <= tableWrapperPos - scrollCorrections[pageLang]
+                    ? stickyHeader.classList.add('show-sticky-header')
+                    : stickyHeader.classList.remove('show-sticky-header');
+            });
+        }, 2000);
+
+
 
         //развернуть/свернуть таблицу
         const closeLangs = {
