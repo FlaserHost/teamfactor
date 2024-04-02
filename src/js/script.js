@@ -268,17 +268,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const advancedPrice = document.querySelectorAll('.advanced > span')
         calculateBtn.addEventListener('click', () => {
             const fieldValues = [...new FormData(calculationForm)];
+            let number_of_recruiters = fieldValues[0][1];
+            let simultaneous_sessions = fieldValues[1][1];
 
-            const tmpSumm = fieldValues[0][1] > 1
-                ? (--fieldValues[0][1]) * priceList.additional_recruiter + priceList.one_recruiter
-                : fieldValues[0][1] * priceList.one_recruiter;
+            if (
+                (number_of_recruiters !== '' && number_of_recruiters !== 0)
+                && (simultaneous_sessions !== '' && simultaneous_sessions !== 0)
+            ) {
+                const tmpSumm = number_of_recruiters > 1
+                    ? (--number_of_recruiters) * priceList.additional_recruiter + priceList.one_recruiter
+                    : number_of_recruiters * priceList.one_recruiter;
 
-            const formula = (tmpSumm + fieldValues[1][1] * priceList.additional_connection);
-            const fastStart = formula / 89 * 3;
-            const advanced = (formula + priceList.allowance * (++fieldValues[0][1])) / 89 * 3;
+                const formula = (tmpSumm + simultaneous_sessions * priceList.additional_connection);
+                const fastStart = formula / 89 * 3;
+                const advanced = (formula + priceList.allowance * (++number_of_recruiters)) / 89 * 3;
 
-            fastStartPrice.forEach(item => item.innerText = `${Math.ceil(fastStart)} $`);
-            advancedPrice.forEach(item => item.innerText = `${Math.ceil(advanced)} $`);
+                fastStartPrice.forEach(item => item.innerText = `${Math.ceil(fastStart)} $`);
+                advancedPrice.forEach(item => item.innerText = `${Math.ceil(advanced)} $`);
+            }
         });
     } catch (err) {}
 
