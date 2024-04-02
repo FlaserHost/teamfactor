@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const scrollCorrections = {
             english: 712,
-            turkish: 712
+            turkish: 512
         };
 
         const tableWrapper = document.querySelector('.tariffs-and-costs');
