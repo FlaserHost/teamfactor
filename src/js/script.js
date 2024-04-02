@@ -201,6 +201,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     try {
+        const pageLang = document.querySelector('.page-wrapper').className.split(' ')[1];
+
+        const scrollCorrections = {
+            english: 362,
+            turkish: 342
+        };
+
         const tableWrapper = document.querySelector('.tariffs-and-costs');
         let tableWrapperPos = tableWrapper.offsetTop * -1;
 
@@ -218,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.addEventListener('scroll', e => {
             const scrollWindow = e.target.body.getBoundingClientRect().top;
-            scrollWindow <= tableWrapperPos - 362
+            scrollWindow <= tableWrapperPos - scrollCorrections[pageLang]
                 ? stickyHeader.classList.add('show-sticky-header')
                 : stickyHeader.classList.remove('show-sticky-header');
         });
