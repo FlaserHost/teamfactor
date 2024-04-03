@@ -270,24 +270,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const advancedPrice = document.querySelectorAll('.advanced > span')
         calculateBtn.addEventListener('click', () => {
             const fieldValues = [...new FormData(calculationForm)];
-            let number_of_recruiters = fieldValues[0][1];
-            let simultaneous_sessions = fieldValues[1][1];
+            let number_of_recruiters = +fieldValues[0][1];
+            let internal_customers = +fieldValues[1][1];
 
-            if (
-                (number_of_recruiters !== '' && number_of_recruiters !== 0)
-                && (simultaneous_sessions !== '' && simultaneous_sessions !== 0)
-            ) {
-                const tmpSumm = number_of_recruiters > 1
-                    ? (--number_of_recruiters) * priceList.additional_recruiter + priceList.one_recruiter
-                    : number_of_recruiters * priceList.one_recruiter;
-
-                const formula = (tmpSumm + simultaneous_sessions * priceList.additional_connection);
-                const fastStart = formula / 89 * 3;
-                const advanced = (formula + priceList.allowance * (++number_of_recruiters)) / 89 * 3;
-
-                fastStartPrice.forEach(item => item.innerText = `${Math.ceil(fastStart)} $`);
-                advancedPrice.forEach(item => item.innerText = `${Math.ceil(advanced)} $`);
+            if (number_of_recruiters <= 0) {
+                number_of_recruiters = 1;
+                calculationForm.querySelector(`input#${fieldValues[0][0]}`).value = 1;
             }
+
+            if (internal_customers < 0) {
+                internal_customers = 0;
+                calculationForm.querySelector(`input#${fieldValues[1][0]}`).value = 0;
+            }
+
+            const tmpSumm = number_of_recruiters > 1
+                ? (--number_of_recruiters) * priceList.additional_recruiter + priceList.one_recruiter
+                : number_of_recruiters * priceList.one_recruiter;
+
+            const formula = (tmpSumm + internal_customers * priceList.additional_connection);
+            const fastStart = formula / 89 * 3;
+            const advanced = (formula + priceList.allowance * (++number_of_recruiters)) / 89 * 3;
+
+            fastStartPrice.forEach(item => item.innerText = `${Math.ceil(fastStart)} $`);
+            advancedPrice.forEach(item => item.innerText = `${Math.ceil(advanced)} $`);
         });
     } catch (err) {}
 
