@@ -334,7 +334,6 @@ section.POST + section.POST-additions {
     min-width: 839px;
     display: flex;
     flex-direction: column;
-    min-height: 750px;
 }
 
 .swiper-free-recruiter .swiper-slide pre {
