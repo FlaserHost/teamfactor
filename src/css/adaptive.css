@@ -848,6 +848,37 @@
     .table-wrapper > .check {
         font-size: 14px;
     }
+
+    .main-content section.calculator {
+        padding: 44px 0;
+    }
+
+    .calc-form {
+        padding: 0 30px;
+    }
+
+    .table-wrapper .table-row-title .row-text {
+        padding: 0 75px 0 22px;
+    }
+
+    .table-wrapper .tariff-title > .tariff-period,
+    .table-sticky-header .tariff-title > .tariff-period {
+        font-size: 11px;
+    }
+
+    .english .table-sticky-header .tariff-title > h3,
+    .english .table-wrapper .tariff-title > h3 {
+        font-size: 19px;
+    }
+
+    .table-wrapper .table-row-title .row-text > div {
+        width: 100%;
+    }
+
+    .info-mark > .hint {
+        left: auto;
+        right: 100%;
+    }
 }
 
 @media screen and (max-width: 458px) {
