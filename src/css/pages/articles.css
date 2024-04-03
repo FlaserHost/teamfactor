@@ -1,3 +1,13 @@
+.main-content {
+    margin: 41px 0 0;
+    padding-top: 0;
+}
+
+h1 {
+    padding: 20px 100px;
+    margin-top: 10px;
+}
+
 .breadcrumbs {
     width: 100%;
 }
@@ -31,33 +41,158 @@
 
 .presenting__tags {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 13px;
 }
 
-.presenting__tags > span {
+.presenting__tags-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.presenting__tags span {
     display: inline-block;
     padding: 7px 10px;
     border-radius: 20px;
     border: 2px solid #E7E7E7;
-    color: #0223B5;
+    color: var(--main-color);
 }
 
-.presenting__tags > time {
+.presenting__tags time {
     display: inline-block;
-    margin-left: auto;
     position: relative;
 }
 
-.presenting__tags > time:before {
+.presenting__tags time:before {
     content: '';
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: calc(100% + 10px);
+    background: url('../../img/calendar.svg') no-repeat center / 25px;
 }
 
+.article-presenting > figure {
+    margin-top: 40px;
+}
+
+.article-presenting > .presenting__tags {
+    margin-top: 20px;
+}
+
+.main-content section:not(.trust-us, .reviews, .SAAS, .calculator, .slider-conditions) {
+    padding: 20px 100px;
+}
+
+h1 {
+    color: var(--main-color);
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.main-content .title-block h3 span {
+    color: var(--main-color);
+    font-size: 22px;
+}
+
+.about > *:not(:first-child) {
+    margin-top: 20px;
+}
+
+.main-content section:not(:first-child) {
+    margin-top: 0;
+}
+
+.main-content section:last-child {
+    padding-bottom: 100px;
+}
+
+.prioritization .person-info {
+    border-radius: 20px;
+    background-color: var(--light-blue);
+    padding: 35px;
+    display: flex;
+    margin: 50px 0;
+}
+
+.prioritization .person-info figure {
+    max-width: 250px;
+    min-width: 250px;
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.prioritization .person-info figure > img {
+    object-fit: contain;
+}
+
+.prioritization .person-info .text-block {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 30px;
+}
+
+.prioritization .person-info .text-block .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.prioritization .person-info .text-block .text-container p {
+    margin-top: auto;
+    font-size: 15px;
+}
+
+.prioritization .person-info .text-block .text-container .quotes {
+    color: var(--main-color);
+    display: inline;
+}
+
+.prioritization .person-info .text-block .text-container .person-position {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.prioritization .person-info .text-block .text-container .person-name {
+    color: var(--main-color);
+    font-size: 22px;
+}
+
+.prioritization p,
+.video > * {
+    margin-top: 20px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.example > *:not(.title-block) {
+    margin-top: 15px;
+}
+
+.example > h4:not(.title-block) {
+    margin-top: 35px;
+}
+
+.video > figure:nth-of-type(1) {
+    margin-bottom: 45px;
+}
