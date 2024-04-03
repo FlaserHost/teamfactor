@@ -528,6 +528,11 @@
         transform: translateX(-30px);
         padding: 0 30px;
     }
+
+    .table-wrapper .check {
+        white-space: normal;
+        padding: 0 10px;
+    }
 }
 
 @media screen and (max-width: 700px) {

@@ -345,9 +345,9 @@ section.POST + section.POST-additions {
 .swiper-free-recruiter figure {
     width: 100%;
     max-width: 1127px;
-    height: 638px;
     box-shadow: 0 10px 27px 9px rgba(100, 130, 254, .12);
     border-radius: 32px;
+    background-color: rgba(100, 130, 254, .12);
 }
 
 .swiper-free-recruiter figure > img {

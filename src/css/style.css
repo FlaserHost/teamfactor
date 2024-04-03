@@ -2073,6 +2073,7 @@ h2 {
     align-items: center;
     position: relative;
     white-space: nowrap;
+    text-align: center;
 }
 
 .turkish .table-wrapper .check {
