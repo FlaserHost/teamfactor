@@ -183,6 +183,10 @@
     .white-mask {
         display: block;
     }
+
+    .table-wrapper .table-row-title:first-child .hint {
+        top: calc(100% + -92px);
+    }
 }
 
 @media screen and (max-width: 1120px) {
@@ -428,6 +432,19 @@
     .table-wrapper .second-tariff {
         bottom: calc(100% + 19px);
     }
+
+    .info-mark > .hint {
+        left: auto;
+        right: 100%;
+    }
+
+    .table-wrapper .table-row-title .row-text > div {
+        width: 100%;
+    }
+
+    .table-wrapper .designations {
+        padding: 30px 17px;
+    }
 }
 
 @media screen and (max-width: 896px) {
@@ -588,6 +605,16 @@
 
     .main-content .SAAS .SAAS-cards {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .english .table-sticky-header .tariff-title > h3,
+    .english .table-wrapper .tariff-title > h3,
+    .turkish .table-sticky-header .tariff-title > h3,
+    .turkish .table-wrapper .tariff-title > h3 {
+        font-size: 3vw;
+        white-space: nowrap;
     }
 }
 
@@ -756,6 +783,35 @@
     }
 }
 
+@media screen and (max-width: 520px) {
+    .main-content section.calculator {
+        padding: 44px 0;
+    }
+
+    .calc-form {
+        padding: 0 30px;
+    }
+
+    .table-wrapper .table-row-title .row-text {
+        padding: 0 75px 0 22px;
+    }
+
+    .table-wrapper .tariff-title > .tariff-period,
+    .table-sticky-header .tariff-title > .tariff-period {
+        font-size: 11px;
+    }
+
+    .english .table-sticky-header .tariff-title > h3,
+    .english .table-wrapper .tariff-title > h3 {
+        font-size: 19px;
+    }
+
+    .table-sticky-header .info-mark > .hint {
+        left: 0;
+        right: auto;
+    }
+}
+
 @media screen and (max-width: 512px) {
     .main-content .achievements {
         display: flex;
@@ -811,10 +867,13 @@
         background: url('../img/calculator/info.svg') no-repeat center / contain;
     }
 
-    .table-wrapper .tariff-title > .tariff-period > .info-mark,
+    .english .table-sticky-header .tariff-title > .tariff-period > .info-mark {
+        width: 31px;
+        height: 31px;
+    }
+
     .table-sticky-header .tariff-title > .tariff-period > .info-mark {
-        width: 20px;
-        height: 20px;
+        background: url(../img/calculator/info-bright.svg) no-repeat center / contain;
     }
 
     .main-content .get-to-know .title-block h2 {
@@ -847,37 +906,6 @@
     .table-wrapper .table-row-title > div,
     .table-wrapper > .check {
         font-size: 14px;
-    }
-
-    .main-content section.calculator {
-        padding: 44px 0;
-    }
-
-    .calc-form {
-        padding: 0 30px;
-    }
-
-    .table-wrapper .table-row-title .row-text {
-        padding: 0 75px 0 22px;
-    }
-
-    .table-wrapper .tariff-title > .tariff-period,
-    .table-sticky-header .tariff-title > .tariff-period {
-        font-size: 11px;
-    }
-
-    .english .table-sticky-header .tariff-title > h3,
-    .english .table-wrapper .tariff-title > h3 {
-        font-size: 19px;
-    }
-
-    .table-wrapper .table-row-title .row-text > div {
-        width: 100%;
-    }
-
-    .info-mark > .hint {
-        left: auto;
-        right: 100%;
     }
 }
 
