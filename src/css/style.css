@@ -1782,7 +1782,7 @@ img {
     padding: 40px;
     display: none;
     justify-content: center;
-    z-index: 90;
+    z-index: 9999;
 }
 
 .demo-page__page-modal-wrapper {
