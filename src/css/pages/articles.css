@@ -120,7 +120,7 @@ h4 {
     margin-top: 0;
 }
 
-.main-content section:last-child {
+.main-content.articles section:last-child {
     padding-bottom: 100px;
 }
 
@@ -195,4 +195,12 @@ h4 {
 
 .video > figure:nth-of-type(1) {
     margin-bottom: 45px;
+}
+
+/* adaptive */
+
+@media screen and (max-width: 580px) {
+    .main-content.articles section:not(.trust-us, .reviews, .SAAS, .calculator) {
+        padding: 20px;
+    }
 }
