@@ -452,5 +452,63 @@ section.POST + section.POST-additions {
     z-index: 5;
 }
 
+/* questions */
+
+.question {
+    width: 100%;
+}
+
+.question-title {
+    padding: 30px 70px 30px 0;
+    cursor: pointer;
+    border-bottom: 3px solid #f4f4f4;
+    position: relative;
+}
+
+.question-arrow {
+    width: 25px;
+    height: 25px;
+    background: url('../../img/pages/team_recruit/accord-arrow.svg') no-repeat center / 25px;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100% 30%;
+    transform: translateY(-50%);
+    right: 20px;
+    transition: .4s;
+    pointer-events: none;
+}
+
+.question-arrow.rotated {
+    transform: rotate(45deg);
+}
+
+.question-title > h2 {
+    font-size: 20px;
+    text-transform: initial;
+    font-weight: 400;
+    color: #575757;
+    pointer-events: none;
+}
+
+.accordion-wrapper {
+    margin-top: 30px;
+}
+
+.answer-wrapper {
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: height .4s;
+}
+
+.answer-container {
+    padding: 30px 0;
+}
+
+.answer-container > .answer {
+    padding: 40px 20px;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+}
 
 
