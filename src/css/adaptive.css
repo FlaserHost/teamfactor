@@ -545,6 +545,14 @@
         white-space: normal;
         text-align: center;
     }
+
+    .question-title > h2 {
+        font-size: 15px;
+    }
+
+    .answer-container > .answer {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 696px) {
