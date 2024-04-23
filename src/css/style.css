@@ -635,7 +635,6 @@ img {
 }
 
 .mobile-menu .free-demo-btn {
-    padding: 8px 20px;
     text-align: center;
 }
 
@@ -1783,6 +1782,7 @@ img {
     display: none;
     justify-content: center;
     z-index: 9999;
+    overflow-y: auto;
 }
 
 .demo-page__page-modal-wrapper {
