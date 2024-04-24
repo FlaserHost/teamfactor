@@ -1834,28 +1834,22 @@ img {
     pointer-events: all;
 }
 
-.demo-page .demo-page-form .field-area.checkbox-area > label > .outer {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.demo-page .demo-page-form .field-area.checkbox-area > label:before,
+.demo-page .demo-page-form .field-area.checkbox-area > label:after {
+    content: '';
+    display: block;
     width: 20px;
     height: 20px;
     border: 1px solid var(--main-color);
+    border-radius: 5px;
+    position: absolute;
     right: 100%;
     top: 0;
-    border-radius: 5px;
+
 }
 
-.demo-page .demo-page-form .field-area.checkbox-area > label .inner {
-    background-color: transparent;
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-}
-
-.demo-page .demo-page-form .field-area.checkbox-area > input:checked + label .inner {
-    background-color: var(--main-color);
+.demo-page .demo-page-form .field-area.checkbox-area > input:checked + label:before {
+    background: url('../img/demo-form-tick.svg') no-repeat center / 16px;
 }
 
 .demo-page .demo-page-form .field-area:not(:first-child) {
