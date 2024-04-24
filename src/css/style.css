@@ -1844,7 +1844,6 @@ img {
     position: absolute;
     right: 100%;
     top: 0;
-
 }
 
 .demo-page .demo-page-form .field-area.checkbox-area > input:checked + label:before {
