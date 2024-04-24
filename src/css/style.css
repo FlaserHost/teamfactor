@@ -1834,8 +1834,7 @@ img {
     pointer-events: all;
 }
 
-.demo-page .demo-page-form .field-area.checkbox-area > label:before,
-.demo-page .demo-page-form .field-area.checkbox-area > label:after {
+.demo-page .demo-page-form .field-area.checkbox-area > label:before {
     content: '';
     display: block;
     width: 20px;
