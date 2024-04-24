@@ -382,17 +382,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const formInputs = demoModal.querySelectorAll('.form-field');
-    formInputs.forEach(btn => {
-        btn.addEventListener('focus', e => {
+    formInputs.forEach(input => {
+        input.addEventListener('focus', e => {
             const parent = e.target.parentElement;
             const label = parent.children[0];
             label.style.opacity = '0';
         });
 
-        btn.addEventListener('blur', e => {
-            const parent = e.target.parentElement;
-            const label = parent.children[0];
-            label.style.opacity = '1';
+        input.addEventListener('blur', e => {
+            if (input.value === '') {
+                const parent = e.target.parentElement;
+                const label = parent.children[0];
+                label.style.opacity = '1';
+            }
         });
     });
 });
