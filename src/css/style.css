@@ -80,7 +80,8 @@ img {
     padding-top: 30px;
 }
 
-.header-wrapper {
+.header-wrapper,
+.cookie-notice {
     padding: 13px 30px;
     border-radius: 10px;
     box-shadow: 0 0 30px 10px #eee;
@@ -93,6 +94,29 @@ img {
     width: calc(100% - 200px);
     display: flex;
     align-items: center;
+}
+
+.cookie-notice {
+    position: fixed;
+    top: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 45px;
+}
+
+.cookie-notice a {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.cookie-notice .cookie-notice-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    background: url('../img/cookie_notice_close.svg') no-repeat center / 15px;
 }
 
 .header-wrapper.border-radius-top {

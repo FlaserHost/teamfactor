@@ -397,4 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    const cookieNoticeCloseBtn = document.querySelector('.cookie-notice-close');
+    cookieNoticeCloseBtn.addEventListener('click', e => e.target.parentElement.remove());
 });
