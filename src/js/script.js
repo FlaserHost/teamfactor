@@ -61,17 +61,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // функция создания дублей слайдов
     const dublicatesCreate = slider => {
-        const viewport = window.innerWidth;
-        const originalSlides = slider.slides;
-        const amount = originalSlides.length;
-        const width = originalSlides[0].getBoundingClientRect().width;
-        const divider = width * amount;
+        try {
+            const viewport = window.innerWidth;
+            const originalSlides = slider.slides;
+            const amount = originalSlides.length;
+            const width = originalSlides[0].getBoundingClientRect().width;
+            const divider = width * amount;
 
-        const dublicatesAmount = Math.round(viewport / divider);
+            const dublicatesAmount = Math.round(viewport / divider);
 
-        for (let i = 0; i < dublicatesAmount; i++) {
-            originalSlides.forEach(slide => slider.appendSlide(slide.outerHTML));
-        }
+            for (let i = 0; i < dublicatesAmount; i++) {
+                originalSlides.forEach(slide => slider.appendSlide(slide.outerHTML));
+            }
+        } catch (err) {}
     }
 
     // Бегущие строки
@@ -90,30 +92,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const mobileMarquee = () => {
-        const viewport = window.innerWidth;
-        let swiperMobMarquee = '';
-        const mobile = document.querySelector('.mobile-marquee');
+        try {
+            const viewport = window.innerWidth;
+            let swiperMobMarquee = '';
+            const mobile = document.querySelector('.mobile-marquee');
 
-        if (viewport <= 425) {
-            mobile.classList.remove('hide');
-            swiperMobMarquee = new Swiper('.mobile-marquee', {
-                direction: 'horizontal',
-                loop: true,
-                slidesPerView: 'auto',
-                spaceBetween: 30,
-                speed: 2000,
-                watchOverflow: true,
-                autoplay: {
-                    delay: 0,
-                    disableOnInteraction: false,
-                    reverseDirection: true,
-                },
-            });
+            if (viewport <= 425) {
+                mobile.classList.remove('hide');
+                swiperMobMarquee = new Swiper('.mobile-marquee', {
+                    direction: 'horizontal',
+                    loop: true,
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    speed: 2000,
+                    watchOverflow: true,
+                    autoplay: {
+                        delay: 0,
+                        disableOnInteraction: false,
+                        reverseDirection: true,
+                    },
+                });
 
-            dublicatesCreate(swiperMobMarquee);
-        } else {
-            mobile.classList.add('hide');
-        }
+                dublicatesCreate(swiperMobMarquee);
+            } else {
+                mobile.classList.add('hide');
+            }
+        } catch (err) {}
     }
 
     // слайдеры
@@ -202,7 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
         const tableWrapper = document.querySelector('.tariffs-and-costs');
-
 
         let tableWrapperPos = tableWrapper.offsetTop * -1;
 

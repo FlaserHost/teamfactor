@@ -99,6 +99,7 @@ img {
 .cookie-notice {
     position: fixed;
     top: auto;
+    height: auto;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -1080,6 +1081,7 @@ img {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 }
 
 .main-content .achievements .achievement span {

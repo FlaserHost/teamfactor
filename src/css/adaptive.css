@@ -223,6 +223,16 @@
         width: 100%;
     }
 
+    /* partners */
+
+    .slider-conditions.partners .title-block,
+    .slider-conditions.partners .section-content,
+    .slider-conditions.partners .swiper-conditions {
+        padding: 0;
+    }
+
+    /* -------- */
+
     .main-content section:not(.trust-us, .reviews, .SAAS),
     .main-content .reviews .title-block,
     .main-content .SAAS .integrations .title-block,

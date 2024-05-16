@@ -1,0 +1,742 @@
+:root {
+    --slides-icons-size: 40px;
+    --pic: 60px;
+}
+
+.main-content {
+    padding-top: 0;
+}
+
+.main-content section.trust-us {
+    margin-top: 80px;
+}
+
+.main-content section.POST {
+    margin-top: 40px;
+}
+
+.english .main-content .main-block .main-title-wrapper {
+    min-width: 400px;
+}
+
+.main-content .main-block {
+    align-items: flex-start;
+}
+
+.main-block .main-btns-block > button:last-child {
+    padding-right: 60px;
+    position: relative;
+}
+
+.main-block .main-btns-block > button:last-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: url('../../img/pages/team_recruit/contact_me_arrow.svg') no-repeat center / 30px;
+}
+
+.main-block .logo-title > h3 {
+    margin-bottom: 50px;
+    color: #ff7d00;
+}
+
+.main-block .logo-title .main-title-wrapper.desktop > img {
+    max-width: 400px;
+}
+
+.main-block .logo-title .slogan {
+    font-size: 24px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.swiper-conditions .swiper-wrapper {
+    flex-wrap: wrap;
+    gap: 17px 0;
+}
+
+.swiper-conditions .swiper-slide {
+    width: 269px;
+    height: 248px;
+    border: 2px solid rgba(100, 130, 254, .12);
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 40px 80px 40px;
+    box-shadow: 0 15px 150px 5px rgba(100, 130, 254, .12);
+    position: relative;
+    margin-right: 17.8px;
+}
+
+.swiper-conditions .swiper-slide:last-child {
+    margin-right: 0;
+}
+
+.swiper-conditions .swiper-slide > p {
+    font-weight: 600;
+    font-size: 17px;
+    height: 35px;
+}
+
+.slider-conditions .swiper {
+    overflow: visible;
+}
+
+.slider-conditions .title-block {
+    padding: 0 100px;
+}
+
+.slider-conditions .section-content {
+    margin-top: 15px;
+    padding: 0 100px;
+}
+
+.advantages .section-content,
+.quick-start .section-content {
+    margin-top: 15px;
+}
+
+.quick-start-content-wrapper {
+    width: 100%;
+    display: grid;
+    grid: repeat(3, 80px) / repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.quick-block {
+    display: flex;
+    align-items: center;
+    gap: 15px 45px;
+}
+
+.quick-block > div:first-child {
+    min-width: var(--pic);
+    height: var(--pic);
+}
+
+.quick-block > div:last-child span {
+    font-weight: 600;
+}
+
+.quick-block > .tick-pic {
+    background: url('../../img/pages/partners/tick.svg') no-repeat center / var(--pic);
+}
+
+.quick-block > .presentation-pic {
+    background: url('../../img/pages/partners/presentation.svg') no-repeat center / var(--pic);
+}
+
+.quick-block > .education-pic {
+    background: url('../../img/pages/partners/education.svg') no-repeat center / var(--pic);
+}
+
+.quick-block > .desktop-pic {
+    background: url('../../img/pages/partners/desktop.svg') no-repeat center / var(--pic);
+}
+
+.quick-block > .video-camera-pic {
+    background: url('../../img/pages/partners/video_camera.svg') no-repeat center / var(--pic);
+}
+
+.quick-block > .dollar-coin-pic {
+    background: url('../../img/pages/partners/dollar_coin.svg') no-repeat center / var(--pic);
+}
+
+.advantages-title span {
+    color: #6482fe;
+}
+
+.main-content .benefits {
+    border-radius: 50px;
+    overflow: hidden;
+    padding-bottom: 90px;
+}
+
+.main-content .benefits .benefits-cards {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(2, minmax(0, 550px));
+    gap: 17px;
+    padding: 100px;
+    justify-content: center;
+}
+
+.main-content .benefits .benefits-card {
+    width: 100%;
+    max-width: 550px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+}
+
+.main-content .benefits .benefits-card span {
+    display: block;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.main-content .benefits .benefits-card h2 {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.main-content .benefits .benefits-card ul {
+    margin: 90px 0 80px;
+}
+
+.main-content .benefits .benefits-card ul li {
+    list-style-type: none;
+    font-size: 19px;
+    font-family: 'Onest Thin', sans-serif;
+    font-weight: 600;
+}
+
+.main-content .benefits .benefits-card ul li:not(:first-child) {
+    margin-top: 20px;
+}
+
+.main-content .benefits .benefits-card .card-btn-block {
+    margin-top: auto;
+}
+
+.main-content .benefits .benefits-card .connect-btn {
+    width: 100%;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+.main-content .become-our-partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content .become-our-partner > span {
+    display: block;
+    margin-top: 15px;
+}
+
+.main-content .become-our-partner > button {
+    margin-top: 60px;
+}
+
+.main-content .become-our-partner .main-btn-view {
+    background-color: #0030FC;
+    position: relative;
+    z-index: 5;
+}
+
+section .section-content p {
+    font-size: 18px;
+}
+
+.sections-wrapper {
+    margin-top: 100px;
+    border-radius: 50px;
+    background-color: var(--light-blue);
+    padding: 60px 0;
+}
+
+div.sections-wrapper > section.achievements,
+div.sections-wrapper > section.SAAS {
+    margin-top: 30px;
+}
+
+div.sections-wrapper > section.SAAS .SAAS-cards {
+    padding: 0 100px;
+}
+
+div.sections-wrapper > section.achievements + .title-block {
+    margin-top: 100px;
+}
+
+.sections-wrapper .title-block {
+    padding: 0 100px;
+}
+
+.main-content .SAAS {
+    background-color: transparent;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.slider-conditions .swiper-conditions {
+    margin-top: 30px;
+    padding: 0 100px;
+}
+
+.swiper-conditions .one-icon:after,
+.swiper-conditions .two-icon:after,
+.swiper-conditions .three-icon:after,
+.swiper-conditions .four-icon:after,
+.swiper-conditions .five-icon:after,
+.swiper-conditions .six-icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: var(--slides-icons-size);
+    height: 40px;
+}
+
+.swiper-conditions .one-icon:after {
+    background: url('../../img/pages/partners/1.svg') no-repeat center / 20px;
+}
+
+.swiper-conditions .two-icon:after {
+    background: url('../../img/pages/partners/2.svg') no-repeat center / 20px;
+}
+
+.swiper-conditions .three-icon:after {
+    background: url('../../img/pages/partners/3.svg') no-repeat center / 20px;
+}
+
+.swiper-conditions .four-icon:after {
+    background: url('../../img/pages/partners/4.svg') no-repeat center / 20px;
+}
+
+.swiper-conditions .five-icon:after {
+    background: url('../../img/pages/partners/5.svg') no-repeat center / 20px;
+}
+
+.swiper-conditions .six-icon:after {
+    background: url('../../img/pages/partners/6.svg') no-repeat center / 20px;
+}
+
+.slider-conditions .slider-navigation-btns,
+.free-recruiter .slider-navigation-btns {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 18px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+}
+
+.free-recruiter .slider-navigation-btns {
+    margin-top: 40px;
+    padding-right: 0;
+}
+
+.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn,
+.free-recruiter .slider-navigation-btns > .free-recruiter-slider-nav-btn {
+    width: 20px;
+    height: 20px;
+}
+
+.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn.prev,
+.free-recruiter .slider-navigation-btns > .free-recruiter-slider-nav-btn.prev {
+    background: url('../../img/arrows.svg') no-repeat center / 20px;
+    transform: rotate(90deg);
+}
+
+.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn.next,
+.free-recruiter .slider-navigation-btns > .free-recruiter-slider-nav-btn.next {
+    background: url('../../img/arrows.svg') no-repeat center / 20px;
+    transform: rotate(-90deg);
+}
+
+.main-content .advantages-article.text p {
+    font-size: 18px;
+}
+
+.main-content .advantages-article.text div:last-child {
+    margin-top: 31px;
+}
+
+.main-content .advantages-article.text {
+    width: 350px;
+    justify-content: flex-end;
+}
+
+.main-content .advantages-article.text div:not(.first-child) {
+    margin-top: 15px;
+}
+
+.main-content .advantages-article.text div:nth-last-child(2) {
+    margin-bottom: 60px;
+}
+
+.main-content .advantages__content-wrapper > article {
+    overflow: visible;
+}
+
+.advantages-article-item:first-of-type .advantages-article img {
+    width: 113%;
+    transform: translateY(25px);
+}
+
+.advantages-article.img span {
+    padding-left: 36px;
+    font-size: 44px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.advantages-article-item:first-of-type .advantages-article.img figure {
+    margin-top: -20px;
+}
+
+.CRM > .title-block > h2 {
+    width: 100%;
+    max-width: 650px;
+}
+
+.CRM .section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.CRM .section-content > p {
+    padding: 40px 0;
+}
+
+.CRM .section-content > p > span {
+    font-weight: 600;
+}
+
+.CRM .section-content > figure {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 300px;
+    align-self: center;
+}
+
+
+
+/* POST */
+
+.POST .section-content {
+    display: flex;
+    gap: 17px;
+    margin-top: 60px;
+}
+
+.POST .section-content > .POST-card {
+    height: 220px;
+    position: relative;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 60px 30px;
+}
+
+.POST .section-content > .POST-card:not(.blue-card) {
+    width: calc((100% / 5) - 32px);
+    background-color: #f1f1f1;
+}
+
+.POST .section-content > .blue-card {
+    width: 400px;
+    background-color: var(--main-color);
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.POST .section-content > .blue-card > p {
+    height: 35px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.POST .section-content > .blue-card:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 30px;
+    background: url('../../img/pages/team_recruit/cursor-click-white.svg') no-repeat center / 50px;
+}
+
+.POST .section-content > .POST-card > figure {
+    width: 100%;
+    min-width: 105px;
+    max-width: 130px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.POST .section-content > .POST-card > span {
+    display: block;
+    margin-top: auto;
+}
+
+.POST > p {
+    margin-top: 50px;
+}
+
+.POST > p > span {
+    font-weight: 600;
+}
+
+.POST > p,
+.POST > p > span {
+    font-size: 20px;
+}
+
+section.POST + section.POST-additions {
+    width: 100%;
+    margin-top: 300px;
+    background-color: #F0F3FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    gap: 20px;
+    position: relative;
+}
+
+.POST-additions > span {
+    font-weight: 600;
+    display: block;
+    margin-right: auto;
+    font-size: 21px;
+}
+
+.POST-additions .contact {
+    border: none;
+    background-color: transparent;
+    padding-right: 60px;
+    color: #000;
+    font-weight: 600;
+    position: relative;
+}
+
+.POST-additions .contact:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: url('../../img/pages/team_recruit/contact_me_arrow_orange.svg') no-repeat center / 30px;
+}
+
+.POST-additions:after {
+    content: '';
+    position: absolute;
+    width: 270px;
+    height: 330px;
+    right: 100px;
+    bottom: calc(100% - 40px);
+    background: url('../../img/pages/team_recruit/girl.svg') no-repeat center / cover;
+    z-index: -1;
+}
+
+
+
+/* free-recruiter */
+
+.swiper-free-recruiter {
+    margin-top: 50px;
+    overflow: visible;
+}
+
+.swiper-free-recruiter .swiper-slide {
+    border-radius: 25px;
+    background-color: #f4f4f4;
+    width: 100%;
+    max-width: 1127px;
+    min-width: 839px;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-free-recruiter .swiper-slide pre {
+    padding: 30px 40px;
+    height: 186px;
+}
+
+.swiper-free-recruiter figure {
+    width: 100%;
+    max-width: 1127px;
+    box-shadow: 0 10px 27px 9px rgba(100, 130, 254, .12);
+    border-radius: 32px;
+    background-color: rgba(100, 130, 254, .12);
+}
+
+.swiper-free-recruiter figure > img {
+    object-fit: contain;
+}
+
+/* convenient */
+
+.convenient .section-container {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    height: 742px;
+    justify-content: center;
+    gap: 42px;
+}
+
+.convenient figure {
+    width: 100%;
+    height: 100%;
+}
+
+.convenient .mobile-img img {
+    object-fit: contain;
+}
+
+.convenient .text-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+.convenient .text-articles > .text-article {
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.convenient .text-articles > .text-article:first-child {
+    transform: translateY(46px);
+}
+
+.convenient .text-articles > .text-article:last-child {
+    margin-top: auto;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.convenient .text-articles > .text-article > pre {
+    white-space: pre-wrap;
+}
+
+.convenient .text-articles > .text-article:last-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background: url('../../img/pages/team_recruit/sign.svg') no-repeat center / 50px;
+}
+
+
+
+/* get to know */
+
+.main-content section.get-to-know {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.get-to-know:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    bottom: -140px;
+    background-image: linear-gradient(to top, rgba(230, 233, 248, .8), transparent);
+}
+
+.main-content .get-to-know .title-block h2 {
+    text-transform: initial;
+    font-size: 40px;
+}
+
+.get-to-know p {
+    text-align: center;
+    width: 350px;
+}
+
+.main-content .get-to-know .main-btn-view {
+    background-color: #0030FC;
+    position: relative;
+    z-index: 5;
+}
+
+/* questions */
+
+.question {
+    width: 100%;
+}
+
+.question-title {
+    padding: 30px 70px 30px 0;
+    cursor: pointer;
+    border-bottom: 3px solid #f4f4f4;
+    position: relative;
+}
+
+.question-arrow {
+    width: 25px;
+    height: 25px;
+    background: url('../../img/pages/team_recruit/accord-arrow.svg') no-repeat center / 25px;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100% 30%;
+    transform: translateY(-50%);
+    right: 20px;
+    transition: .4s;
+    pointer-events: none;
+}
+
+.question-arrow.rotated {
+    transform: rotate(45deg);
+}
+
+.question-title > h2 {
+    font-size: 20px;
+    text-transform: initial;
+    font-weight: 400;
+    color: #575757;
+    pointer-events: none;
+}
+
+.accordion-wrapper {
+    margin-top: 30px;
+}
+
+.answer-wrapper {
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: height .4s;
+}
+
+.answer-container {
+    padding: 30px 0;
+}
+
+.answer-container > .answer {
+    padding: 40px 20px;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+}
+
+
