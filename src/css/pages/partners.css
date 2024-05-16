@@ -67,7 +67,7 @@
     border-radius: 25px;
     display: flex;
     align-items: flex-end;
-    padding: 30px 40px 80px 40px;
+    padding: 30px 30px 80px;
     box-shadow: 0 15px 150px 5px rgba(100, 130, 254, .12);
     position: relative;
     margin-right: 17.8px;
@@ -77,10 +77,19 @@
     margin-right: 0;
 }
 
-.swiper-conditions .swiper-slide > p {
+.swiper-conditions .swiper-slide .text-block {
+    height: 30px;
+}
+
+.swiper-conditions .swiper-slide p {
     font-weight: 600;
     font-size: 17px;
-    height: 35px;
+}
+
+.swiper-conditions .swiper-slide .text-block span {
+    font-size: 13px;
+    display: block;
+    margin-top: 8px;
 }
 
 .slider-conditions .swiper {
