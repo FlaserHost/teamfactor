@@ -162,8 +162,14 @@
     display: grid;
     grid: repeat(2, 1fr) / repeat(2, minmax(0, 550px));
     gap: 17px;
-    padding: 100px;
+    padding: 30px 0;
     justify-content: center;
+}
+
+.main-content .benefits .benefits-card .card-content h2 span {
+    text-transform: lowercase;
+    display: inline;
+    font-size: 32px;
 }
 
 .main-content .benefits .benefits-card {
@@ -277,12 +283,12 @@ div.sections-wrapper > section.achievements + .title-block {
     padding: 0 100px;
 }
 
-.swiper-conditions .one-icon:after,
-.swiper-conditions .two-icon:after,
-.swiper-conditions .three-icon:after,
-.swiper-conditions .four-icon:after,
-.swiper-conditions .five-icon:after,
-.swiper-conditions .six-icon:after {
+.swiper-conditions .one-icon:before,
+.swiper-conditions .two-icon:before,
+.swiper-conditions .three-icon:before,
+.swiper-conditions .four-icon:before,
+.swiper-conditions .five-icon:before,
+.swiper-conditions .six-icon:before {
     content: '';
     display: block;
     position: absolute;
@@ -292,28 +298,39 @@ div.sections-wrapper > section.achievements + .title-block {
     height: 40px;
 }
 
-.swiper-conditions .one-icon:after {
+.swiper-conditions .one-icon:before {
     background: url('../../img/pages/partners/1.svg') no-repeat center / 20px;
 }
 
-.swiper-conditions .two-icon:after {
+.swiper-conditions .two-icon:before {
     background: url('../../img/pages/partners/2.svg') no-repeat center / 20px;
 }
 
-.swiper-conditions .three-icon:after {
+.swiper-conditions .three-icon:before {
     background: url('../../img/pages/partners/3.svg') no-repeat center / 20px;
 }
 
-.swiper-conditions .four-icon:after {
+.swiper-conditions .four-icon:before {
     background: url('../../img/pages/partners/4.svg') no-repeat center / 20px;
 }
 
-.swiper-conditions .five-icon:after {
+.swiper-conditions .five-icon:before {
     background: url('../../img/pages/partners/5.svg') no-repeat center / 20px;
 }
 
-.swiper-conditions .six-icon:after {
+.swiper-conditions .six-icon:before {
     background: url('../../img/pages/partners/6.svg') no-repeat center / 20px;
+}
+
+.swiper-conditions .six-icon:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    background: url('../../img/pages/partners/rocket.svg') no-repeat center / 70px;
 }
 
 .slider-conditions .slider-navigation-btns,
