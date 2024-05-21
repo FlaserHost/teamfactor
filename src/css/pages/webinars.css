@@ -77,11 +77,13 @@
     background: url(../../img/calendar.svg) no-repeat center / 30px;
 }
 
-.main-content .webinar-duration {
+.main-content .webinar-duration,
+.main-content .webinar-places-left {
     margin-top: 35px;
 }
 
-.main-content .webinar-duration span {
+.main-content .webinar-duration span,
+.main-content .webinar-places-left span{
     position: relative;
     display: block;
     padding-left: 45px;
@@ -89,7 +91,8 @@
     font-size: 14px;
 }
 
-.main-content .webinar-duration span:before {
+.main-content .webinar-duration span:before,
+.main-content .webinar-places-left span:before {
     content: '';
     display: block;
     width: 40px;
@@ -98,7 +101,14 @@
     top: 50%;
     transform: translateY(-50%);
     left: -5px;
+}
+
+.main-content .webinar-duration span:before {
     background: url('../../img/pages/webinars/clock.svg') no-repeat center / 40px;
+}
+
+.main-content .webinar-places-left span:before {
+    background: url('../../img/pages/webinars/person_2.svg') no-repeat center / 40px;
 }
 
 .main-content .main-block .logo-preview {
@@ -272,6 +282,137 @@
 .main-content .webinar-program .text-content-block button {
     margin-top: 30px;
     width: 220px;
+}
+
+.main-content .webinar-program .text-content-block .slider-navigation-btns {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 18px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+}
+
+.main-content .webinar-program .text-content-block .slider-navigation-btns > .free-recruiter-slider-nav-btn {
+    width: 20px;
+    height: 20px;
+}
+
+.main-content .webinar-program .text-content-block .slider-navigation-btns > .free-recruiter-slider-nav-btn.prev {
+    background: url(../../img/arrows.svg) no-repeat center / 20px;
+    transform: rotate(90deg);
+}
+
+.main-content .webinar-program .text-content-block .slider-navigation-btns > .free-recruiter-slider-nav-btn.next {
+    background: url(../../img/arrows.svg) no-repeat center / 20px;
+    transform: rotate(-90deg);
+}
+
+.main-content .webinar-program .text-content-block .swiper-free-recruiter {
+    margin-top: 50px;
+    overflow: visible;
+}
+
+.main-content .webinar-program .text-content-block .swiper-free-recruiter .swiper-slide {
+    border-radius: 25px;
+    background-color: #f4f4f4;
+    width: 100%;
+    max-width: 1127px;
+    min-width: 839px;
+}
+
+.main-content .webinar-program .text-content-block .swiper-free-recruiter figure {
+    width: 100%;
+    max-width: 1127px;
+    box-shadow: 0 10px 27px 9px rgba(100, 130, 254, .12);
+    border-radius: 32px;
+    background-color: rgba(100, 130, 254, .12);
+}
+
+.main-content .webinar-program .text-content-block .swiper-free-recruiter figure > img,
+.main-content .speaker .swiper-slide img {
+    object-fit: contain;
+}
+
+.main-content .speaker .swiper-slide {
+    border-radius: 20px;
+    background-color: var(--light-blue);
+    height: 300px;
+    padding: 35px;
+    display: flex;
+}
+
+.main-content .speaker .swiper-slide figure {
+    max-width: 250px;
+    min-width: 250px;
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.main-content .speaker .section-container {
+    margin-top: 30px;
+}
+
+.main-content .speaker .section-container .text-container {
+    margin-top: 50px;
+}
+
+.main-content .speaker .section-container .text-container p {
+    margin: 30px 0;
+}
+
+.main-content .speaker .section-container .text-container h2 {
+    margin-top: 50px;
+    font-size: 27px;
+}
+
+.main-content .speaker .swiper-slide .text-block {
+    display: flex;
+    padding-left: 30px;
+}
+
+.main-content .speaker .swiper-slide .text-block .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .speaker .swiper-slide .text-block .text-container .person-name {
+    color: var(--main-color);
+    font-size: 22px;
+}
+
+.main-content .speaker .swiper-slide .text-block .text-container span {
+    display: block;
+}
+
+.main-content .speaker .swiper-slide .text-block .text-container .person-position {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.main-content .speaker .swiper-slide .text-block .text-container p {
+    margin-top: auto;
+    font-size: 15px;
+}
+
+.main-content .speaker .swiper-slide .text-block .text-container p:first-of-type {
+    margin-bottom: 10px;
+}
+
+.main-content .speaker .swiper-slide .text-block .text-container .quotes {
+    color: var(--main-color);
+    display: inline;
+}
+
+.main-content .become-our-partner .title-block h2 {
+    text-transform: lowercase;
+}
+
+.main-content .become-our-partner .title-block h2:first-letter {
+    text-transform: uppercase;
 }
 
 .swiper-conditions .swiper-wrapper {
