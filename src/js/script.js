@@ -370,18 +370,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // открытие демо формы
     const demoModal = document.querySelector('.demo-page-modal');
+    const demoModalTitle = demoModal.querySelector('h2');
+    const demoModalDescription = demoModal.querySelector('p');
+    const demoModalForm = demoModal.querySelector('form');
+    const formBtn = demoModalForm.querySelector('button[type="submit"]');
     const demoModalCloseBtn = demoModal.querySelector('.cross-close-btn')
+
     const demoBtns = document.querySelectorAll('.demo-btn');
     demoBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             demoModal.classList.add('flex');
             html.style.overflow = 'hidden';
+            demoModalTitle.innerText = 'Demo version';
+            demoModalDescription.innerText = 'In order to get a demo version provide the following information:';
+            formBtn.innerText = 'Get a ready solution for your tasks';
         });
     });
 
     demoModalCloseBtn.addEventListener('click', () => {
         demoModal.classList.remove('flex');
         html.style.overflow = 'visible';
+    });
+
+    const regBtns = document.querySelectorAll('.register-btn');
+    regBtns.forEach(btn => {
+        btn.addEventListener('click', e => {
+            const property = e.target.dataset.property;
+            demoModal.classList.add('flex');
+            html.style.overflow = 'hidden';
+
+            const titles = {
+                register: {
+                    h2: 'register for the webinar',
+                    p: `In order to register for the webinar provide the following information:`,
+                    form_action: '#',
+                    button: 'Register',
+                },
+                video: {
+                    h2: 'get the webinar video',
+                    p: `In order to get the webinar video, the presentation, 
+the gift and other useful information provide the following information:`,
+                    form_action: '#',
+                    button: 'Get the webinar video',
+                }
+            };
+
+            demoModalTitle.innerText = titles[property].h2;
+            demoModalDescription.innerText = titles[property].p;
+            demoModalForm.setAttribute('action', titles[property].form_action);
+            formBtn.innerText = titles[property].button;
+        });
     });
 
     const formInputs = demoModal.querySelectorAll('.form-field');

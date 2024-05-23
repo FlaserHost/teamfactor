@@ -1824,6 +1824,7 @@ img {
     font-size: 56px;
     color: var(--main-color);
     text-transform: uppercase;
+    text-align: center;
 }
 
 .demo-page__page-modal-wrapper > p {
@@ -1858,6 +1859,11 @@ img {
     position: relative;
     cursor: pointer;
     pointer-events: all;
+}
+
+.demo-page .demo-page-form .field-area.checkbox-area > label > a {
+    color: #677BD3;
+    font-size: 16px;
 }
 
 .demo-page .demo-page-form .field-area.checkbox-area > label:before {
@@ -1941,6 +1947,8 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
     -moz-appearance: textfield;
 }
+
+/* ----- */
 
 h2 {
     text-transform: uppercase;
