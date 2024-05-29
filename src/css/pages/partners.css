@@ -385,7 +385,7 @@ div.sections-wrapper > section.achievements + .title-block {
 
 .main-content .advantages-article.text {
     width: 350px;
-    justify-content: flex-end;
+    margin-top: 20px;
 }
 
 .main-content .advantages-article.text div:not(.first-child) {
@@ -400,15 +400,25 @@ div.sections-wrapper > section.achievements + .title-block {
     overflow: visible;
 }
 
+.main-content .advantages__content-wrapper > article .advantages-title h2 {
+    text-transform: capitalize;
+}
+
 .advantages-article.img span {
     padding-left: 36px;
-    font-size: 44px;
+    font-size: 32px;
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
+    position: absolute;
+    top: 23px;
 }
 
-.advantages-article-item:first-of-type .advantages-article.img figure {
+.main-content .advantages-article-item.show {
+    position: relative;
+}
+
+.advantages-article-item .advantages-article.img figure {
     margin-top: -20px;
 }
 
