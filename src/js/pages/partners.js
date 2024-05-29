@@ -83,8 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     button: 'Send a request',
                 },
             };
-
-            demoModalTitle.style.whiteSpace = 'nowrap';
+            
             demoModalTitle.innerText = titles[property].h2;
             demoModalDescription.innerText = titles[property].p;
             demoModalForm.setAttribute('action', titles[property].form_action);
