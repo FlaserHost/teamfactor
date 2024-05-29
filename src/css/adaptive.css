@@ -752,8 +752,6 @@
     .quick-start-content-wrapper {
         grid: 1fr / 1fr;
     }
-
-    
 }
 
 @media screen and (max-width: 591px) {
