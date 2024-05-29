@@ -401,7 +401,6 @@ div.sections-wrapper > section.achievements + .title-block {
 }
 
 .advantages-article-item:first-of-type .advantages-article img {
-    width: 113%;
     transform: translateY(25px);
 }
 
@@ -411,6 +410,10 @@ div.sections-wrapper > section.achievements + .title-block {
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
+}
+
+.advantages-article-item:first-of-type .advantages-article.img {
+    transform: translateX(77px);
 }
 
 .advantages-article-item:first-of-type .advantages-article.img figure {
