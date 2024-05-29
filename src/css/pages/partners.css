@@ -418,8 +418,12 @@ div.sections-wrapper > section.achievements + .title-block {
     position: relative;
 }
 
+.advantages-article-item .advantages-article.img {
+    margin-left: 23px;
+}
+
 .advantages-article-item .advantages-article.img figure {
-    margin-top: -20px;
+    margin-top: -26px;
 }
 
 .CRM > .title-block > h2 {
