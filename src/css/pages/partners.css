@@ -272,7 +272,7 @@ section .section-content p {
     left: 0;
     width: 100%;
     height: 164px;
-    top: -140px;
+    top: -125px;
     background-image: linear-gradient(to top, rgba(230, 233, 248, .9), transparent);
 }
 
