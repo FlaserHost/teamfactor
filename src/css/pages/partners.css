@@ -400,20 +400,12 @@ div.sections-wrapper > section.achievements + .title-block {
     overflow: visible;
 }
 
-.advantages-article-item:first-of-type .advantages-article img {
-    transform: translateY(25px);
-}
-
 .advantages-article.img span {
     padding-left: 36px;
     font-size: 44px;
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
-}
-
-.advantages-article-item:first-of-type .advantages-article.img {
-    transform: translateX(77px);
 }
 
 .advantages-article-item:first-of-type .advantages-article.img figure {
