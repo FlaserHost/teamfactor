@@ -190,7 +190,8 @@
 }
 
 @media screen and (max-width: 1120px) {
-    .header-wrapper {
+    .header-wrapper,
+    .cookie-notice {
         width: calc(100% - 60px);
     }
 
@@ -229,6 +230,21 @@
     .slider-conditions.partners .section-content,
     .slider-conditions.partners .swiper-conditions {
         padding: 0;
+    }
+
+    .advantages-article.img span {
+        display: block;
+        text-align: center;
+        position: static;
+        padding-left: 0;
+    }
+
+    .advantages-article-item .advantages-article.img {
+        margin-left: 0;
+    }
+
+    .advantages-article-item .advantages-article.img figure {
+        margin: 0;
     }
 
     /* -------- */
@@ -462,6 +478,16 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .main-content .benefits .benefits-cards {
+        grid: 1fr / 1fr;
+    }
+
+    .main-content .benefits .benefits-card {
+        max-width: initial;
+    }
+}
+
 @media screen and (max-width: 896px) {
     .main-content .achievements .achievement span:first-child {
         font-size: 27px;
@@ -634,6 +660,10 @@
     .main-content .SAAS .SAAS-cards {
         flex-wrap: wrap;
     }
+
+    div.sections-wrapper > section.SAAS .SAAS-cards {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -718,6 +748,12 @@
     .presenting__tags time {
         margin-left: 38px;
     }
+
+    .quick-start-content-wrapper {
+        grid: 1fr / 1fr;
+    }
+
+    
 }
 
 @media screen and (max-width: 591px) {
@@ -864,6 +900,10 @@
     .table-sticky-header .info-mark > .hint {
         left: 0;
         right: auto;
+    }
+
+    .swiper-conditions .swiper-wrapper {
+        justify-content: center;
     }
 }
 
