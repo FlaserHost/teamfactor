@@ -62,9 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const modalBtnProperty = document.getElementById('btn-property');
+
     demoModalCloseBtn.addEventListener('click', () => {
         demoModal.classList.remove('flex');
         html.style.overflow = 'visible';
+        modalBtnProperty.value = '';
     });
 
     const partnersBtns = document.querySelectorAll('.partners-btn');
@@ -72,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', e => {
             e.preventDefault();
             const property = e.target.dataset.property;
+            modalBtnProperty.value = e.target.dataset.modalProperty;
             demoModal.classList.add('flex');
             html.style.overflow = 'hidden';
 
