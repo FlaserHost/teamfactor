@@ -50,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="free-demo-btn demo-btn" id="free-demo-btn" data-form_id="1" type="button">Request free demo</button>
+                <button class="free-demo-btn demo-btn" id="free-demo-btn" data-form_id="1" data-property="demo_modal" data-modal-property="demo_modal" type="button">Request free demo</button>
                 <div class="hamburger-place"></div>
             </div>
         </header>
@@ -260,7 +260,7 @@
                         <button class="mobile-menu-btn" type="button" data-property="about-us-mobile">About us</button>
                     </li>
                 </ul>
-                <button class="free-demo-btn demo-btn" data-form_id="1" type="button">Request free demo</button>
+                <button class="free-demo-btn demo-btn" data-property="demo_modal" data-modal-property="demo_modal" data-form_id="1" type="button">Request free demo</button>
             </article>
             <article class="mobile-menu-article solutions-mobile" id="solutions-mobile">
                 <div class="mobile-title">
@@ -512,7 +512,7 @@
                     <img src="../src/img/logo_preview-mobile.png" alt="logo-preview">
                 </figure>
                 <div class="main-btns-block">
-                    <button class="main-btn main-btn-view register-btn" data-form_id="1" data-property="register" type="button">Register</button>
+                    <button class="main-btn main-btn-view demo-btn" data-form_id="1" data-property="register" data-modal-property="register" type="button">Register</button>
                     <button class="main-btn main-btn-view demo-btn" type="button">Contact me</button>
                 </div>
             </div>
@@ -621,7 +621,7 @@
                 <span><span class="digit">2</span>. чточточаоаоаа</span>
                 <p>We interviewed Tamara Yeletskaya, HRD of the customer company, and received a comment on the internal circumstances that prompted Impulse Telecom to contact us for consulting.</p>
                 <p>We were told the purpose and objectives that were formulated at the strategic sessions. Tamara Yeletskaya accompanied the cold facts with precise and concise remarks on each point.</p>
-                <button class="main-btn-view register-btn" data-property="register" type="button">Register</button>
+                <button class="main-btn-view demo-btn" data-property="register" data-modal-property="register" type="button">Register</button>
                 <div class="slider-navigation-btns">
                     <button class="free-recruiter-slider-nav-btn prev" type="button"></button>
                     <button class="free-recruiter-slider-nav-btn next" type="button"></button>
@@ -674,7 +674,7 @@
                 <h2>Join the webinar</h2>
             </div>
             <span>Fill out an application and earn up to 60%</span>
-            <button class="main-btn-view register-btn" data-property="register" type="button">Register</button>
+            <button class="main-btn-view demo-btn" data-property="register" type="button">Register</button>
         </section>
         <div class="sections-wrapper">
             <div class="title-block">
@@ -799,7 +799,7 @@
                     <p class="webinar-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem ut perspiciatis unde omnis iste natus error sit voluptatem</p>
                     <div class="time-block">
                         <time datetime="2024-01-20T16:00">4:00 pm &nbsp; 20.01.24</time>
-                        <button class="register-btn main-btn-view" data-property="register" type="button">Register</button>
+                        <button class="demo-btn main-btn-view" data-property="register" data-modal-property="register" type="button">Register</button>
                     </div>
                 </article>
                 <article class="subscribe">
@@ -1038,14 +1038,15 @@
                 <input class="form-field" id="form__phone-number-field" type="tel" required>
             </div>
             <div class="field-area checkbox-area">
-                <input id="consent-checkbox" type="checkbox">
+                <input id="consent-checkbox" type="checkbox" checked required>
                 <label class="required" for="consent-checkbox">By checking this box, I give my consent to the processing of my personal data, accept the
                     <a href="#">terms of the Offer</a> for using the site and agree to the <a href="#">Privacy Policy</a></label>
             </div>
             <div class="field-area checkbox-area">
-                <input id="announcements-checkbox" type="checkbox">
+                <input id="announcements-checkbox" type="checkbox" checked>
                 <label for="announcements-checkbox">I want to receive announcements of events, news, interesting articles from the TeamFactor team</label>
             </div>
+            <input id="btn-property" name="btn_property" type="hidden">
             <button class="main-btn-view get-ready-btn" type="submit">Get a ready solution for your tasks</button>
         </form>
     </div>

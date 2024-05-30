@@ -104,34 +104,3 @@ mobileBackBtns.forEach(btn => {
         mainMenu.classList.add('flex');
     });
 });
-
-// открытие демо формы
-const demoModal = document.querySelector('.demo-page-modal');
-const demoModalCloseBtn = demoModal.querySelector('.cross-close-btn')
-const demoBtns = document.querySelectorAll('.demo-btn');
-demoBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        demoModal.classList.add('flex');
-        html.style.overflow = 'hidden';
-    });
-});
-
-demoModalCloseBtn.addEventListener('click', () => {
-    demoModal.classList.remove('flex');
-    html.style.overflow = 'visible';
-});
-
-const formInputs = demoModal.querySelectorAll('.form-field');
-formInputs.forEach(btn => {
-    btn.addEventListener('focus', e => {
-        const parent = e.target.parentElement;
-        const label = parent.children[0];
-        label.style.opacity = '0';
-    });
-
-    btn.addEventListener('blur', e => {
-        const parent = e.target.parentElement;
-        const label = parent.children[0];
-        label.style.opacity = '1';
-    });
-});

@@ -78,18 +78,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Бегущие строки
 
-    const swiperDeskMarquee = new Swiper('.desktop-marquee', {
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        speed: 2000,
-        watchOverflow: true,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-        },
-    });
+    let swiperDeskMarquee;
+
+    try {
+        swiperDeskMarquee = new Swiper('.desktop-marquee', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            speed: 2000,
+            watchOverflow: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+        });
+    } catch (err) {}
 
     const mobileMarquee = () => {
         try {
@@ -122,77 +126,84 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // слайдеры
 
-    const thumbSwiper = new Swiper(".thumbs-slider", {
-        spaceBetween: 17,
-        slidesPerView: 'auto',
-        freeMode: true,
-        watchSlidesProgress: true,
-        allowTouchMove: false
-    });
+    let thumbSwiper;
+    let messengers;
+    let jobSites;
+    let services;
 
-    const mainSwiper = new Swiper(".main-slider", {
-        spaceBetween: 17,
-        thumbs: {
-            swiper: thumbSwiper,
-        },
-        breakpoints: {
-            769: {
-                slidesPerView: 1.5,
+    try {
+        thumbSwiper = new Swiper(".thumbs-slider", {
+            spaceBetween: 17,
+            slidesPerView: 'auto',
+            freeMode: true,
+            watchSlidesProgress: true,
+            allowTouchMove: false
+        });
+
+        const mainSwiper = new Swiper(".main-slider", {
+            spaceBetween: 17,
+            thumbs: {
+                swiper: thumbSwiper,
             },
-            10: {
-                slidesPerView: 1.07,
+            breakpoints: {
+                769: {
+                    slidesPerView: 1.5,
+                },
+                10: {
+                    slidesPerView: 1.07,
+                }
             }
-        }
-    });
+        });
 
-    const messengers = new Swiper(".swiper-messengers", {
-        spaceBetween: 17,
-        loop: true,
-        slidesPerView: 'auto',
-        navigation: {
-            nextEl: '.next-arrow.messengers-arrow',
-            prevEl: '.prev-arrow.messengers-arrow',
-        },
-    });
-
-    const jobSites = new Swiper(".swiper-job-sites", {
-        spaceBetween: 17,
-        loop: true,
-        slidesPerView: 'auto',
-        navigation: {
-            nextEl: '.next-arrow.job-sites-arrow',
-            prevEl: '.prev-arrow.job-sites-arrow',
-        },
-    });
-
-    const services = new Swiper(".swiper-services", {
-        spaceBetween: 17,
-        loop: true,
-        slidesPerView: 'auto',
-        navigation: {
-            nextEl: '.next-arrow.services-arrow',
-            prevEl: '.prev-arrow.services-arrow',
-        },
-    });
-
-    const blogSlider = new Swiper(".swiper-blog", {
-        spaceBetween: 20,
-        breakpoints: {
-            945: {
-                slidesPerView: 4,
+        messengers = new Swiper(".swiper-messengers", {
+            spaceBetween: 17,
+            loop: true,
+            slidesPerView: 'auto',
+            navigation: {
+                nextEl: '.next-arrow.messengers-arrow',
+                prevEl: '.prev-arrow.messengers-arrow',
             },
-            768: {
-                slidesPerView: 3,
+        });
+
+        jobSites = new Swiper(".swiper-job-sites", {
+            spaceBetween: 17,
+            loop: true,
+            slidesPerView: 'auto',
+            navigation: {
+                nextEl: '.next-arrow.job-sites-arrow',
+                prevEl: '.prev-arrow.job-sites-arrow',
             },
-            490: {
-                slidesPerView: 2.1,
+        });
+
+        services = new Swiper(".swiper-services", {
+            spaceBetween: 17,
+            loop: true,
+            slidesPerView: 'auto',
+            navigation: {
+                nextEl: '.next-arrow.services-arrow',
+                prevEl: '.prev-arrow.services-arrow',
             },
-            10: {
-                slidesPerView: 1.1,
+        });
+
+        const blogSlider = new Swiper(".swiper-blog", {
+            spaceBetween: 20,
+            breakpoints: {
+                945: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                490: {
+                    slidesPerView: 2.1,
+                },
+                10: {
+                    slidesPerView: 1.1,
+                }
             }
-        }
-    });
-
+        });
+    } catch (err) {}
+    
     const sliders = [swiperDeskMarquee, messengers, jobSites, services];
     sliders.forEach(slider => dublicatesCreate(slider));
 
@@ -376,48 +387,49 @@ document.addEventListener('DOMContentLoaded', () => {
     const formBtn = demoModalForm.querySelector('button[type="submit"]');
     const demoModalCloseBtn = demoModal.querySelector('.cross-close-btn')
 
-    const demoBtns = document.querySelectorAll('.demo-btn');
-    demoBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            demoModal.classList.add('flex');
-            html.style.overflow = 'hidden';
-            demoModalTitle.innerText = 'Demo version';
-            demoModalDescription.innerText = 'In order to get a demo version provide the following information:';
-            formBtn.innerText = 'Get a ready solution for your tasks';
-        });
-    });
+    const modalBtnProperty = document.getElementById('btn-property');
 
     demoModalCloseBtn.addEventListener('click', () => {
         demoModal.classList.remove('flex');
         html.style.overflow = 'visible';
+        modalBtnProperty.value = '';
     });
 
-    const regBtns = document.querySelectorAll('.register-btn');
-    regBtns.forEach(btn => {
+    const demoBtns = document.querySelectorAll('.demo-btn');
+    demoBtns.forEach(btn => {
         btn.addEventListener('click', e => {
+            e.preventDefault();
             const property = e.target.dataset.property;
+            modalBtnProperty.value = e.target.dataset.modalProperty;
             demoModal.classList.add('flex');
             html.style.overflow = 'hidden';
 
             const titles = {
+                demo_modal: {
+                    h2: 'Demo version',
+                    p: `In order to get a demo version provide the following information:`,
+                    button: 'Get a ready solution for your tasks',
+                },
                 register: {
                     h2: 'register for the webinar',
                     p: `In order to register for the webinar provide the following information:`,
-                    form_action: '#',
                     button: 'Register',
                 },
                 video: {
                     h2: 'get the webinar video',
                     p: `In order to get the webinar video, the presentation, 
 the gift and other useful information provide the following information:`,
-                    form_action: '#',
                     button: 'Get the webinar video',
-                }
+                },
+                partners: {
+                    h2: 'become a partner',
+                    p: `In order to send a request provide the following information:`,
+                    button: 'Send a request',
+                },
             };
 
             demoModalTitle.innerText = titles[property].h2;
             demoModalDescription.innerText = titles[property].p;
-            demoModalForm.setAttribute('action', titles[property].form_action);
             formBtn.innerText = titles[property].button;
         });
     });

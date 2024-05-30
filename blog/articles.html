@@ -46,7 +46,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="free-demo-btn demo-btn" id="free-demo-btn" data-form_id="1" type="button">Request free demo</button>
+                    <button class="free-demo-btn demo-btn" id="free-demo-btn" data-form_id="1" data-property="demo_modal" data-modal-property="demo_modal" type="button">Request free demo</button>
                     <div class="hamburger-place"></div>
                 </div>
             </header>
@@ -256,7 +256,7 @@
                             <button class="mobile-menu-btn" type="button" data-property="about-us-mobile">About us</button>
                         </li>
                     </ul>
-                    <a class="free-demo-btn demo-btn" data-form_id="1" href="#">Request free demo</a>
+                    <a class="free-demo-btn demo-btn" data-form_id="1" data-property="demo_modal" data-modal-property="demo_modal" href="#">Request free demo</a>
                 </article>
                 <article class="mobile-menu-article solutions-mobile" id="solutions-mobile">
                     <div class="mobile-title">
@@ -800,10 +800,12 @@
                     <input id="announcements-checkbox" type="checkbox">
                     <label for="announcements-checkbox">I want to receive announcements of events, news, interesting articles from the TeamFactor team</label>
                 </div>
+                <input id="btn-property" name="btn_property" type="hidden">
                 <button class="main-btn-view get-ready-btn" type="submit">Get a ready solution for your tasks</button>
             </form>
         </div>
     </div>
+    <script src="../src/js/script.js"></script>
     <script src="../src/js/pages/articles.js"></script>
 </body>
 </html>
