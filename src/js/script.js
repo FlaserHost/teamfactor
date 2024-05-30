@@ -31,7 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', e => {
             const headerWrapper = e.target.closest('.header-wrapper');
             const subId = e.target.dataset.subId;
+
             const subSection = document.getElementById(subId);
+
+            console.log(e.target.classList.contains('active-nav'));
 
             if (!e.target.classList.contains('active-nav')) {
                 subSections.forEach(sub => sub.classList.remove('showed'));
