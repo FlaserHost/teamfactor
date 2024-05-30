@@ -63,8 +63,12 @@ button {
     cursor: pointer;
 }
 
-ul, li {
+ul, ul li {
     list-style-type: none;
+}
+
+ol li {
+    list-style-position: inside;
 }
 
 img {
@@ -874,6 +878,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 80px;
+    position: relative;
 }
 
 .main-content .main-block .main-title-wrapper {
@@ -1829,7 +1834,6 @@ img {
 
 .demo-page__page-modal-wrapper > p {
     text-align: center;
-    width: 250px;
     margin-top: 10px;
 }
 
@@ -2458,6 +2462,37 @@ h2 {
     color: #fff;
     text-decoration: none;
     text-align: center;
+}
+
+.breadcrumbs {
+    width: 100%;
+}
+
+.breadcrumbs > ul {
+    display: flex;
+    gap: 25px;
+}
+
+.breadcrumbs > ul > li {
+    position: relative;
+}
+
+.breadcrumbs > ul > li:not(:first-child):before {
+    content: '»';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-13px);
+    right: 100%;
+    width: 17px;
+    height: 17px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .52);
+}
+
+.breadcrumbs > ul > li > a {
+    font-size: 17px;
+    color: rgba(0, 0, 0, .52);
 }
 
 /* max-width: 1384px; */

@@ -19,8 +19,9 @@
     min-width: 400px;
 }
 
-.main-content .main-block {
+.main-content section.main-block {
     align-items: flex-start;
+    margin-top: 60px;
 }
 
 .main-block .main-btns-block > button:last-child {
@@ -41,7 +42,7 @@
 }
 
 .main-block .logo-title > h3 {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 400;
@@ -112,7 +113,7 @@
 }
 
 .main-content .main-block .logo-preview {
-    padding-top: 66px;
+    padding-top: 35px;
 }
 
 .main-block .logo-title .main-title-wrapper.desktop > img {
@@ -150,7 +151,11 @@
 
 .main-block .webinar-description {
     margin-top: 30px;
-    max-width: 350px;
+    max-width: 400px;
+}
+
+.main-block .webinar-description p {
+    font-size: 18px;
 }
 
 .main-content .main-block .main-btns-block {
@@ -210,7 +215,7 @@
     margin-top: 30px;
 }
 
-.main-content .checklist .section-list span {
+.main-content .checklist .section-list li {
     display: block;
     padding-left: 75px;
     position: relative;
@@ -220,11 +225,11 @@
     margin-top: 40px;
 }
 
-.main-content .checklist .section-list span:not(:first-child) {
+.main-content .checklist .section-list li:not(:first-child) {
     margin-top: 50px;
 }
 
-.main-content .checklist .section-list span:before {
+.main-content .checklist .section-list li:before {
     content: '';
     display: block;
     width: 45px;
@@ -257,7 +262,7 @@
 }
 
 .main-content .webinar-program .text-content-block {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .main-content .webinar-program ul,
@@ -285,13 +290,12 @@
 }
 
 .main-content .webinar-program .text-content-block .slider-navigation-btns {
-    margin-top: 40px;
     display: flex;
     width: 100%;
     justify-content: flex-end;
     gap: 18px;
     padding-right: 100px;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 
 .main-content .webinar-program .text-content-block .slider-navigation-btns > .free-recruiter-slider-nav-btn {
@@ -310,7 +314,7 @@
 }
 
 .main-content .webinar-program .text-content-block .swiper-free-recruiter {
-    margin-top: 50px;
+    margin-top: 30px;
     overflow: visible;
 }
 
@@ -338,7 +342,6 @@
 .main-content .speaker .swiper-slide {
     border-radius: 20px;
     background-color: var(--light-blue);
-    height: 300px;
     padding: 35px;
     display: flex;
 }
@@ -346,7 +349,7 @@
 .main-content .speaker .swiper-slide figure {
     max-width: 250px;
     min-width: 250px;
-    height: 100%;
+    height: 230px;
     border-radius: 14px;
     overflow: hidden;
 }
@@ -355,8 +358,18 @@
     margin-top: 30px;
 }
 
+.main-content .speaker .section-container .text-container > span:nth-of-type(1),
+.main-content .speaker .section-container .text-container > span:nth-of-type(2),
 .main-content .speaker .section-container .text-container p {
     margin: 30px 0;
+}
+
+.main-content .speaker .section-container .text-container > span {
+    display: block;
+}
+
+.main-content .speaker .section-container .text-container .person-name ~ p {
+    margin: 0;
 }
 
 .main-content .speaker .section-container .text-container h2 {
@@ -374,6 +387,10 @@
     flex-direction: column;
 }
 
+.main-content .speaker .swiper-slide .text-block .text-container {
+    padding: 10px 0;
+}
+
 .main-content .speaker .swiper-slide .text-block .text-container .person-name {
     color: var(--main-color);
     font-size: 22px;
@@ -383,28 +400,14 @@
     display: block;
 }
 
-.main-content .speaker .swiper-slide .text-block .text-container .person-position {
-    font-size: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
 .main-content .speaker .swiper-slide .text-block .text-container p {
     margin-top: auto;
     font-size: 15px;
 }
 
-.main-content .speaker .swiper-slide .text-block .text-container p:first-of-type {
-    margin-bottom: 10px;
-}
-
-.main-content .speaker .swiper-slide .text-block .text-container .quotes {
-    color: var(--main-color);
-    display: inline;
-}
-
 .main-content .become-our-partner .title-block h2 {
     text-transform: lowercase;
+    font-size: 32px;
 }
 
 .main-content .become-our-partner .title-block h2:first-letter {
@@ -601,7 +604,7 @@
 }
 
 .main-content .become-our-partner > button {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .main-content .become-our-partner .main-btn-view {

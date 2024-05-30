@@ -8,37 +8,6 @@ h1 {
     margin-top: 10px;
 }
 
-.breadcrumbs {
-    width: 100%;
-}
-
-.breadcrumbs > ul {
-    display: flex;
-    gap: 25px;
-}
-
-.breadcrumbs > ul > li {
-    position: relative;
-}
-
-.breadcrumbs > ul > li:not(:first-child):before {
-    content: '»';
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-13px);
-    right: 100%;
-    width: 17px;
-    height: 17px;
-    font-size: 20px;
-    color: rgba(0, 0, 0, .52);
-}
-
-.breadcrumbs > ul > li > a {
-    font-size: 17px;
-    color: rgba(0, 0, 0, .52);
-}
-
 .presenting__tags {
     display: flex;
     justify-content: space-between;
