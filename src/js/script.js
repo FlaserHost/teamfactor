@@ -1,5 +1,29 @@
 'use strict';
 
+const titles = {
+    demo_modal: {
+        h2: 'Demo version',
+        p: `In order to get a demo version provide the following information:`,
+        button: 'Get a ready solution for your tasks',
+    },
+    register: {
+        h2: 'register for the webinar',
+        p: `In order to register for the webinar provide the following information:`,
+        button: 'Register',
+    },
+    video: {
+        h2: 'get the webinar video',
+        p: `In order to get the webinar video, the presentation, 
+the gift and other useful information provide the following information:`,
+        button: 'Get the webinar video',
+    },
+    partners: {
+        h2: 'become a partner',
+        p: `In order to send a request provide the following information:`,
+        button: 'Send a request',
+    },
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const subSections = document.querySelectorAll('.sub-menu');
     const navBtns = document.querySelectorAll('.nav-btn');
