@@ -50,6 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let timeinterval = setInterval(updateClock, 1000);
     }
 
-    let deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
+    let deadline = new Date(Date.parse(new Date()) +  1296000 * 1000); // for endless timer
     initializeClock('countdown', deadline);
 });
