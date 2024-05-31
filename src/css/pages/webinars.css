@@ -124,7 +124,6 @@
     font-size: 36px;
     text-transform: uppercase;
     width: 100%;
-    max-width: 405px;
     color: var(--main-color);
     font-weight: 600;
 }

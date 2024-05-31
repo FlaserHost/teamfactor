@@ -633,6 +633,15 @@
     .page-footer .footer-logo > figure {
         max-width: 130px;
     }
+
+    .page-footer .articles-keeper {
+        grid: repeat(2, minmax(0, 217px)) / repeat(2, 1fr);
+    }
+
+    .page-footer .articles-keeper .stories {
+        width: auto;
+        max-width: 300px;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -1035,5 +1044,11 @@
 @media screen and (max-width: 376px) {
     .table-wrapper .tariff-title > .tariff-price {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .page-footer .articles-keeper {
+        grid: 1fr / 1fr;
     }
 }
