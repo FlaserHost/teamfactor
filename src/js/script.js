@@ -1,5 +1,7 @@
 'use strict';
 
+const html = document.querySelector('html');
+
 const titles = {
     demo_modal: {
         h2: 'Demo version',
@@ -21,6 +23,11 @@ the gift and other useful information provide the following information:`,
         h2: 'become a partner',
         p: `In order to send a request provide the following information:`,
         button: 'Send a request',
+    },
+    contact_me: {
+        h2: 'order a callback',
+        p: `In order for us to contact you provide the following information:`,
+        button: 'Order a callback',
     },
 };
 
