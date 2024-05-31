@@ -1,5 +1,4 @@
 'use strict';
-const html = document.querySelector('html');
 
 document.addEventListener('DOMContentLoaded', () => {
     const freeRecruiterSlider = new Swiper('.swiper-free-recruiter', {
