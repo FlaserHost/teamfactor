@@ -293,6 +293,12 @@ div.sections-wrapper > section.achievements + .title-block {
     padding: 0 100px;
 }
 
+.sections-wrapper .title-block h2 {
+    width: 100%;
+    max-width: 1690px;
+    margin: 0 auto;
+}
+
 .main-content .SAAS {
     background-color: transparent;
     overflow: hidden;

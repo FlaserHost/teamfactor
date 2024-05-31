@@ -77,6 +77,12 @@ img {
     object-fit: cover;
 }
 
+section {
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .page-wrapper {
     width: 100%;
     display: flex;
@@ -96,6 +102,7 @@ img {
     z-index: 135;
     height: 73px;
     width: calc(100% - 200px);
+    max-width: 1900px;
     display: flex;
     align-items: center;
 }
@@ -729,6 +736,9 @@ img {
 
 .page-footer .footer-container {
     width: 100%;
+    max-width: 1710px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-footer .footer-logo > figure {
