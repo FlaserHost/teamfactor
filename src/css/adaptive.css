@@ -648,6 +648,10 @@
     .main-content .speaker .swiper-slide .text-block {
         padding-left: 0;
     }
+
+    .main-content.webinar .speaker .swiper-slide {
+        padding-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 700px) {

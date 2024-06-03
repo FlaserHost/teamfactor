@@ -383,7 +383,7 @@
     display: block;
 }
 
-.main-content .speaker .section-container .text-container .person-name ~ p {
+.main-content:not(.webinar) .speaker .section-container .text-container .person-name ~ p {
     margin: 0;
 }
 
