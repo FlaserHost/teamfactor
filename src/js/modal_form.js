@@ -1,4 +1,5 @@
 // открытие демо формы
+const formTitleLang = document.getElementById('form-title-lang').value;
 const demoModal = document.querySelector('.demo-page-modal');
 const demoModalTitle = demoModal.querySelector('h2');
 const demoModalDescription = demoModal.querySelector('p');
@@ -23,9 +24,9 @@ demoBtns.forEach(btn => {
         demoModal.classList.add('flex');
         html.style.overflow = 'hidden';
 
-        demoModalTitle.innerText = titles[property].h2;
-        demoModalDescription.innerText = titles[property].p;
-        formBtn.innerText = titles[property].button;
+        demoModalTitle.innerText = titles[property][formTitleLang].h2;
+        demoModalDescription.innerText = titles[property][formTitleLang].p;
+        formBtn.innerText = titles[property][formTitleLang].button;
     });
 });
 
