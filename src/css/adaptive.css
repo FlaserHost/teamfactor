@@ -517,6 +517,10 @@
     .main-content .webinar-program .text-content-block .slider-navigation-btns {
         padding-right: 0;
     }
+
+    .main-content .webinar-program .swiper-slide {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 896px) {
@@ -551,6 +555,10 @@
         width: auto;
         max-width: 180px;
         max-height: 180px;
+    }
+
+    .main-content .checklist .section-container p {
+        margin-top: 10px;
     }
 }
 
