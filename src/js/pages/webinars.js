@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getTimeRemaining(endtime) {
         let t = Date.parse(endtime) - Date.parse(new Date());
+
         let seconds = Math.floor((t / 1000) % 60);
         let minutes = Math.floor((t / 1000 / 60) % 60);
         let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -50,6 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let timeinterval = setInterval(updateClock, 1000);
     }
 
-    let deadline = new Date(Date.parse(new Date()) +  1296000 * 1000); // for endless timer
+    const startTime = document.getElementById('webinar-start-date');
+    const timestamp = startTime.dataset.timestamp;
+    const interval = timestamp - (Date.parse(new Date()) / 1000);
+    let deadline = new Date(Date.parse(new Date()) +  interval * 1000);
     initializeClock('countdown', deadline);
 });
