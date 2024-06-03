@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1.5,
         spaceBetween: 25,
         breakpoints: {
-            424: {
+            10: {
                 slidesPerView: 1,
                 spaceBetween: 25
             },
