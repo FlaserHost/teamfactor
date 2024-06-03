@@ -15,10 +15,6 @@
     margin-top: 40px;
 }
 
-.english .main-content .main-block .main-title-wrapper {
-    min-width: 400px;
-}
-
 .main-content section.main-block {
     align-items: flex-start;
     margin-top: 60px;
@@ -161,6 +157,10 @@
     margin-top: 50px;
 }
 
+.main-content.webinar .main-block .main-title-wrapper {
+    min-width: initial;
+}
+
 .main-content section.timer {
     width: 100%;
     background-color: #E7E7E7;
@@ -181,6 +181,7 @@
     font-weight: 100;
     text-align: center;
     font-size: 30px;
+    white-space: nowrap;
 }
 
 .countdown-number {
