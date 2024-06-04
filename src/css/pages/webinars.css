@@ -157,7 +157,7 @@
     margin-top: 50px;
 }
 
-.main-content.webinar .main-block .main-title-wrapper {
+div.webinar .main-content .main-block .main-title-wrapper {
     min-width: initial;
 }
 
@@ -382,7 +382,7 @@
     display: block;
 }
 
-.main-content:not(.webinar) .speaker .section-container .text-container .person-name ~ p {
+div:not(.webinar) .main-content .speaker .section-container .text-container .person-name ~ p {
     margin: 0;
 }
 
