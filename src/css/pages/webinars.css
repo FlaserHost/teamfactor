@@ -157,9 +157,11 @@
     margin-top: 50px;
 }
 
-div.webinar .main-content .main-block .main-title-wrapper {
+/* webinar */
+div.special-class .main-content .main-block .main-title-wrapper {
     min-width: initial;
 }
+/* --- */
 
 .main-content section.timer {
     width: 100%;
@@ -382,9 +384,11 @@ div.webinar .main-content .main-block .main-title-wrapper {
     display: block;
 }
 
-div:not(.webinar) .main-content .speaker .section-container .text-container .person-name ~ p {
+/* .webinar */
+div:not(.special-class) .main-content .speaker .section-container .text-container .person-name ~ p {
     margin: 0;
 }
+/* --- */
 
 .main-content .speaker .section-container .text-container h2 {
     margin-top: 50px;
