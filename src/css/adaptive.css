@@ -619,6 +619,11 @@
         display: block;
     }
 
+    .hamburger-menu, .demo-page__page-modal-wrapper .hamburger-menu {
+        top: 57px;
+        right: 57px;
+    }
+
     .team-recruit-page .header-wrapper {
         position: fixed;
         top: 0;
@@ -847,6 +852,19 @@
     .quick-start-content-wrapper {
         grid: 1fr / 1fr;
     }
+
+    .page-wrapper {
+        padding-top: 0;
+    }
+
+    .header-wrapper {
+        width: 100%;
+    }
+
+    .hamburger-menu, .demo-page__page-modal-wrapper .hamburger-menu {
+        top: 28px;
+        right: 28px;
+    }
 }
 
 @media screen and (max-width: 591px) {
@@ -952,6 +970,10 @@
 
     .main-content section.request {
         margin-top: 50px;
+    }
+
+    .logo-title > h3 {
+        padding-left: 26px;
     }
 }
 

@@ -412,14 +412,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (parent.classList.contains('closed')) {
             modal.classList.remove('hide');
             parent.classList.remove('closed');
-            html.style.overflow = 'hidden';
+            html.style.overflowY = 'hidden';
         } else {
             modal.classList.add('hide');
             parent.classList.add('closed');
             mobileMenuArticles.forEach(art => art.classList.remove('flex'));
             modal.querySelector('.mobile-menu-platform').classList.remove('not-menu');
             modal.querySelector('#mobile-menu-article').classList.add('flex');
-            html.style.overflow = 'visible';
+            html.style.overflowY = 'visible';
         }
     });
 
