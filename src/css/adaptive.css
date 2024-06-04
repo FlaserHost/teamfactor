@@ -619,7 +619,7 @@
         display: block;
     }
 
-    .header-wrapper {
+    .team-recruit-page .header-wrapper {
         position: fixed;
         top: 0;
         width: 100%;
@@ -1019,7 +1019,7 @@
     }
 
     .hamburger-menu {
-        top: 25px;
+        top: 29px;
     }
 
     .table-sticky-header .tariff-title > h3 {
