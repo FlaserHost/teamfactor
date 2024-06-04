@@ -3550,13 +3550,14 @@ Aramalar:
                 <input class="form-field" id="form__phone-number-field" type="tel" required>
             </div>
             <div class="field-area checkbox-area">
-                <input id="consent-checkbox" type="checkbox">
-                <label for="consent-checkbox">Kutuyu işaretleyerek, kişisel verilerimin işlenmesine izin veriyorum, sitenin kullanımı için Teklifin şartlarını kabul ediyorum ve Gizlilik Politikasını kabul ediyorum</label>
+                <input id="consent-checkbox" type="checkbox" required checked>
+                <label class="required" for="consent-checkbox">Kutuyu işaretleyerek, kişisel verilerimin işlenmesine izin veriyorum, sitenin kullanımı için Teklifin şartlarını kabul ediyorum ve Gizlilik Politikasını kabul ediyorum</label>
             </div>
             <div class="field-area checkbox-area">
-                <input id="announcements-checkbox" type="checkbox">
+                <input id="announcements-checkbox" type="checkbox" checked>
                 <label for="announcements-checkbox">TeamFactor'dan web semineri duyuruları ve faydalı makaleler almak istiyorum</label>
             </div>
+            <input id="btn-property" name="btn_property" type="hidden">
             <button class="main-btn-view get-ready-btn" type="submit">İhtiyaçlarınız için hazır çözüm deneyin</button>
         </form>
     </div>

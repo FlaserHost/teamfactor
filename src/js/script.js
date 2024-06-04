@@ -10,9 +10,9 @@ const titles = {
             button: 'Get a ready solution for your tasks',
         },
         turkish: {
-            h2: 'Demo version',
-            p: `In order to get a demo version provide the following information:`,
-            button: 'Get a ready solution for your tasks',
+            h2: 'Demo versiyonu',
+            p: `Ücretsiz demo talep etmek için aşağıdaki bilgileri doldurun:`,
+            button: 'İhtiyaçlarınız için hazır çözüm deneyin',
         }
     },
     register: {
