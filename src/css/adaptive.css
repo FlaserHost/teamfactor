@@ -1004,10 +1004,6 @@
         right: auto;
     }
 
-    .swiper-conditions .swiper-wrapper {
-        justify-content: center;
-    }
-
     .swiper-conditions .swiper-slide:last-child {
         margin-right: 17.8px;
     }
