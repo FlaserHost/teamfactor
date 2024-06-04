@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 slidesPerView: 1,
                 spaceBetween: 25
             },
+            1500: {
+                slidesPerView: 1.5,
+            }
         },
         navigation: {
             nextEl: '.free-recruiter-slider-nav-btn.next',
