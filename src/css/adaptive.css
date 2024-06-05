@@ -1246,6 +1246,14 @@
     .countdown-text {
         font-size: 17px;
     }
+
+    .page-footer .articles-keeper {
+        grid: 1fr / 1fr;
+    }
+
+    .page-footer .all-rights-reserved > span {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -1257,14 +1265,6 @@
 @media screen and (max-width: 376px) {
     .table-wrapper .tariff-title > .tariff-price {
         font-size: 15px;
-    }
-
-    .page-footer .articles-keeper {
-        grid: 1fr / 1fr;
-    }
-
-    .page-footer .all-rights-reserved > span {
-        display: inline;
     }
 }
 
