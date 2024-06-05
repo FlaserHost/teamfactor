@@ -528,6 +528,16 @@
     .main-content .webinar-program .swiper-slide {
         height: auto;
     }
+
+    .swiper-conditions .swiper-wrapper {
+        justify-content: center;
+        gap: 17px;
+    }
+
+    .swiper-conditions .swiper-wrapper .swiper-slide {
+        width: calc(50% - 9px);
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 896px) {
@@ -734,6 +744,11 @@
     .answer-container > .answer {
         font-size: 14px;
     }
+
+    .main-content .checklist .section-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 696px) {
@@ -817,6 +832,10 @@
 
     div.sections-wrapper > section.SAAS .SAAS-cards {
         padding: 0;
+    }
+
+    div.sections-wrapper > section.SAAS {
+        padding: 0 20px;
     }
 }
 
@@ -1028,6 +1047,10 @@
     .logo-title > h3 {
         padding-left: 26px;
     }
+
+    .special-class .logo-title > h3 {
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 566px) {
@@ -1202,6 +1225,11 @@
 
     .POST-additions:after {
         right: 0;
+    }
+
+    .blog .reg-btn,
+    .swiper-conditions .swiper-wrapper .swiper-slide {
+        width: 100%;
     }
 }
 
