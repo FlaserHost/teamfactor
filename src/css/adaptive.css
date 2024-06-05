@@ -271,6 +271,7 @@
     /* -------- */
 
     .main-content section:not(.trust-us, .reviews, .SAAS, .timer),
+    .main-content .title-block.spec,
     .main-content .reviews .title-block,
     .main-content .SAAS .integrations .title-block,
     .main-content .SAAS .slider-title,
