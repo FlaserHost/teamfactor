@@ -538,6 +538,10 @@
         width: calc(50% - 9px);
         margin-right: 0;
     }
+
+    .swiper-conditions .swiper-wrapper .swiper-slide:last-child {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 896px) {
@@ -1092,10 +1096,6 @@
         left: 0;
         right: auto;
     }
-
-    .swiper-conditions .swiper-slide:last-child {
-        margin-right: 17.8px;
-    }
 }
 
 @media screen and (max-width: 512px) {
@@ -1228,7 +1228,8 @@
     }
 
     .blog .reg-btn,
-    .swiper-conditions .swiper-wrapper .swiper-slide {
+    .swiper-conditions .swiper-wrapper .swiper-slide,
+    .become-our-partner .reg-btn {
         width: 100%;
     }
 }
