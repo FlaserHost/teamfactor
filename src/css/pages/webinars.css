@@ -288,6 +288,10 @@ div.special-class .main-content .main-block .main-title-wrapper {
     margin-top: 20px;
 }
 
+.main-content .webinar-program ol li:not(:first-child) {
+    margin-top: 10px;
+}
+
 .main-content .webinar-program .text-content-block span {
     display: block;
 }
