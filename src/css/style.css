@@ -1941,8 +1941,8 @@ body[data-language="english"] .language-panel .available-lang.turkish {
 
 .cross-close-btn {
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 20px;
+    right: 25px;
     width: 20px;
     height: 20px;
     background: url('../img/calculator/cross.svg') no-repeat center / 20px;
