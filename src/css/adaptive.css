@@ -1258,6 +1258,14 @@
     .table-wrapper .tariff-title > .tariff-price {
         font-size: 15px;
     }
+
+    .page-footer .articles-keeper {
+        grid: 1fr / 1fr;
+    }
+
+    .page-footer .all-rights-reserved > span {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 363px) {
@@ -1274,15 +1282,5 @@
     .main-content .speaker .swiper-slide figure {
         max-width: initial;
         min-width: initial;
-    }
-}
-
-@media screen and (max-width: 321px) {
-    .page-footer .articles-keeper {
-        grid: 1fr / 1fr;
-    }
-
-    .page-footer .all-rights-reserved > span {
-        display: inline;
     }
 }
