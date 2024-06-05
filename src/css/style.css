@@ -1860,10 +1860,6 @@ section {
     position: relative;
 }
 
-.demo-page .demo-page-form .field-area {
-    height: 63px;
-}
-
 .demo-page .demo-page-form .field-area > input[type='checkbox'] {
     display: none;
 }
@@ -1924,7 +1920,7 @@ section {
 }
 
 .demo-page .demo-page-form .field-area:nth-last-child(3) {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .demo-page .demo-page-form .field-area > input {
