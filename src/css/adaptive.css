@@ -1232,6 +1232,10 @@
     .become-our-partner .reg-btn {
         width: 100%;
     }
+
+    .page-footer .all-rights-reserved > span {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 422px) {
@@ -1253,10 +1257,6 @@
 @media screen and (max-width: 376px) {
     .table-wrapper .tariff-title > .tariff-price {
         font-size: 15px;
-    }
-
-    .page-footer .all-rights-reserved > span {
-        display: block;
     }
 }
 
