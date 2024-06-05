@@ -195,6 +195,7 @@
 .POST .section-content {
     display: flex;
     gap: 17px;
+    flex-wrap: wrap;
     margin-top: 60px;
 }
 

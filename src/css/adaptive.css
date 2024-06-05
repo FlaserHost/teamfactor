@@ -83,7 +83,7 @@
 }
 
 @media screen and (max-width: 1230px) {
-    .main-content .main-btn-view:not(.become-client, .reg-btn) {
+    .main-content .main-btn-view:not(.become-client, .reg-btn, .POST-additions__btn) {
         width: 100%;
     }
 
@@ -357,6 +357,11 @@
     .page-footer .sub-menu-article-list.industries__list {
         margin-bottom: 30px;
     }
+
+    .calc-input-wrapper > .info-mark > .hint {
+        left: auto;
+        right: 50px;
+    }
 }
 
 @media screen and (max-width: 958px) {
@@ -485,6 +490,7 @@
         bottom: calc(100% + 19px);
     }
 
+    .calc-input-wrapper > .info-mark > .hint,
     .info-mark > .hint {
         left: auto;
         right: 100%;
@@ -637,6 +643,65 @@
     .table-wrapper .check {
         white-space: normal;
         padding: 0 10px;
+    }
+
+    .POST .section-content {
+        justify-content: space-between;
+    }
+
+    .POST .section-content > .blue-card {
+        width: 100%;
+    }
+
+    .POST .section-content > .POST-card:not(.blue-card) {
+        width: 48%;
+    }
+
+    .POST-additions .contact {
+        padding-right: 31px;
+        padding-left: 0;
+    }
+
+    .POST-additions .contact:after {
+        right: -14px;
+    }
+
+    .convenient .section-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .convenient .text-articles > .text-article:first-child {
+        transform: translateY(0);
+    }
+
+    .convenient .text-articles > .text-article {
+        width: auto;
+    }
+
+    .main-content .mass-media .media-blocks-container .media-block img {
+        min-width: 90px;
+    }
+
+    .main-content .mass-media .media-blocks-container .media-block img.vcru-logo {
+        min-width: 60px;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    section.POST + section.POST-additions {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .POST-additions .contact {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .POST-additions > span {
+        margin-right: 0;
     }
 }
 
@@ -1106,6 +1171,12 @@
     }
 }
 
+@media screen and (max-width: 464px) {
+    .POST .section-content > .POST-card:not(.blue-card) {
+        width: 47%;
+    }
+}
+
 @media screen and (max-width: 458px) {
     .english .table-wrapper .tariff-title > h3,
     .turkish .table-wrapper .tariff-title > h3 {
@@ -1122,6 +1193,14 @@
     .mobile-menu-platform .mobile-menu-list {
         margin: auto;
         text-align: center;
+    }
+
+    .main-content .POST-additions .main-btn-view.contact {
+        width: auto;
+    }
+
+    .POST-additions:after {
+        right: 0;
     }
 }
 
@@ -1145,6 +1224,10 @@
     .table-wrapper .tariff-title > .tariff-price {
         font-size: 15px;
     }
+
+    .page-footer .all-rights-reserved > span {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 363px) {
@@ -1167,5 +1250,9 @@
 @media screen and (max-width: 321px) {
     .page-footer .articles-keeper {
         grid: 1fr / 1fr;
+    }
+
+    .page-footer .all-rights-reserved > span {
+        display: inline;
     }
 }
