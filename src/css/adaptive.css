@@ -529,17 +529,17 @@
         height: auto;
     }
 
-    .swiper-conditions .swiper-wrapper {
+    .special-class .swiper-conditions .swiper-wrapper {
         justify-content: center;
         gap: 17px;
     }
 
-    .swiper-conditions .swiper-wrapper .swiper-slide {
+    .special-class .swiper-conditions .swiper-wrapper .swiper-slide {
         width: calc(50% - 9px);
         margin-right: 0;
     }
 
-    .swiper-conditions .swiper-wrapper .swiper-slide:last-child {
+    .special-class .swiper-conditions .swiper-wrapper .swiper-slide:last-child {
         width: 100%;
     }
 }
