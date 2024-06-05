@@ -895,11 +895,11 @@ section {
     max-width: 600px;
 }
 
-.english .main-content .main-block .main-title-wrapper {
+body[data-language="english"] .main-content .main-block .main-title-wrapper {
     min-width: 400px;
 }
 
-.turkish .main-content .main-block .main-title-wrapper {
+body[data-language="turkish"] .main-content .main-block .main-title-wrapper {
     min-width: 385px;
 }
 
@@ -1796,13 +1796,13 @@ section {
     margin-top: 17px;
 }
 
-.language-panel.english .current-lang,
-.language-panel.turkish .available-lang.english {
+body[data-language="english"] .language-panel .current-lang,
+body[data-language="turkish"] .language-panel .available-lang.english {
     background: url('../img/langs/GB.svg') no-repeat center / 35px;
 }
 
-.language-panel.turkish .current-lang,
-.language-panel.english .available-lang.turkish {
+body[data-language="turkish"] .language-panel .current-lang,
+body[data-language="english"] .language-panel .available-lang.turkish {
     background: url('../img/langs/TR.svg') no-repeat center / 35px;
 }
 
@@ -2120,7 +2120,7 @@ h2 {
     text-align: center;
 }
 
-.turkish .table-wrapper .check {
+body[data-language="turkish"] .table-wrapper .check {
     white-space: normal;
     padding: 0 10px;
     text-align: center;
@@ -2187,13 +2187,13 @@ h2 {
     z-index: -1;
 }
 
-.english .table-sticky-header .tariff-title > h3,
-.english .table-wrapper .tariff-title > h3 {
+body[data-language="english"] .table-sticky-header .tariff-title > h3,
+body[data-language="english"] .table-wrapper .tariff-title > h3 {
     font-size: 24px;
 }
 
-.turkish .table-sticky-header .tariff-title > h3,
-.turkish .table-wrapper .tariff-title > h3 {
+body[data-language="turkish"] .table-sticky-header .tariff-title > h3,
+body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
     font-size: 20px;
 }
 
