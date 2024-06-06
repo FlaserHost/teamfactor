@@ -1266,6 +1266,11 @@
     .table-wrapper .tariff-title > .tariff-price {
         font-size: 15px;
     }
+
+    .main-content .main-block .logo-preview-mobile,
+    .main-content .main-block .main-btns-block {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 363px) {
