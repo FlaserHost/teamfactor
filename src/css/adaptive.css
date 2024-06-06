@@ -506,6 +506,17 @@
     }
 }
 
+@media screen and (max-width: 917px) {
+    .slider-conditions.partners .swiper-conditions .swiper-wrapper {
+        justify-content: center;
+        gap: 17px;
+    }
+
+    .slider-conditions.partners .swiper-conditions .swiper-slide {
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .main-content .benefits .benefits-cards {
         grid: 1fr / 1fr;
@@ -920,6 +931,10 @@
 
     .main-content .mass-media .media-blocks-container .media-block:nth-last-child(-n + 4) {
         display: none;
+    }
+
+    .slider-conditions.partners .swiper-conditions .swiper-slide {
+        width: 100%;
     }
 }
 
