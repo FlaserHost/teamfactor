@@ -22,9 +22,9 @@ const titles = {
             button: 'Register',
         },
         turkish: {
-            h2: 'register for the webinar',
-            p: `In order to register for the webinar provide the following information:`,
-            button: 'Register',
+            h2: 'Webİnara kayıt olun',
+            p: `Webinara kayıt olmak için aşağıdaki bilgileri doldurun:`,
+            button: 'Kayıt Olun',
         }
     },
     video: {
@@ -35,10 +35,9 @@ the gift and other useful information provide the following information:`,
             button: 'Get the webinar video',
         },
         turkish: {
-            h2: 'get the webinar video',
-            p: `In order to get the webinar video, the presentation, 
-the gift and other useful information provide the following information:`,
-            button: 'Get the webinar video',
+            h2: 'Webİnarın kaydını İzleyİn',
+            p: `Webinarın kaydına ulaşmak için aşağıdaki bilgileri doldurun:`,
+            button: 'Webinarın kaydını izleyin',
         }
     },
     partners: {
