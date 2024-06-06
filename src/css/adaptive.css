@@ -1267,8 +1267,8 @@
         font-size: 15px;
     }
 
-    .main-content .main-block .logo-preview-mobile,
-    .main-content .main-block .main-btns-block {
+    .special-class .main-content .main-block .logo-preview-mobile,
+    .special-class .main-content .main-block .main-btns-block {
         padding: 0;
     }
 }
