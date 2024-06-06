@@ -571,6 +571,13 @@
     }
 }
 
+@media screen and (max-width: 869px) {
+    .sections-wrapper .title-block,
+    div.sections-wrapper > section.SAAS .SAAS-cards {
+        padding: 0 30px;
+    }
+}
+
 @media screen and (max-width: 810px) {
     .main-content .speaker .swiper-slide figure {
         height: auto;
