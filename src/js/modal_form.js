@@ -1,5 +1,6 @@
 // открытие демо формы
 const formTitleLang = document.body.dataset.language;
+const pageTitle = document.body.dataset.title;
 const demoModal = document.querySelector('.demo-page-modal');
 const demoModalTitle = demoModal.querySelector('h2');
 const demoModalDescription = demoModal.querySelector('p');
@@ -20,7 +21,7 @@ demoBtns.forEach(btn => {
     btn.addEventListener('click', e => {
         e.preventDefault();
         const property = e.target.dataset.property;
-        modalBtnProperty.value = e.target.dataset.modalProperty;
+        modalBtnProperty.value = `${pageTitle}__${e.target.dataset.modalProperty}`;
         demoModal.classList.add('flex');
         html.style.overflow = 'hidden';
 

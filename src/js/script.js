@@ -60,9 +60,9 @@ aşağıdaki bilgileri doldurun:`,
             button: 'Order a callback',
         },
         turkish: {
-            h2: 'order a callback',
-            p: `In order for us to contact you provide the following information:`,
-            button: 'Order a callback',
+            h2: 'Gerİ arama talep et',
+            p: `Sizinle iletişime geçebilmemiz için lütfen aşağıdaki bilgileri doldurun:`,
+            button: 'Geri arama talep et',
         }
     },
 };
