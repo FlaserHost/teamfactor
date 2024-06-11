@@ -742,14 +742,11 @@
     .main-content .speaker .swiper-slide {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 0;
     }
 
     .main-content .speaker .swiper-slide .text-block {
         padding-left: 0;
-    }
-
-    .main-content.webinar .speaker .swiper-slide {
-        padding-bottom: 0;
     }
 }
 
