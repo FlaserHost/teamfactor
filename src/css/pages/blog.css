@@ -42,4 +42,25 @@ h2 {
     color: var(--main-color);
 }
 
+.filter-items {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-item .filter-btn {
+    padding: 10px 25px;
+    color: #000;
+    border: 2px solid #F1F1F1;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.filter-item .filter-btn.active {
+    color: var(--main-color);
+    background-color: #E5E9F7;
+    border-color: #E5E9F7
+}
+
 
