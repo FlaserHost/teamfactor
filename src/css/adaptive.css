@@ -861,6 +861,15 @@
     }
 }
 
+@media screen and (max-width: 662px) {
+    /* blog */
+    .blog__article {
+        flex-direction: column;
+        gap: 10px;
+    }
+    /**/
+}
+
 @media screen and (max-width: 660px) {
     .main-content.articles .prioritization .person-info {
         flex-direction: column;
@@ -1266,6 +1275,12 @@
     .page-footer .all-rights-reserved > span {
         display: inline;
     }
+
+    /* blog */
+    .blog__article .read-more-btn {
+        width: 100%;
+    }
+    /**/
 }
 
 @media screen and (max-width: 422px) {
