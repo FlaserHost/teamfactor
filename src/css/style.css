@@ -1362,6 +1362,7 @@ body[data-language="turkish"] .main-content .main-block .main-title-wrapper {
     bottom: calc(100% - 50px);
     left: -10px;
     background: url('../img/post.svg') no-repeat center / 100% 100%;
+    pointer-events: none;
 }
 
 .main-content .webinars .subscribe .email-field {
