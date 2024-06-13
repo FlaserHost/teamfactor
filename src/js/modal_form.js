@@ -1,5 +1,4 @@
 // открытие демо формы
-const formTitleLang = document.body.dataset.language;
 const pageTitle = document.body.dataset.title;
 const demoModal = document.querySelector('.demo-page-modal');
 const demoModalTitle = demoModal.querySelector('h2');

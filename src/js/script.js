@@ -65,9 +65,20 @@ aşağıdaki bilgileri doldurun:`,
             button: 'Geri arama talep et',
         }
     },
+    cookie: {
+        english: {
+            p: `In order to optimize the website functionality and improve your online experience TeamFactor uses cookies. You agree to the usage of cookies when you continue using this site. Further details can be found in our <a href="#">Cookie Policy</a>`,
+            button: 'Accept',
+        },
+        turkish: {
+            p: `Web sitesi işlevselliğini optimize etmek ve çevrimiçi deneyiminizi geliştirmek için TeamFactor çerezleri kullanır. Bu siteyi kullanmaya devam ettiğinizde çerezlerin kullanımını kabul edersiniz. Daha fazla ayrıntı <a href="#">Çerez Politikamızda</a> bulabilirsiniz`,
+            button: 'Kabul et',
+        },
+    }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+    const formTitleLang = document.body.dataset.language;
     const subSections = document.querySelectorAll('.sub-menu');
     const navBtns = document.querySelectorAll('.nav-btn');
     navBtns.forEach((btn, _, orig) => {
@@ -100,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const languagePanel = document.getElementById('language-panel');
     const currentLang = document.getElementById('current-lang');
-    currentLang.addEventListener('click', e => {
+    currentLang.addEventListener('click', () => {
         if (languagePanel.classList.contains('hide')) {
             const wrapper = languagePanel.children[0];
             const height = wrapper.getBoundingClientRect().height;
@@ -449,6 +460,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const cookieNoticeCloseBtn = document.querySelector('.cookie-notice-close');
-    cookieNoticeCloseBtn.addEventListener('click', e => e.target.parentElement.remove());
+    if (!localStorage.acceptCookie) {
+        const cookieBlock = `<div class="cookie-notice">
+            <p>${titles.cookie[formTitleLang].p}</p>
+            <button class="cookie-notice-btn cookie-notice-close" type="button"></button>
+            <button class="cookie-notice-btn cookie-notice-accept" type="button">${titles.cookie[formTitleLang].button}</button>
+        </div>`;
+
+        document.querySelector('main').insertAdjacentHTML('afterend', cookieBlock);
+
+        const cookieNoticeCloseBtns = document.querySelectorAll('.cookie-notice-btn');
+        cookieNoticeCloseBtns.forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.target.parentElement.remove();
+                localStorage.acceptCookie = true;
+            });
+        });
+    }
 });
