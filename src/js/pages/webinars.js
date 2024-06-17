@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.innerText = titles.timer[formTitleLang].button;
                     btn.setAttribute('data-property', 'video');
                     btn.setAttribute('data-modal-property', 'video');
+                    btn.style.width = 'auto';
                 });
             }
         }
@@ -80,6 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const timestamp = startTime.dataset.timestamp;
     const interval = timestamp - (Date.parse(new Date()) / 1000);
 
-    let deadline = new Date(Date.parse(new Date()) +  interval * 1000);
+    let deadline = new Date(Date.parse(new Date()) +  5 * 1000);
     initializeClock('countdown', deadline);
 });
