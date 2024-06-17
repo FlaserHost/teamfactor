@@ -374,8 +374,8 @@
 }
 
 @media screen and (max-width: 950px) {
-    .main-content .main-block .main-title-wrapper.desktop {
-        display: none;
+    .main-block .logo-title .main-title-wrapper.desktop > img {
+        max-width: initial;
     }
 
     .page-wrapper.special-class .main-block .main-title-wrapper.desktop,
