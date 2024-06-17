@@ -170,6 +170,29 @@ div.special-class .main-content .main-block .main-title-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.main-content section.timer.ended-en:before {
+    content: 'The webinar is over';
+}
+
+.main-content section.timer.ended-tr:before {
+    content: 'Webinar bitmiştir';
+}
+
+.main-content section.timer.ended-en:before,
+.main-content section.timer.ended-tr:before {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: calc(100% + 20px);
+    font-size: 20px;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    color: #6f6f6f;
+    text-align: center;
 }
 
 .countdown-title {

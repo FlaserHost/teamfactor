@@ -74,7 +74,17 @@ aşağıdaki bilgileri doldurun:`,
             p: `Web sitesi işlevselliğini optimize etmek ve çevrimiçi deneyiminizi geliştirmek için TeamFactor çerezleri kullanır. Bu siteyi kullanmaya devam ettiğinizde çerezlerin kullanımını kabul edersiniz. Daha fazla ayrıntı <a href="#">Çerez Politikamızda</a> bulabilirsiniz`,
             button: 'Kabul et',
         },
-    }
+    },
+    timer: {
+        english: {
+            button: 'Get the webinar video',
+            before_class: 'ended-en'
+        },
+        turkish: {
+            button: 'Webinarın kaydını izleyin',
+            before_class: 'ended-tr'
+        }
+    },
 };
 
 const formTitleLang = document.body.dataset.language;

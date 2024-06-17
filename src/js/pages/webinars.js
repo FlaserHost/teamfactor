@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
+    // таймер
+
     function getTimeRemaining(endtime) {
         let t = Date.parse(endtime) - Date.parse(new Date());
 
@@ -56,6 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (t.total <= 0) {
                 clearInterval(timeinterval);
+                const timer = document.querySelector('.timer');
+                const registerBtns = document.querySelectorAll('button[data-property="register"]');
+
+                const beforeClass = titles.timer[formTitleLang].before_class;
+                timer.classList.add(beforeClass);
+
+                registerBtns.forEach(btn => {
+                    btn.innerText = titles.timer[formTitleLang].button;
+                    btn.setAttribute('data-property', 'video');
+                    btn.setAttribute('data-modal-property', 'video');
+                });
             }
         }
 
@@ -66,6 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const startTime = document.getElementById('webinar-start-date');
     const timestamp = startTime.dataset.timestamp;
     const interval = timestamp - (Date.parse(new Date()) / 1000);
-    let deadline = new Date(Date.parse(new Date()) +  interval * 1000);
+
+    //let deadline = new Date(Date.parse(new Date()) +  interval * 1000);
+    let deadline = new Date(Date.parse(new Date()) +  5 * 1000);
     initializeClock('countdown', deadline);
 });
