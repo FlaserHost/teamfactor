@@ -206,12 +206,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 60px 30px;
+    padding: 20px 0 30px;
 }
 
 .POST .section-content > .POST-card:not(.blue-card) {
-    width: calc((100% / 5) - 32px);
+    width: calc((100% / 8) - 32px);
     background-color: #f1f1f1;
+    min-width: 191px;
 }
 
 .POST .section-content > .blue-card {
@@ -241,11 +242,8 @@
 }
 
 .POST .section-content > .POST-card > figure {
-    width: 100%;
-    min-width: 105px;
-    max-width: 130px;
-    height: 100%;
-    margin-bottom: 20px;
+    height: 140px;
+    margin-bottom: 13px;
 }
 
 .POST .section-content > .POST-card > span {

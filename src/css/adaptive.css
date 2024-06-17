@@ -1266,6 +1266,12 @@
     }
 }
 
+@media screen and (max-width: 438px) {
+    .POST .section-content > .POST-card:not(.blue-card) {
+        min-width: initial;
+    }
+}
+
 @media screen and (max-width: 426px) {
     .mobile-menu-platform,
     .main-content .webinar-program .text-content-block button {
@@ -1351,5 +1357,11 @@
     .main-content .speaker .swiper-slide figure {
         max-width: initial;
         min-width: initial;
+    }
+}
+
+@media screen and (max-width: 322px) {
+    .POST .section-content > .POST-card:not(.blue-card) {
+        width: 100%;
     }
 }
