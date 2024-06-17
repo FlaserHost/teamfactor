@@ -77,8 +77,9 @@ aşağıdaki bilgileri doldurun:`,
     }
 };
 
+const formTitleLang = document.body.dataset.language;
+
 document.addEventListener('DOMContentLoaded', () => {
-    const formTitleLang = document.body.dataset.language;
     const subSections = document.querySelectorAll('.sub-menu');
     const navBtns = document.querySelectorAll('.nav-btn');
     navBtns.forEach((btn, _, orig) => {
