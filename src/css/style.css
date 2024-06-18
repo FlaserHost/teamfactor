@@ -2519,4 +2519,146 @@ body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
     color: rgba(0, 0, 0, .52);
 }
 
+.banner {
+    display: none;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 10000;
+    margin: 0;
+    max-width: initial;
+}
+
+.banner > .banner-block {
+    width: 100%;
+    margin: auto;
+    max-width: 750px;
+    border-radius: 50px;
+    padding: 35px 20px;
+    background: #6482FE url('../img/banner/lines.svg') no-repeat center bottom / contain;
+    position: relative;
+}
+
+.banner-block span,
+.banner-block h2 {
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+.banner-block > .invite {
+    font-size: 26px;
+}
+
+.banner-block h2 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.banner-block .block-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.banner-block .date-start {
+    display: grid;
+    grid: repeat(2, 50px) / 109px 94px;
+    gap: 18px 0;
+}
+
+.banner-block span.date__day {
+    grid-row: 1 / 3;
+    display: flex;
+    align-items: center;
+    font-size: 111px;
+    letter-spacing: -10px;
+}
+
+.banner-block span.date__month {
+    font-size: 49px;
+    padding-top: 10px;
+}
+
+.banner-block span.date__time {
+    font-size: 24px;
+    padding-top: 6px;
+}
+
+.banner-block .info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.banner-block .speaker-info {
+    padding-left: 17px;
+}
+
+.banner-block .speaker-photo {
+    width: 280px;
+}
+
+.banner-block .speaker-photo > img {
+    object-fit: contain;
+}
+
+.banner-block .speaker-name {
+    font-size: 30px;
+}
+
+.banner-block .speaker-position {
+    margin-top: 7px;
+    font-size: 17px;
+}
+
+.banner-block .btns-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    margin-top: 40px;
+}
+
+.banner-block .banner-btn {
+    padding: 20px 25px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.banner-block .banner-reg-btn {
+    background-color: #0223B5;
+    color: #fff;
+}
+
+.banner-block .banner-another-webinars {
+    background-color: #fff;
+    color: #0223B5;
+    white-space: nowrap;
+}
+
+.banner-block .banner-close-btn {
+    width: 30px;
+    height: 30px;
+    background: url('../img/banner/close-btn.svg') no-repeat center / 30px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+}
+
 /* max-width: 1384px; */

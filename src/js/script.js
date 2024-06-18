@@ -488,4 +488,31 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // баннер
+
+    if (!sessionStorage.bannerWatched) {
+        setTimeout(() => {
+            const banner = document.querySelector('.banner');
+            banner.style.display = 'flex';
+            html.style.overflow = 'hidden';
+
+            const closeBtn = banner.querySelector('#banner-close-btn');
+            closeBtn.addEventListener('click', e => {
+                banner.remove();
+                sessionStorage.bannerWatched = true;
+                html.style.overflow = 'visible';
+            });
+
+            const bannerBtns = banner.querySelectorAll('.banner-btn');
+            bannerBtns.forEach(btn => {
+                btn.addEventListener('click', e => {
+                    e.preventDefault();
+                    sessionStorage.bannerWatched = true;
+                    const href = e.target.getAttribute('href');
+                    location.href = href;
+                });
+            });
+        }, 15000);
+    }
 });
