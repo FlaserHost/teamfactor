@@ -970,15 +970,6 @@
     .banner-block .btns-block {
         margin-top: 32px;
     }
-
-    .banner-block .ad-wrapper {
-        padding-top: 20px;
-        height: 40px;
-    }
-
-    .banner-block .ad {
-        font-size: 14px;
-    }
 }
 
 @media screen and (max-width: 640px) {
