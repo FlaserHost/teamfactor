@@ -2615,11 +2615,13 @@ body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
 
 .banner-block .speaker-name {
     font-size: 30px;
+    text-align: left;
 }
 
 .banner-block .speaker-position {
     margin-top: 7px;
     font-size: 17px;
+    text-align: left;
 }
 
 .banner-block .btns-block {
