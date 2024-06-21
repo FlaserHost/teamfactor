@@ -2540,7 +2540,7 @@ body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
     max-width: 750px;
     border-radius: 50px;
     padding: 35px 20px;
-    background: #6482FE url('../img/banner/lines.svg') no-repeat center bottom / contain;
+    background: #6482FE url('../img/banner_img/lines.svg') no-repeat center bottom / contain;
     position: relative;
 }
 
@@ -2656,7 +2656,7 @@ body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
 .banner-block .banner-close-btn {
     width: 30px;
     height: 30px;
-    background: url('../img/banner/close-btn.svg') no-repeat center / 30px;
+    background: url('../img/banner_img/close-btn.svg') no-repeat center / 30px;
     position: absolute;
     top: 20px;
     right: 25px;
