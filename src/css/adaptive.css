@@ -374,8 +374,8 @@
 }
 
 @media screen and (max-width: 950px) {
-    [data-title="HRM-en"] .main-content .main-block .main-title-wrapper.desktop,
-    [data-title="HRM-tr"] .main-content .main-block .main-title-wrapper.desktop {
+    .main-content .main-block .main-title-wrapper.desktop.HRM-en,
+    .main-content .main-block .main-title-wrapper.desktop.HRM-tr {
         display: none;
     }
 
