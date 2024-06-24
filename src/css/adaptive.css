@@ -374,11 +374,6 @@
 }
 
 @media screen and (max-width: 950px) {
-    .main-content .main-block .main-title-wrapper.desktop.HRM-en,
-    .main-content .main-block .main-title-wrapper.desktop.HRM-tr {
-        display: none;
-    }
-
     .main-block .logo-title .main-title-wrapper.desktop > img {
         max-width: initial;
     }
@@ -386,6 +381,11 @@
     .page-wrapper.special-class .main-block .main-title-wrapper.desktop,
     .main-content .main-block .main-title-wrapper.mobile {
         display: block;
+    }
+
+    .main-content .main-block .main-title-wrapper.desktop.HRM-en,
+    .main-content .main-block .main-title-wrapper.desktop.HRM-tr {
+        display: none;
     }
 
     .main-content .main-block .logo-preview {
