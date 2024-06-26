@@ -58,6 +58,11 @@ h1 {
     padding: 20px 100px;
 }
 
+h2 > span,
+h3 > span {
+    color: var(--main-color);
+}
+
 h1 {
     color: var(--main-color);
     font-size: 36px;
@@ -66,7 +71,8 @@ h1 {
     margin: 0 auto;
 }
 
-h2 {
+h2,
+.main-content h2 span {
     font-size: 27px;
 }
 
@@ -78,17 +84,12 @@ h4 {
     font-size: 18px;
 }
 
-.main-content .title-block h3 span {
-    color: var(--main-color);
+.main-content h3 span {
     font-size: 22px;
 }
 
 .about.prioritization.example > article:not(:first-child) {
     margin-top: 30px;
-}
-
-.about > *:not(:first-child) {
-    margin-top: 20px;
 }
 
 .main-content section:not(:first-child) {
@@ -160,12 +161,20 @@ h4 {
     font-weight: 600;
 }
 
-.example > *:not(.title-block) {
+.example > * {
     margin-top: 15px;
 }
 
-.example > h4:not(.title-block) {
+.example > h2:not(:first-child) {
+    margin-top: 40px;
+}
+
+.example > h4 {
     margin-top: 35px;
+}
+
+.example > h3 {
+    margin-top: 40px;
 }
 
 .video > figure:nth-of-type(1) {
