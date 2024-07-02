@@ -15,6 +15,7 @@ section.articles {
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
+    width: 100%;
 }
 
 .read-more-btn {
@@ -36,6 +37,7 @@ section.articles {
 .blog__article figure {
     border-radius: 30px;
     overflow: hidden;
+
 }
 
 h2 {
