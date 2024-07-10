@@ -27,6 +27,7 @@ section.articles {
     transition: .3s;
     padding: 10px 35px;
     text-align: center;
+    margin-top: auto;
 }
 
 .read-more-btn:hover {
@@ -41,6 +42,13 @@ section.articles {
 
 h2 {
     color: var(--main-color);
+}
+
+p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .filter-items {
