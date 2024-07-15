@@ -2573,7 +2573,7 @@ body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
 .banner-block .date-start {
     display: grid;
     grid: repeat(2, 50px) / 109px 94px;
-    gap: 18px 0;
+    gap: 18px 25px;
 }
 
 .banner-block span.date__day {
