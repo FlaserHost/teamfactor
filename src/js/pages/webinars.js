@@ -81,6 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const timestamp = startTime.dataset.timestamp;
     const interval = timestamp - (Date.parse(new Date()) / 1000);
 
-    let deadline = new Date(Date.parse(new Date()) +  interval * 1000);
+    let deadline = new Date(Date.parse(new Date()) +  5 * 1000);
     initializeClock('countdown', deadline);
 });
