@@ -515,4 +515,42 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }, 15000);
     }
+
+    // Отправка почты
+
+    const asyncFetch = async (path, data) => {
+        const response = await fetch(path, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams(data).toString()
+        });
+
+        if (response.ok) {
+            return await response.json();
+        }
+    }
+
+    const subscribeBtn = document.querySelector('.subscribe-btn');
+    subscribeBtn.addEventListener('click', e => {
+        e.preventDefault();
+        const parent = e.target.parentElement;
+        const path = parent.dataset.path;
+
+        const formData = {
+            email: parent.querySelector('#email-field').value,
+            sessid: BX.bitrix_sessid()
+        }
+
+        asyncFetch(path, formData).then(response => {
+            let messageColor = '#1DECEC';
+
+            if (!response.success) {
+                messageColor = '#F3A2A2';
+            }
+
+            parent.innerHTML = `<span style="color: ${messageColor}">${response.message}</span>`;
+        });
+    });
 });
