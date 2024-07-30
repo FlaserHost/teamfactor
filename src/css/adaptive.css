@@ -624,7 +624,7 @@
     }
 }
 
-@media screen and (max-width: 795px) {
+@media screen and (max-width: 796px) {
     .main-content .achievements {
         grid: repeat(3, minmax(106px, 1fr)) / repeat(22, 1fr);
     }
@@ -656,6 +656,14 @@
 
     .main-content .achievements .achievement span:first-child {
         font-size: 37px;
+    }
+
+    .main-content .POST-additions {
+        flex-direction: column;
+    }
+
+    .POST-additions > span {
+        margin-right: 0;
     }
 }
 
@@ -727,8 +735,13 @@
         transform: translateY(0);
     }
 
-    .convenient .text-articles > .text-article {
+    .convenient .text-articles > .text-article,
+    .convenient.kpi .text-articles {
         width: auto;
+    }
+
+    .convenient.kpi .section-container {
+        gap: 0;
     }
 
     .main-content .mass-media .media-blocks-container .media-block img {
