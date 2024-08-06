@@ -144,19 +144,28 @@
 }
 
 .you-can h3 {
-    font-size: 46px;
-    color: rgba(2, 35, 181, .3);
+    font-size: 36px;
+    color: var(--main-color);
 }
 
 .you-can .inner-wrapper {
-    margin-top: 30px;
-    display: grid;
-    grid: repeat(2, 1fr) / repeat(2, 1fr);
-    align-items: center;
-    gap: 15px;
-    padding: 40px 60px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.you-can .inner-wrapper > article {
+    padding: 40px;
+    max-width: 628px;
+    background-color: #EFF3FF;
     border-radius: 20px;
-    background-color: #f4f4f4;
+}
+
+.you-can .inner-wrapper > article > pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-top: 40px;
 }
 
 .slider-conditions .slider-navigation-btns,
