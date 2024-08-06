@@ -168,6 +168,14 @@
     margin-top: 40px;
 }
 
+.slider-conditions > span {
+    font-size: 20px;
+}
+
+.slider-conditions > .swiper-conditions {
+    margin-top: 27px;
+}
+
 .slider-conditions .slider-navigation-btns,
 .free-recruiter .slider-navigation-btns {
     display: flex;
