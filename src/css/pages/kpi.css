@@ -74,6 +74,7 @@
     font-weight: 600;
     font-size: 17px;
     height: 35px;
+    padding-bottom: 48px;
 }
 
 .slider-conditions .swiper {
@@ -195,6 +196,10 @@
     gap: 18px;
     padding-right: 100px;
     margin-bottom: 30px;
+}
+
+.free-recruiter > p > span {
+    font-weight: 600;
 }
 
 .free-recruiter .slider-navigation-btns {
