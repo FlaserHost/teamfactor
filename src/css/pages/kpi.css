@@ -198,6 +198,10 @@
     margin-bottom: 30px;
 }
 
+.convenient.kpi > p {
+    margin-top: 30px;
+}
+
 .free-recruiter > p > span {
     font-weight: 600;
 }
