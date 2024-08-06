@@ -950,10 +950,6 @@ body[data-language="turkish"] .main-content .main-block .main-title-wrapper {
     font-size: 17px;
 }
 
-.main-content .main-block .main-btns-block .main-btn-view {
-    width: 220px;
-}
-
 .main-content .main-block .main-btns-block .main-btn-view:last-child {
     color: var(--main-color);
     background-color: #fff;
