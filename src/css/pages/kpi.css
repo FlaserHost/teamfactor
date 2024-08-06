@@ -143,6 +143,11 @@
     background: url('../../img/pages/team_recruit/shield-tick.svg') no-repeat center / var(--slides-icons-size);
 }
 
+.you-can {
+    display: flex;
+    flex-direction: column;
+}
+
 .you-can h3 {
     font-size: 36px;
     color: var(--main-color);
@@ -166,6 +171,11 @@
     white-space: pre-wrap;
     word-break: break-word;
     margin-top: 40px;
+}
+
+.you-can-demo-btn {
+    margin-top: 30px;
+    align-self: center;
 }
 
 .slider-conditions > span {
