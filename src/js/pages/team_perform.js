@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // аккордеон
 
-    const close = (sibling, arrow) => {
+    /*const close = (sibling, arrow) => {
         sibling.classList.remove('showed');
         arrow.classList.remove('rotated');
         sibling.removeAttribute('style');
@@ -61,5 +61,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 close(sibling, arrow);
             }
         });
-    });
+    });*/
 });

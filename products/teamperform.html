@@ -7,7 +7,7 @@
     <title>TeamFactor</title>
     <link rel="stylesheet" href="../src/css/swiper.css">
     <link rel="stylesheet" href="../src/css/style.css">
-    <link rel="stylesheet" href="../src/css/pages/kpi.css">
+    <link rel="stylesheet" href="../src/css/pages/team_perform.css">
     <link rel="stylesheet" href="../src/css/adaptive.css">
     <script src="../src/js/swiper.js"></script>
 </head>
@@ -817,9 +817,15 @@ Everything is calculated automatically for bonuses and indicators, and reports c
                 <span>Fill in the fields to calculate prices</span>
                 <form class="calc-form" id="calc-form" action="#" method="POST">
                     <div class="form-inputs-wrapper">
-                        <input class="calc-form-field" id="number_of_recruiters" name="number_of_recruiters" type="number" placeholder="Number of recruiters" aria-label="Number of recruiters">
+                        <input class="calc-form-field" id="number-of-employees" name="number_of_employees" type="number" placeholder="Number of employees" aria-label="Number of employees">
                         <div class="calc-input-wrapper">
-                            <input class="calc-form-field" id="internal_customers" name="internal_customers" type="number" placeholder="Simultaneous sessions of internal customers" aria-label="Simultaneous sessions of internal customers">
+                            <select class="calc-form-field" id="internal-customers" name="internal_customers" aria-label="Simultaneous sessions of internal customers">
+                                <option value="5">5 simultaneous sessions of internal customers</option>
+                                <option value="10">10 simultaneous sessions of internal customers</option>
+                                <option value="20">20 simultaneous sessions of internal customers</option>
+                                <option value="50">50 simultaneous sessions of internal customers</option>
+                                <option value="100">100 simultaneous sessions of internal customers</option>
+                            </select>
                             <div class="info-mark">
                                 <div class="hint">
                                     <p>Simultaneous connections to the database by users with roles: internal customer, security department employee, etc. If the number of connections exceeds 50, the price is on request</p>
@@ -2478,8 +2484,8 @@ Everything is calculated automatically for bonuses and indicators, and reports c
         </div>
     </article>
 </section>
-<script src="../src/js/script.js"></script>
-<script src="../src/js/pages/kpi.js"></script>
+<script src="../src/js/script_team_perform.js"></script>
+<script src="../src/js/pages/team_perform.js"></script>
 <script src="../src/js/modal_form.js"></script>
 </body>
 </html>

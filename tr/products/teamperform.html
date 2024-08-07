@@ -7,7 +7,7 @@
     <title>TeamFactor</title>
     <link rel="stylesheet" href="../../src/css/swiper.css">
     <link rel="stylesheet" href="../../src/css/style.css">
-    <link rel="stylesheet" href="../../src/css/pages/kpi.css">
+    <link rel="stylesheet" href="../../src/css/pages/team_perform.css">
     <link rel="stylesheet" href="../../src/css/adaptive.css">
     <script src="../../src/js/swiper.js"></script>
 </head>
@@ -811,9 +811,15 @@ Göstergeler ve primler için tüm hesaplamalar otomatiktir ve raporlar tek bir 
                 <span>Fiyatı hesaplamak için alanları doldurun</span>
                 <form class="calc-form" id="calc-form" action="#" method="POST">
                     <div class="form-inputs-wrapper">
-                        <input class="calc-form-field" id="number-of-recruiters" name="number_of_recruiters" type="number" placeholder="İşe alım uzmanlarının sayısı" aria-label="Number of recruiters">
+                        <input class="calc-form-field" id="number-of-employees" name="number_of_employees" type="number" placeholder="İşe alım uzmanlarının sayısı" aria-label="Number of employees">
                         <div class="calc-input-wrapper">
-                            <input class="calc-form-field" id="simultaneous-sessions" name="simultaneous_sessions" type="number" placeholder="İç müşterilerin eş zamanlı oturumları (sayı)" aria-label="Simultaneous sessions of internal clients">
+                            <select class="calc-form-field" id="internal-customers" name="internal_customers" aria-label="Simultaneous sessions of internal clients">
+                                <option value="5">5 İç müşterilerin eş zamanlı oturumları (sayı)</option>
+                                <option value="10">10 İç müşterilerin eş zamanlı oturumları (sayı)</option>
+                                <option value="20">20 İç müşterilerin eş zamanlı oturumları (sayı)</option>
+                                <option value="50">50 İç müşterilerin eş zamanlı oturumları (sayı)</option>
+                                <option value="100">100 İç müşterilerin eş zamanlı oturumları (sayı)</option>
+                            </select>
                             <div class="info-mark">
                                 <div class="hint">
                                     <p>Aşağıdaki rollere sahip kullanıcı tabanına eşzamanlı oturumlar: iç müşteri, güvenlik sorumlusu vb. Oturum sayısı 50'yi aşarsa - talep üzerine hesaplama</p>
@@ -2472,7 +2478,7 @@ Göstergeler ve primler için tüm hesaplamalar otomatiktir ve raporlar tek bir 
         </div>
     </article>
 </section>
-<script src="../../src/js/script.js"></script>
+<script src="../../src/js/script_team_perform.js"></script>
 <script src="../../src/js/pages/team_recruit.js"></script>
 <script src="../../src/js/modal_form.js"></script>
 </body>

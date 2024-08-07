@@ -2065,11 +2065,21 @@ h2 {
     color: #aaa;
 }
 
-.form-inputs-wrapper input {
+.form-inputs-wrapper :where(input, select) {
     border-radius: 10px;
     padding: 15px 47px 15px 15px;
     width: 100%;
     max-width: 413px;
+}
+
+.form-inputs-wrapper:has(select) :where(input, select) {
+    padding: 15px 6px 15px 15px;
+    color: #aaaaaa;
+}
+
+.form-inputs-wrapper select {
+    cursor: pointer;
+    color: #aaaaaa;
 }
 
 .calc-input-wrapper {
@@ -2084,7 +2094,7 @@ h2 {
 .calc-input-wrapper > .info-mark {
     position: absolute;
     top: 50%;
-    right: 15px;
+    left: calc(100% + 12px);
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
