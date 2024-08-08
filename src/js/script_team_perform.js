@@ -395,7 +395,9 @@ document.addEventListener('DOMContentLoaded', () => {
             fastStartPrice.forEach(item => item.innerText = `${fastStartFormatted} $`);
             advancedPrice.forEach(item => item.innerText = `${extendedFormatted} $`);
         });
-    } catch (err) {}
+    } catch (err) {
+        // не нуждается в обработке
+    }
 
     window.addEventListener('resize', () => {
         viewportChecker();
