@@ -1,0 +1,103 @@
+.privacy-policy-text a {
+    font-size: 16px;
+    color: #69B4FF;
+}
+
+.privacy-policy-text ul,
+.privacy-policy-text ul > li {
+    list-style: inside disc;
+}
+
+.privacy-policy-text ul > li:not(:first-child) {
+    margin-top: 8px;
+}
+
+.main-content {
+    margin: 41px 0 0;
+    padding-top: 0;
+}
+
+.presenting__tags {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.presenting__tags-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.presenting__tags span {
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 20px;
+    border: 2px solid #E7E7E7;
+    color: var(--main-color);
+}
+
+.presenting__tags time {
+    display: inline-block;
+    position: relative;
+    margin-left: 35px;
+}
+
+.presenting__tags time:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(100% + 10px);
+    background: url('../../img/calendar.svg') no-repeat center / 25px;
+}
+
+.article-presenting > .presenting__tags {
+    margin-top: 20px;
+}
+
+h1 {
+    color: var(--main-color);
+    font-size: 36px;
+    text-transform: uppercase;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 20px 100px;
+}
+
+h2 {
+    font-size: 27px;
+    padding: 20px 0;
+}
+
+.about.prioritization.example > article:not(:first-child) {
+    margin-top: 30px;
+}
+
+.main-content section:not(:first-child) {
+    margin-top: 0;
+}
+
+.main-content.articles section:last-child {
+    padding-bottom: 100px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.mgt20 {
+    margin-top: 20px;
+}
+
+/* adaptive */
+
+@media screen and (max-width: 580px) {
+    .main-content.articles section:not(.trust-us, .reviews, .SAAS, .calculator) {
+        padding: 20px;
+    }
+}
