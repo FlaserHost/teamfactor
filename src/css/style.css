@@ -2681,6 +2681,11 @@ body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
     gap: 15px;
 }
 
+.main-content:has(.main-block.notice) {
+    padding-top: 0;
+    margin-bottom: 80px;
+}
+
 .main-block.notice {
     display: flex;
     flex-direction: column;
@@ -2692,6 +2697,7 @@ body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
 .main-block.notice > h1,
 .main-block.notice > h1 > span {
     font-size: 35px;
+    text-transform: uppercase;
 }
 
 .main-block.notice > h1 > span {
