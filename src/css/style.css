@@ -880,6 +880,10 @@ section {
     margin-top: auto;
 }
 
+.page-footer .privacy-policy.priv-terms > a {
+    white-space: nowrap;
+}
+
 .main-content section:not(.trust-us, .reviews, .SAAS, .calculator, .slider-conditions) {
     padding: 0 100px;
 }
