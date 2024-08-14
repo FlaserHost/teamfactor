@@ -2681,4 +2681,45 @@ body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
     gap: 15px;
 }
 
+.main-block.notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.main-block.notice > h1,
+.main-block.notice > h1 > span {
+    font-size: 35px;
+}
+
+.main-block.notice > h1 > span {
+    color: var(--main-color);
+}
+
+.main-block.notice > a {
+    background-color: #32D951;
+    border: 1px solid #32D951;
+    padding: 10px 55px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.main-block.notice > a:before {
+    content: '';
+    display: block;
+    background: url('../img/whatsapp_green.svg') no-repeat center / 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
 /* max-width: 1384px; */
