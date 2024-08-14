@@ -98,6 +98,6 @@ h2 {
 
 @media screen and (max-width: 580px) {
     .main-content.articles section:not(.trust-us, .reviews, .SAAS, .calculator) {
-        padding: 20px;
+        padding: 20px 30px;
     }
 }
