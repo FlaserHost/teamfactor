@@ -41,7 +41,7 @@
         flex-direction: column;
     }
 
-    .page-footer .articles-keeper .stories .sub-menu-article-list li a:first-child {
+    .page-footer .articles-keeper .stories .sub-menu-article-list li > a:first-child {
         margin-bottom: 40px;
     }
 
@@ -60,7 +60,7 @@
 
     .page-footer .privacy-policy.portable,
     .page-footer .all-rights-reserved.portable {
-        display: block;
+        display: flex;
     }
 }
 

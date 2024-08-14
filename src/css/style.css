@@ -2672,4 +2672,9 @@ body[data-language="turkish"] .table-wrapper .tariff-title > h3 {
     cursor: pointer;
 }
 
+.privacy-policy.priv-terms {
+    display: flex;
+    gap: 15px;
+}
+
 /* max-width: 1384px; */
