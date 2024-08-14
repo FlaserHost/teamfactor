@@ -67,11 +67,11 @@ aşağıdaki bilgileri doldurun:`,
     },
     cookie: {
         english: {
-            p: `In order to optimize the website functionality and improve your online experience TeamFactor uses cookies. You agree to the usage of cookies when you continue using this site. Further details can be found in our <a href="#">Cookie Policy</a>`,
+            p: `In order to optimize the website functionality and improve your online experience TeamFactor uses cookies. You agree to the usage of cookies when you continue using this site. Further details can be found in our <a href="/privacy_policy/eng.html">Cookie Policy</a>`,
             button: 'Accept',
         },
         turkish: {
-            p: `Web sitesi işlevselliğini optimize etmek ve çevrimiçi deneyiminizi geliştirmek için TeamFactor çerezleri kullanır. Bu siteyi kullanmaya devam ettiğinizde çerezlerin kullanımını kabul edersiniz. Daha fazla ayrıntı <a href="#">Çerez Politikamızda</a> bulabilirsiniz`,
+            p: `Web sitesi işlevselliğini optimize etmek ve çevrimiçi deneyiminizi geliştirmek için TeamFactor çerezleri kullanır. Bu siteyi kullanmaya devam ettiğinizde çerezlerin kullanımını kabul edersiniz. Daha fazla ayrıntı <a href="/privacy_policy/eng.html">Çerez Politikamızda</a> bulabilirsiniz`,
             button: 'Kabul et',
         },
     },
