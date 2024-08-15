@@ -665,6 +665,11 @@
     .POST-additions > span {
         margin-right: 0;
     }
+
+    .main-content:has(.main-block.notice) {
+        height: 80vh;
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 768px) {
