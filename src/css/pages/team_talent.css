@@ -1,0 +1,586 @@
+:root {
+    --slides-icons-size: 40px;
+}
+
+.main-content {
+    padding-top: 0;
+}
+
+.english .main-content .main-block .main-title-wrapper {
+    min-width: 400px;
+}
+
+.main-content .main-block {
+    align-items: flex-start;
+}
+
+.main-block .main-btns-block > button:last-child {
+    padding-right: 60px;
+    position: relative;
+}
+
+.main-block .main-btns-block > button:last-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: url('../../img/pages/team_recruit/contact_me_arrow.svg') no-repeat center / 30px;
+}
+
+.main-block .logo-title > h3 {
+    margin-bottom: 50px;
+    color: #ff7d00;
+}
+
+.main-block .logo-title .main-title-wrapper.desktop > img {
+    max-width: 400px;
+}
+
+.main-block .logo-title .slogan {
+    font-size: 24px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.swiper-conditions .swiper-slide {
+    width: 240px;
+    height: 248px;
+    border: 2px solid rgba(100, 130, 254, .12);
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 40px 80px 40px;
+    box-shadow: 0 15px 150px 5px rgba(100, 130, 254, .12);
+    position: relative;
+}
+
+.swiper-conditions .swiper-slide > p {
+    font-weight: 600;
+    font-size: 17px;
+    height: 35px;
+}
+
+.slider-conditions .swiper {
+    overflow: visible;
+}
+
+.swiper-conditions .cursor-icon:after,
+.swiper-conditions .calendar-icon:after,
+.swiper-conditions .fork-icon:after,
+.swiper-conditions .pull-request-icon:after,
+.swiper-conditions .cloud-icon:after,
+.swiper-conditions .main-icon:after,
+.swiper-conditions .star-icon:after,
+.swiper-conditions .monitor-icon:after,
+.swiper-conditions .shield-icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: var(--slides-icons-size);
+    height: var(--slides-icons-size);
+}
+
+.swiper-conditions .cursor-icon:after {
+    background: url('../../img/pages/team_recruit/cursor-click.svg') no-repeat center / var(--slides-icons-size);
+}
+
+.swiper-conditions .calendar-icon:after {
+    background: url('../../img/pages/team_recruit/calendar-edit.svg') no-repeat center / var(--slides-icons-size);
+}
+
+.swiper-conditions .fork-icon:after {
+    background: url('../../img/pages/team_recruit/fork.svg') no-repeat center / var(--slides-icons-size);
+}
+
+.swiper-conditions .pull-request-icon:after {
+    background: url('../../img/pages/team_recruit/pull-request.svg') no-repeat center / var(--slides-icons-size);
+}
+
+.swiper-conditions .cloud-icon:after {
+    background: url('../../img/pages/team_recruit/cloud-sync.svg') no-repeat center / var(--slides-icons-size);
+}
+
+.swiper-conditions .main-icon:after {
+    background: url('../../img/pages/team_recruit/mail-in.svg') no-repeat center / var(--slides-icons-size);
+}
+
+.swiper-conditions .star-icon:after {
+    background: url('../../img/pages/team_recruit/bookmark-star.svg') no-repeat center / var(--slides-icons-size);
+}
+
+.swiper-conditions .monitor-icon:after {
+    background: url('../../img/pages/team_recruit/code-pc.svg') no-repeat center / var(--slides-icons-size);
+}
+
+.swiper-conditions .shield-icon:after {
+    background: url('../../img/pages/team_recruit/shield-tick.svg') no-repeat center / var(--slides-icons-size);
+}
+
+.free-recruiter > p {
+    margin-top: 20px;
+}
+
+.free-recruiter > p:last-child {
+    margin-top: 50px;
+}
+
+.slider-conditions .slider-navigation-btns,
+.free-recruiter .slider-navigation-btns {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 18px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+}
+
+.free-recruiter .slider-navigation-btns {
+    margin-top: 40px;
+    padding-right: 0;
+}
+
+.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn,
+.free-recruiter .slider-navigation-btns > .free-recruiter-slider-nav-btn {
+    width: 20px;
+    height: 20px;
+}
+
+.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn.prev,
+.free-recruiter .slider-navigation-btns > .free-recruiter-slider-nav-btn.prev {
+    background: url('../../img/arrows.svg') no-repeat center / 20px;
+    transform: rotate(90deg);
+}
+
+.slider-conditions .slider-navigation-btns > .conditions-slider-nav-btn.next,
+.free-recruiter .slider-navigation-btns > .free-recruiter-slider-nav-btn.next {
+    background: url('../../img/arrows.svg') no-repeat center / 20px;
+    transform: rotate(-90deg);
+}
+
+.CRM > .title-block > h2 {
+    width: 100%;
+    max-width: 650px;
+}
+
+.CRM .section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.CRM .section-content > p {
+    padding: 40px 0;
+}
+
+.CRM .section-content > p > span {
+    font-weight: 600;
+}
+
+.CRM .section-content > figure {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 300px;
+    align-self: center;
+}
+
+
+
+/* POST-additions */
+
+.main-content section.POST-additions {
+    width: 100%;
+    background-color: #F0F3FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    gap: 20px;
+    position: relative;
+}
+
+.POST-additions > span {
+    font-weight: 600;
+    display: block;
+    margin-right: auto;
+    font-size: 21px;
+}
+
+.POST-additions .contact {
+    border: none;
+    background-color: transparent;
+    padding-right: 60px;
+    color: #000;
+    font-weight: 600;
+    position: relative;
+}
+
+.POST-additions .contact:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: url('../../img/pages/team_recruit/contact_me_arrow_orange.svg') no-repeat center / 30px;
+}
+
+
+
+/* free-recruiter */
+
+.swiper-free-recruiter {
+    margin-top: 50px;
+    overflow: visible;
+}
+
+.swiper-free-recruiter .swiper-slide {
+    border-radius: 25px;
+    background-color: #f4f4f4;
+    width: 100%;
+    max-width: 1127px;
+    min-width: 839px;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-free-recruiter .swiper-slide pre {
+    padding: 30px 40px;
+    white-space: pre-wrap;
+}
+
+.swiper-free-recruiter figure {
+    width: 100%;
+    max-width: 1127px;
+    box-shadow: 0 10px 27px 9px rgba(100, 130, 254, .12);
+    border-radius: 32px;
+    background-color: rgba(100, 130, 254, .12);
+}
+
+.swiper-free-recruiter figure > img {
+    object-fit: contain;
+}
+
+.pre-wrapper {
+    min-height: 186px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* convenient */
+
+.convenient .section-container {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    height: 742px;
+    justify-content: center;
+    gap: 42px;
+}
+
+.convenient figure {
+    width: 100%;
+    height: 100%;
+}
+
+.convenient .mobile-img img {
+    object-fit: contain;
+}
+
+.convenient .text-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+.convenient .text-articles > .text-article {
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.convenient .text-articles > .text-article:first-child {
+    transform: translateY(46px);
+}
+
+.convenient .text-articles > .text-article:last-child {
+    margin-top: auto;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.convenient .text-articles > .text-article > pre {
+    white-space: pre-wrap;
+}
+
+.convenient .text-articles > .text-article:last-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background: url('../../img/pages/team_recruit/sign.svg') no-repeat center / 50px;
+}
+
+
+
+/* get to know */
+
+.main-content section.get-to-know {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.get-to-know:not(.talent):after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    bottom: -140px;
+    background-image: linear-gradient(to top, rgba(230, 233, 248, .8), transparent);
+}
+
+.main-content .get-to-know .title-block h2 {
+    text-transform: initial;
+    font-size: 40px;
+}
+
+.get-to-know p {
+    text-align: center;
+    width: 350px;
+}
+
+.main-content .get-to-know .main-btn-view {
+    background-color: #0030FC;
+    position: relative;
+    z-index: 5;
+}
+
+.main-content .get-to-know.talent .main-btn-view {
+    background-color: var(--main-color);
+}
+
+/* reduce-staff */
+
+.reduce-staff__content {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.reduce-staff__info {
+    background-color: #F0F3FF;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.reduce-staff__info > span {
+    font-weight: 600;
+    display: block;
+}
+
+.reduce-staff__info:not(:last-child) > h2,
+.reduce-staff__info > span,
+.reduce-staff__info > h2 > .capitalize {
+    font-size: 18px;
+}
+
+.reduce-staff__info:not(:last-child) > h2 {
+    text-transform: lowercase;
+}
+
+.reduce-staff__info > h2 > .capitalize {
+    text-transform: capitalize;
+}
+
+.reduce-staff__info > span,
+.reduce-staff__info ul {
+    margin-top: 20px;
+}
+
+.reduce-staff__info li {
+    list-style: inside disc;
+}
+
+.reduce-staff__info .demo-btn {
+    margin-top: 100px;
+}
+
+.reduce-staff__info:first-child {
+    width: calc(70% - 20px);
+}
+
+.reduce-staff__info:nth-child(2) {
+    width: 30%;
+}
+
+.reduce-staff__info:last-child {
+    width: 100%;
+    padding-right: 35%;
+    background: #F0F3FF url('../../img/pages/team_talent/phone.png') no-repeat calc(100% - 70px) 15px / contain;
+}
+
+.reduce-staff__info:last-child > h2 > span {
+    color: var(--main-color);
+}
+
+.reduce-staff__info:last-child > h2,
+.reduce-staff__info:last-child > h2 > span {
+    font-size: 22px;
+}
+
+
+/* organize */
+
+.organize__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.organize__info {
+    background-color: #F0F3FF;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.organize__info:first-child {
+    width: calc(55% - 20px);
+}
+
+.organize__info:first-child ul {
+    margin-top: 20px;
+}
+
+.organize__info li {
+    list-style: inside disc;
+}
+
+.organize__info:last-child {
+    width: 45%;
+}
+
+.organize__info h2 {
+    font-size: 18px;
+    text-transform: lowercase;
+}
+
+.organize__info h2:first-letter {
+    text-transform: uppercase;
+}
+
+.organize .you-can__tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.organize .you-can-wrapper > span {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.organize .you-can__tags > .tag {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px 20px 15px 50px;
+    position: relative;
+    border: 1px solid #f4f4f4;
+    box-shadow: 0 10px 20px 2px #f0f3ff;
+}
+
+.organize .you-can__tags > .tag:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17px;
+    background: url('../../img/pages/team_talent/tick.svg') no-repeat center / 20px;
+}
+
+/* questions */
+
+.question {
+    width: 100%;
+}
+
+.question-title {
+    padding: 30px 70px 30px 0;
+    cursor: pointer;
+    border-bottom: 3px solid #f4f4f4;
+    position: relative;
+}
+
+.question-arrow {
+    width: 25px;
+    height: 25px;
+    background: url('../../img/pages/team_recruit/accord-arrow.svg') no-repeat center / 25px;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100% 30%;
+    transform: translateY(-50%);
+    right: 20px;
+    transition: .4s;
+    pointer-events: none;
+}
+
+.question-arrow.rotated {
+    transform: rotate(45deg);
+}
+
+.question-title > h2 {
+    font-size: 20px;
+    text-transform: initial;
+    font-weight: 400;
+    color: #575757;
+    pointer-events: none;
+}
+
+.accordion-wrapper {
+    margin-top: 30px;
+}
+
+.answer-wrapper {
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: height .4s;
+}
+
+.answer-container {
+    padding: 30px 0;
+}
+
+.answer-container > .answer {
+    padding: 40px 20px;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+}
