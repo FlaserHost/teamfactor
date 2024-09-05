@@ -46,8 +46,12 @@
     max-width: 450px;
 }
 
+.slider-conditions {
+    padding: 0 100px;
+}
+
 .swiper-conditions .swiper-slide {
-    width: 240px;
+    width: 380px;
     height: 248px;
     border: 2px solid rgba(100, 130, 254, .12);
     border-radius: 25px;
@@ -56,6 +60,13 @@
     padding: 30px 40px 80px 40px;
     box-shadow: 0 15px 150px 5px rgba(100, 130, 254, .12);
     position: relative;
+}
+
+.swiper-conditions .swiper-wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .swiper-conditions .swiper-slide > p {
