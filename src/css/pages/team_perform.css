@@ -287,24 +287,22 @@
     content: '';
     display: block;
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 2px;
+    right: 20px;
+    width: 70px;
     height: 82px;
 }
 
 .CRM .measures > div.kpi-rect:after {
-    width: 100px;
-    background: url('../../img/pages/kpi/kpi-rect.svg') no-repeat center / 100%;
+    background: url('../../img/pages/kpi/kpi-rect.svg') no-repeat center / 70px;
 }
 
 .CRM .measures > div.verifiable-rect:after {
-    width: 70px;
-    background: url('../../img/pages/kpi/verifiable-rect.svg') no-repeat center / 100%;
+    background: url('../../img/pages/kpi/verifiable-rect.svg') no-repeat center / 70px;
 }
 
 .CRM .measures > div.assessable-rect:after {
-    width: 90px;
-    background: url('../../img/pages/kpi/assessable-rect.svg') no-repeat center / 100%;
+    background: url('../../img/pages/kpi/assessable-rect.svg') no-repeat center / 70px;
 }
 
 .CRM .measures > div > h2 {
