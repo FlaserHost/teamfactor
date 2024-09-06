@@ -305,6 +305,10 @@
     .calculator {
         padding: 100px 30px;
     }
+
+    .main-content section.POST-additions {
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 1070px) {
@@ -446,6 +450,17 @@
 
     .main-content .main-btn-view:not(.become-client, .reg-btn) {
         width: auto;
+    }
+
+
+    /* team talent */
+    .main-content .reduce-staff__info:last-child {
+        background: #f0f3ff;
+        padding: 30px;
+    }
+
+    .reduce-staff__info .demo-btn {
+        margin-top: 40px;
     }
 }
 
@@ -821,6 +836,13 @@
         flex-direction: column;
         align-items: center;
     }
+
+    /* team talent */
+
+    .reduce-staff__content .reduce-staff__info,
+    .organize .organize__info {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 696px) {
@@ -1001,6 +1023,13 @@
 
     .sections-wrapper .title-block {
         padding: 0 35px;
+    }
+
+    /* team talent */
+
+    .you-can__tags .tag,
+    .swiper-conditions .swiper-slide {
+        width: 100%;
     }
 }
 
@@ -1396,6 +1425,13 @@
         width: 100%;
     }
     /**/
+
+    /* team talent */
+
+    .customization .customization__content {
+        padding-right: 0;
+        background: url('../img/pages/team_talent/girl.svg') no-repeat right 126% / 336px;
+    }
 }
 
 @media screen and (max-width: 422px) {
@@ -1423,6 +1459,12 @@
     .special-class .main-content .main-block .main-btns-block {
         padding: 0;
     }
+
+    /* team talent */
+
+    .customization .customization__content {
+        background: url('../img/pages/team_talent/girl.svg') no-repeat right 122% / 316px;
+    }
 }
 
 @media screen and (max-width: 363px) {
@@ -1445,5 +1487,11 @@
 @media screen and (max-width: 322px) {
     .POST .section-content > .POST-card:not(.blue-card) {
         width: 100%;
+    }
+
+    /* team talent */
+
+    .customization .customization__content {
+        background: url('../img/pages/team_talent/girl.svg') no-repeat right 107% / 259px;
     }
 }

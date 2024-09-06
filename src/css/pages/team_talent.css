@@ -493,7 +493,7 @@
 .integrate .integrate__content {
     width: 100%;
     display: grid;
-    grid: repeat(2, 1fr) / repeat(2, 50%);
+    grid: repeat(2, 1fr) / repeat(2, calc(50% - 10px));
     gap: 20px;
 }
 
