@@ -263,6 +263,73 @@
     align-self: center;
 }
 
+.CRM .measures {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.CRM .measures > div {
+    width: 400px;
+    height: 170px;
+    background-color: #E6E9F8;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.CRM .measures > div:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 82px;
+}
+
+.CRM .measures > div.kpi-rect:after {
+    width: 100px;
+    background: url('../../img/pages/kpi/kpi-rect.svg') no-repeat center / 100%;
+}
+
+.CRM .measures > div.verifiable-rect:after {
+    width: 70px;
+    background: url('../../img/pages/kpi/verifiable-rect.svg') no-repeat center / 100%;
+}
+
+.CRM .measures > div.assessable-rect:after {
+    width: 90px;
+    background: url('../../img/pages/kpi/assessable-rect.svg') no-repeat center / 100%;
+}
+
+.CRM .measures > div > h2 {
+    color: var(--main-color);
+    margin-bottom: auto;
+    font-size: 20px;
+}
+
+.CRM .measures > div:not(:first-child) > h2 {
+    text-transform: capitalize;
+}
+
+.CRM .measures > div > span {
+    display: block;
+}
+
+.CRM .measures > div > span:first-of-type {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.CRM .measures > div > span:last-of-type {
+    font-size: 14px;
+}
+
 section.CRM + section.POST-additions {
     width: 100%;
     margin-top: 300px;
