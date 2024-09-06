@@ -1,5 +1,5 @@
 :root {
-    --slides-icons-size: 40px;
+    --slides-icons-size: 50px;
 }
 
 .main-content {
@@ -83,11 +83,7 @@
 .swiper-conditions .calendar-icon:after,
 .swiper-conditions .fork-icon:after,
 .swiper-conditions .pull-request-icon:after,
-.swiper-conditions .cloud-icon:after,
-.swiper-conditions .main-icon:after,
-.swiper-conditions .star-icon:after,
-.swiper-conditions .monitor-icon:after,
-.swiper-conditions .shield-icon:after {
+.swiper-conditions .cloud-icon:after {
     content: '';
     display: block;
     position: absolute;
@@ -98,39 +94,23 @@
 }
 
 .swiper-conditions .cursor-icon:after {
-    background: url('../../img/pages/team_recruit/cursor-click.svg') no-repeat center / var(--slides-icons-size);
+    background: url('../../img/pages/team_talent/rocket.svg') no-repeat center / var(--slides-icons-size);
 }
 
 .swiper-conditions .calendar-icon:after {
-    background: url('../../img/pages/team_recruit/calendar-edit.svg') no-repeat center / var(--slides-icons-size);
+    background: url('../../img/pages/team_talent/blank.svg') no-repeat center / var(--slides-icons-size);
 }
 
 .swiper-conditions .fork-icon:after {
-    background: url('../../img/pages/team_recruit/fork.svg') no-repeat center / var(--slides-icons-size);
+    background: url('../../img/pages/team_talent/people.svg') no-repeat center / var(--slides-icons-size);
 }
 
 .swiper-conditions .pull-request-icon:after {
-    background: url('../../img/pages/team_recruit/pull-request.svg') no-repeat center / var(--slides-icons-size);
+    background: url('../../img/pages/team_talent/gist.svg') no-repeat center / var(--slides-icons-size);
 }
 
 .swiper-conditions .cloud-icon:after {
-    background: url('../../img/pages/team_recruit/cloud-sync.svg') no-repeat center / var(--slides-icons-size);
-}
-
-.swiper-conditions .main-icon:after {
-    background: url('../../img/pages/team_recruit/mail-in.svg') no-repeat center / var(--slides-icons-size);
-}
-
-.swiper-conditions .star-icon:after {
-    background: url('../../img/pages/team_recruit/bookmark-star.svg') no-repeat center / var(--slides-icons-size);
-}
-
-.swiper-conditions .monitor-icon:after {
-    background: url('../../img/pages/team_recruit/code-pc.svg') no-repeat center / var(--slides-icons-size);
-}
-
-.swiper-conditions .shield-icon:after {
-    background: url('../../img/pages/team_recruit/shield-tick.svg') no-repeat center / var(--slides-icons-size);
+    background: url('../../img/pages/team_talent/diamond.svg') no-repeat center / var(--slides-icons-size);
 }
 
 .free-recruiter > p {
@@ -173,6 +153,15 @@
     background: url('../../img/arrows.svg') no-repeat center / 20px;
     transform: rotate(-90deg);
 }
+
+.swiper-conditions__btn-block {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CRM */
 
 .CRM > .title-block > h2 {
     width: 100%;
@@ -286,66 +275,6 @@
 }
 
 
-/* convenient */
-
-.convenient .section-container {
-    width: 100%;
-    display: flex;
-    margin-top: 40px;
-    height: 742px;
-    justify-content: center;
-    gap: 42px;
-}
-
-.convenient figure {
-    width: 100%;
-    height: 100%;
-}
-
-.convenient .mobile-img img {
-    object-fit: contain;
-}
-
-.convenient .text-articles {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: 100%;
-}
-
-.convenient .text-articles > .text-article {
-    background-color: #f4f4f4;
-    padding: 40px;
-    border-radius: 20px;
-    width: 400px;
-}
-
-.convenient .text-articles > .text-article:first-child {
-    transform: translateY(46px);
-}
-
-.convenient .text-articles > .text-article:last-child {
-    margin-top: auto;
-    padding-bottom: 90px;
-    position: relative;
-}
-
-.convenient .text-articles > .text-article > pre {
-    white-space: pre-wrap;
-}
-
-.convenient .text-articles > .text-article:last-child:after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 30px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
-    background: url('../../img/pages/team_recruit/sign.svg') no-repeat center / 50px;
-}
-
-
 
 /* get to know */
 
@@ -364,19 +293,22 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 531px;
     bottom: -140px;
-    background-image: linear-gradient(to top, rgba(230, 233, 248, .8), transparent);
+    background-image: linear-gradient(to top, rgba(230, 233, 248, 1), rgba(230, 233, 248, .9), rgba(230, 233, 248, .8), transparent);
 }
 
-.main-content .get-to-know .title-block h2 {
+.main-content .get-to-know:not(.talent) .title-block h2 {
+    position: relative;
     text-transform: initial;
     font-size: 40px;
+    z-index: 5;
 }
 
 .get-to-know p {
     text-align: center;
     width: 350px;
+    z-index: 5;
 }
 
 .main-content .get-to-know .main-btn-view {
@@ -388,6 +320,7 @@
 .main-content .get-to-know.talent .main-btn-view {
     background-color: var(--main-color);
 }
+
 
 /* reduce-staff */
 
@@ -537,11 +470,61 @@
     background: url('../../img/pages/team_talent/tick.svg') no-repeat center / 20px;
 }
 
+
 /* motivate */
 
 .motivate > p {
     margin: 30px 0 20px;
 }
+
+
+/* integrate */
+
+.integrate > p,
+.integrate .integrate__content  {
+    margin-top: 20px;
+}
+
+.integrate .integrate__content {
+    width: 100%;
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(2, 50%);
+    gap: 20px;
+}
+
+.integrate .integrate__content > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #F0F3FF;
+    padding: 30px;
+}
+
+.integrate .integrate__content > div > h3 {
+    font-size: 18px;
+}
+
+.integrate .integrate__content > div > p {
+    margin-top: 15px;
+}
+
+
+/* customization */
+
+.customization__content {
+    width: 100%;
+    height: 435px;
+    margin-top: 20px;
+    padding-right: 50%;
+    background: url('../../img/pages/team_talent/girl.svg') no-repeat right center / contain;
+}
+
+.customization__content > p {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 20px;
+}
+
 
 /* questions */
 
