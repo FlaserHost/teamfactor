@@ -344,7 +344,8 @@
 
 .reduce-staff__info:not(:last-child) > h2,
 .reduce-staff__info > span,
-.reduce-staff__info > h2 > .capitalize {
+.reduce-staff__info > h2 > .capitalize,
+.reduce-staff__info > h2 > .normal {
     font-size: 18px;
 }
 
@@ -354,6 +355,10 @@
 
 .reduce-staff__info > h2 > .capitalize {
     text-transform: capitalize;
+}
+
+.reduce-staff__info > h2 > .normal {
+    text-transform: initial;
 }
 
 .reduce-staff__info > span,
