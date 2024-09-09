@@ -771,6 +771,12 @@
     .main-content .mass-media .media-blocks-container .media-block img.vcru-logo {
         min-width: 60px;
     }
+
+    /* team talent */
+
+    .main-content .motivate + section.slider-conditions {
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 745px) {
@@ -1028,7 +1034,7 @@
     /* team talent */
 
     .you-can__tags .tag,
-    .swiper-conditions .swiper-slide {
+    .motivate + .slider-conditions .swiper-conditions .swiper-slide {
         width: 100%;
     }
 }
@@ -1224,6 +1230,16 @@
     .special-class .logo-title > h3 {
         padding-left: 0;
     }
+
+    .main-content section.POST-additions .contact {
+        width: auto;
+    }
+
+    /* team talent */
+
+    .main-content .organize + section.POST-additions {
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 566px) {
@@ -1304,6 +1320,16 @@
     .table-wrapper .table-row-title > div,
     .table-wrapper > .check {
         font-size: 15px;
+    }
+
+    /* team talent */
+
+    .main-content .integrate .integrate__content {
+        grid: initial;
+    }
+
+    .main-content .integrate .integrate__content > div {
+        height: auto;
     }
 }
 
@@ -1431,6 +1457,10 @@
     .customization .customization__content {
         padding-right: 0;
         background: url('../img/pages/team_talent/girl.svg') no-repeat right 126% / 336px;
+    }
+
+    .reduce-staff .demo-btn {
+        width: 100%;
     }
 }
 
