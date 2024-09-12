@@ -616,6 +616,22 @@
     }
 }
 
+/* второй шаблон спикеров начало */
+
+@media screen and (max-width: 830px) {
+    .main-content .speaker.more-than-one .section-container .swiper-slide .speakers {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .main-content .speaker.more-than-one .section-container .swiper-slide .speakers {
+        gap: 50px;
+    }
+}
+
+/* второй шаблон спикеров конец */
+
 @media screen and (max-width: 810px) {
     .main-content .speaker .swiper-slide figure {
         height: auto;

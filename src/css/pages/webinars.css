@@ -450,6 +450,38 @@ div:not(.special-class) .main-content .speaker .section-container .text-containe
     font-size: 15px;
 }
 
+/* второй шаблон спикеров начало */
+
+.main-content .speaker.more-than-one .section-container .swiper-slide {
+    flex-direction: column;
+}
+
+.main-content .speaker.more-than-one .section-container .swiper-slide .speakers {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+.main-content .speaker.more-than-one .section-container .swiper-slide .speakers .speaker-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content .speaker.more-than-one .section-container .swiper-slide .speakers .speaker-card > span {
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.main-content .speaker.more-than-one .section-container .swiper-slide .text-block {
+    margin-top: 60px;
+}
+
+/* второй шаблон спикеров конец */
+
 .main-content .become-our-partner .title-block h2 {
     text-transform: lowercase;
     font-size: 32px;
