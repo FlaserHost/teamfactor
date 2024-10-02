@@ -436,6 +436,10 @@ section.POST + section.POST-additions {
     background-image: linear-gradient(to top, rgba(230, 233, 248, .8), transparent);
 }
 
+.get-to-know.talent:after {
+    display: none;
+}
+
 .main-content .get-to-know .title-block h2 {
     text-transform: initial;
     font-size: 40px;

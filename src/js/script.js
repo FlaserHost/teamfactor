@@ -310,8 +310,6 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
         const tableWrapper = document.querySelector('.tariffs-and-costs');
 
-        let tableWrapperPos = tableWrapper.offsetTop * -1;
-
         window.addEventListener('resize', () => {
             tableWrapperPos = tableWrapper.offsetTop * -1;
         });
@@ -325,6 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const stickyHeader = document.querySelector('.table-sticky-header');
 
         document.addEventListener('scroll', e => {
+            let tableWrapperPos = tableWrapper.offsetTop * -1;
             const scrollWindow = e.target.body.getBoundingClientRect().top;
             scrollWindow <= tableWrapperPos
                 ? stickyHeader.classList.add('show-sticky-header')
