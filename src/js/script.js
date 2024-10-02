@@ -394,8 +394,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 : number_of_recruiters * priceList.one_recruiter;
 
             const formula = (tmpSumm + internal_customers * priceList.additional_connection);
-            const fastStart = formula / 89 * 3;
-            const advanced = (formula + priceList.allowance * (++number_of_recruiters)) / 89 * 3;
+            const fastStart = formula / 89; // * 1
+            const advanced = (formula + priceList.allowance * (++number_of_recruiters)) / 89; // * 1
 
             fastStartPrice.forEach(item => item.innerText = `${Math.ceil(fastStart)} $`);
             advancedPrice.forEach(item => item.innerText = `${Math.ceil(advanced)} $`);

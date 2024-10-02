@@ -99,8 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const subSection = document.getElementById(subId);
 
-            console.log(e.target.classList.contains('active-nav'));
-
             if (!e.target.classList.contains('active-nav')) {
                 subSections.forEach(sub => sub.classList.remove('showed'));
                 orig.forEach(nav => nav.classList.remove('active-nav'));
@@ -389,8 +387,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const increasePercent = fullMonthSumm * 30 / 100;
             const fullMonthSummExtended = fullMonthSumm + increasePercent;
 
-            const fastStartFormatted = Math.round(fullMonthSumm / 89 * 3).toLocaleString();
-            const extendedFormatted = Math.round(fullMonthSummExtended / 89 * 3).toLocaleString();
+            const fastStartFormatted = Math.round(fullMonthSumm / 89).toLocaleString(); // * 1
+            const extendedFormatted = Math.round(fullMonthSummExtended / 89).toLocaleString(); // * 1
 
             fastStartPrice.forEach(item => item.innerText = `${fastStartFormatted} $`);
             advancedPrice.forEach(item => item.innerText = `${extendedFormatted} $`);
