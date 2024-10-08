@@ -497,7 +497,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // баннер
 
-    if (!sessionStorage.bannerWatched) {
+    /*if (!sessionStorage.bannerWatched) {
         setTimeout(() => {
             const banner = document.querySelector('.banner');
             banner.style.display = 'flex';
@@ -520,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         }, 15000);
-    }
+    }*/
 
     // Отправка почты
 
