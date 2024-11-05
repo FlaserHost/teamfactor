@@ -427,6 +427,11 @@ div:not(.special-class) .main-content .speaker .section-container .text-containe
     padding-left: 30px;
 }
 
+.main-content .speaker.more-than-one .swiper-slide .text-block {
+    display: flex;
+    padding-left: 0;
+}
+
 .main-content .speaker .swiper-slide .text-block .text-container {
     display: flex;
     flex-direction: column;
@@ -459,25 +464,48 @@ div:not(.special-class) .main-content .speaker .section-container .text-containe
 .main-content .speaker.more-than-one .section-container .swiper-slide .speakers {
     display: flex;
     justify-content: center;
-    gap: 200px;
-    flex-wrap: wrap;
+    gap: 111px;
+}
+
+.main-content .speaker.more-than-one .swiper-slide figure {
+    border-radius: 50%;
+}
+
+.main-content .speaker.more-than-one .section-container .text-container > span:nth-of-type(1),
+.main-content .speaker.more-than-one .section-container .text-container > span:nth-of-type(2),
+.main-content .speaker.more-than-one .section-container .text-container p {
+    margin: 15px 0 0 0;
+}
+
+.main-content .speaker.more-than-one .swiper-slide .text-block {
+    padding-left: 0;
 }
 
 .main-content .speaker.more-than-one .section-container .swiper-slide .speakers .speaker-card {
+    width: 42%;
+}
+
+.main-content .speaker.more-than-one .section-container .swiper-slide .speakers .speaker-card .speaker-titles {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.main-content .speaker.more-than-one .section-container .swiper-slide .speakers .speaker-card > span {
+.main-content .speaker.more-than-one .section-container .swiper-slide .speakers .speaker-card span {
     display: inline-block;
     color: var(--main-color);
     font-size: 24px;
     margin-top: 30px;
 }
 
+.main-content .speaker.more-than-one .section-container .swiper-slide .speakers .speaker-card span.speaker-position {
+    color: #000;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
 .main-content .speaker.more-than-one .section-container .swiper-slide .text-block {
-    margin-top: 60px;
+    margin-top: 15px;
 }
 
 /* второй шаблон спикеров конец */

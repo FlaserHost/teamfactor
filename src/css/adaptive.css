@@ -1047,6 +1047,14 @@
         padding: 0 35px;
     }
 
+    .main-content .speaker.more-than-one .section-container .swiper-slide .speakers {
+        flex-direction: column;
+    }
+
+    .main-content .speaker.more-than-one .section-container .swiper-slide .speakers .speaker-card {
+        width: 100%;
+    }
+
     /* team talent */
 
     .you-can__tags .tag,

@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let days = Math.floor(t / (1000 * 60 * 60 * 24));
         return {
             'total': t,
-            'days': days,
-            'hours': hours,
-            'minutes': minutes,
-            'seconds': seconds
+            'days': days >= 0 ? days : 0,
+            'hours': hours >= 0 ? hours : 0,
+            'minutes': minutes >= 0 ? minutes : 0,
+            'seconds': seconds >= 0 ? seconds : 0,
         };
     }
 
@@ -57,7 +57,12 @@ document.addEventListener('DOMContentLoaded', () => {
             secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
             if (t.total <= 0) {
-                clearInterval(timeinterval);
+		try {
+			clearInterval(timeinterval);
+		} catch (err) {
+			// Не требует обработки
+		}
+                
                 const timer = document.querySelector('.timer');
                 const registerBtns = document.querySelectorAll('button[data-property="register"]');
 
