@@ -358,19 +358,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // кнопка Назад (для мобильной версии)
-    const mobileBackBtns = document.querySelectorAll('.mobile-back-btn');
-    mobileBackBtns.forEach(btn => {
-        btn.addEventListener('click', e => {
-            const platform = e.target.closest('.mobile-menu-platform');
-            const mainMenu = platform.children[0];
-            const parent = e.target.closest('.mobile-menu-article');
-            platform.classList.remove('not-menu');
-            parent.classList.remove('flex');
-            mainMenu.classList.add('flex');
-        });
-    });
-
     if (!localStorage.acceptCookie) {
         const cookieBlock = `<div class="cookie-notice">
             <p>${titles.cookie[formTitleLang].p}</p>
